@@ -11,7 +11,8 @@ ROOT = Path(__file__).resolve().parents[1]
 FIG = ROOT / "paper/figures"; FIG.mkdir(parents=True, exist_ok=True)
 R = ROOT / "results/revision"; F = ROOT / "results/final"
 plt.rcParams.update({"font.size": 8, "axes.spines.top": False, "axes.spines.right": False, "savefig.bbox": "tight", "axes.titlesize": 8.5})
-C = {"blue": "#3b6ea8", "orange": "#d9822b", "green": "#4c9a5f", "red": "#c0504d", "grey": "#8c8c8c", "purple": "#7b5ea7"}
+# Okabe-Ito colour-blind-safe palette (grey kept only for neutral/reference elements)
+C = {"blue": "#0072B2", "orange": "#E69F00", "green": "#009E73", "red": "#D55E00", "grey": "#999999", "purple": "#CC79A7", "sky": "#56B4E9", "yellow": "#F0E442", "black": "#000000"}
 J = lambda p: json.load(open(p))
 
 
