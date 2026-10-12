@@ -29,3 +29,9 @@ logs/
 *.bbl
 *.blg
 paper/*_backup.tex
+
+# Internal notes kept out of the repository
+docs/08_*.md
+docs/10_*.md
+docs/12_*.md
+docs/13_*.md

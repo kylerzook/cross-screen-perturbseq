@@ -31,8 +31,7 @@ bash run_all.sh            # commands used, in order
 ```
 **Verification status.** The main-text pipeline (decomposition, noise checks, binding from cached promoter features,
 Norman preprocessing and context analysis, independent-screen benchmark, cascade test) was re-run from a fresh clone
-in a clean environment built from `requirements.txt`, and its outputs were compared with the committed results
-(see `docs/13_clean_run_check.md`). The remaining commands in `run_all.sh` (Supplement S1–S9 simulations, per-TF
+in a clean environment built from `requirements.txt`, and its outputs were compared with the committed results. The remaining commands in `run_all.sh` (Supplement S1–S9 simulations, per-TF
 promoter-feature generation) are supplied as used but were not re-verified end to end.
 
 ## Main-text results → code

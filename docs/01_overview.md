@@ -87,4 +87,3 @@ Three small tests, each aimed at one question.
 ## Medium synthetic + real-data tests (`experiments/medium_synthetic.py`, `experiments/replogle_heldout.py`)
 - **Medium synthetic:** 80 simulated genes (70 measured) with snapshot cells, Poisson counts, noisy labelling velocity, a hidden confounder, misspecified Hill shapes and a noisy sequence prior. 10 seeds. Covers ablations, baselines, prior and noise sweeps, and coverage with random, degree-based and active knockdown selection. Results: `docs/06_medium_synthetic_results.md`.
 - **Real data:** Replogle K562 Perturb-seq pseudobulk, with held-out knockdown prediction and edge checks, with and without K562 ChIP or JASPAR occupancy priors. Results: `docs/07_replogle_heldout_results.md`.
-- **Evaluation and plan:** `docs/08_evaluation_and_plan.md`.
