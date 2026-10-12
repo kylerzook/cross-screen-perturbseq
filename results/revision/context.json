@@ -1,0 +1,126 @@
+{
+ "Norman 2019 (A alone vs A in C's context)": {
+  "n_comparisons": 262,
+  "n_genes": 2000,
+  "counts": {
+   "strong_in_ctx1": {
+    "observed": 64962,
+    "null_mean": 77543.5,
+    "null_sd": 186.1535656386952
+   },
+   "strong_in_ctx2": {
+    "observed": 26311,
+    "null_mean": 28060.5,
+    "null_sd": 78.72070883827203
+   },
+   "shared_same_sign": {
+    "observed": 15560,
+    "null_mean": 20646.55,
+    "null_sd": 74.52011473421119
+   },
+   "reversed": {
+    "observed": 218,
+    "null_mean": 2.75,
+    "null_sd": 1.9716744153130354
+   },
+   "gained (ns in ctx1, strong in ctx2)": {
+    "observed": 7256,
+    "null_mean": 4032.95,
+    "null_sd": 50.105363984308106
+   },
+   "lost (strong in ctx1, ns in ctx2)": {
+    "observed": 36891,
+    "null_mean": 39617.9,
+    "null_sd": 168.91030163965723
+   },
+   "significant context difference |z_diff|>3": {
+    "observed": 12084,
+    "null_mean": 1421.2,
+    "null_sd": 33.97587379303143
+   },
+   "  of which: reversal": {
+    "observed": 218,
+    "null_mean": 2.75,
+    "null_sd": 1.9716744153130354
+   },
+   "  of which: same sign, different magnitude": {
+    "observed": 2813,
+    "null_mean": 49.9,
+    "null_sd": 7.822403722641782
+   },
+   "  of which: gained": {
+    "observed": 3136,
+    "null_mean": 553.2,
+    "null_sd": 15.480956042828879
+   },
+   "  of which: lost": {
+    "observed": 3061,
+    "null_mean": 226.55,
+    "null_sd": 17.763656718142244
+   }
+  }
+ },
+ "Wessels 2023 (A alone vs A in C's context)": {
+  "n_comparisons": 106,
+  "n_genes": 2000,
+  "counts": {
+   "strong_in_ctx1": {
+    "observed": 7848,
+    "null_mean": 10421.1,
+    "null_sd": 75.9110663869241
+   },
+   "strong_in_ctx2": {
+    "observed": 5168,
+    "null_mean": 7984.45,
+    "null_sd": 83.9002234800361
+   },
+   "shared_same_sign": {
+    "observed": 1639,
+    "null_mean": 2811.35,
+    "null_sd": 31.36602461262823
+   },
+   "reversed": {
+    "observed": 18,
+    "null_mean": 0.45,
+    "null_sd": 0.49749371855331
+   },
+   "gained (ns in ctx1, strong in ctx2)": {
+    "observed": 2714,
+    "null_mean": 3461.2,
+    "null_sd": 62.17041096856285
+   },
+   "lost (strong in ctx1, ns in ctx2)": {
+    "observed": 4844,
+    "null_mean": 5209.4,
+    "null_sd": 70.51765736324485
+   },
+   "significant context difference |z_diff|>3": {
+    "observed": 1692,
+    "null_mean": 564.7,
+    "null_sd": 22.7993420957711
+   },
+   "  of which: reversal": {
+    "observed": 18,
+    "null_mean": 0.45,
+    "null_sd": 0.49749371855331
+   },
+   "  of which: same sign, different magnitude": {
+    "observed": 77,
+    "null_mean": 3.25,
+    "null_sd": 1.6085707942145413
+   },
+   "  of which: gained": {
+    "observed": 486,
+    "null_mean": 161.5,
+    "null_sd": 10.360984509205677
+   },
+   "  of which: lost": {
+    "observed": 497,
+    "null_mean": 135.05,
+    "null_sd": 9.531395490692852
+   }
+  }
+ },
+ "note": "Null: for every gene and comparison both contexts share the precision-weighted mean effect; each context's estimate is redrawn with its own standard error (20 replicates). Using the noisy mean as truth makes the null slightly generous to 'gained'/'lost' counts, i.e. conservative for claiming excess context dependence.",
+ "seconds": 29.16855239868164
+}

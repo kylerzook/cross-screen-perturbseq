@@ -1,0 +1,81 @@
+{
+ "prior_kinds": {
+  "T0->T1": "strong",
+  "T1->T2": "weak",
+  "T2->g4": "weak",
+  "T0->g5": "strong",
+  "T1->g5": "weak",
+  "T3->g6": "weak",
+  "T2->g7": "weak",
+  "T3->g8": "strong",
+  "T1->g9": "strong"
+ },
+ "decoys": [
+  "T3->T1",
+  "T0->T3",
+  "T1->g8",
+  "T3->g9"
+ ],
+ "scores": {
+  "|corr| (WT)": {
+   "AUROC": 0.50480109739369,
+   "AUPRC": 0.10776565574932923,
+   "precision_at_9": 0.0,
+   "indirect_FP_in_top9": 0.0,
+   "indirect_pairs_total": 4,
+   "decoy_FP_in_top9": 0.0,
+   "decoys_total": 4,
+   "indirect_mean_rank_pct": 0.6416666666666666
+  },
+  "lagged corr": {
+   "AUROC": 0.7325102880658437,
+   "AUPRC": 0.36537999037999036,
+   "precision_at_9": 0.5555555555555556,
+   "indirect_FP_in_top9": 0.0,
+   "indirect_pairs_total": 4,
+   "decoy_FP_in_top9": 0.0,
+   "decoys_total": 4,
+   "indirect_mean_rank_pct": 0.5111111111111111
+  },
+  "Lasso-VAR": {
+   "AUROC": 0.962962962962963,
+   "AUPRC": 0.5930615680615681,
+   "precision_at_9": 0.6666666666666666,
+   "indirect_FP_in_top9": 0.0,
+   "indirect_pairs_total": 4,
+   "decoy_FP_in_top9": 0.0,
+   "decoys_total": 4,
+   "indirect_mean_rank_pct": 0.2638888888888889
+  },
+  "KD mean-difference (total effect)": {
+   "AUROC": 0.8257887517146776,
+   "AUPRC": 0.5152723819390486,
+   "precision_at_9": 0.4444444444444444,
+   "indirect_FP_in_top9": 3.0,
+   "indirect_pairs_total": 4,
+   "decoy_FP_in_top9": 0.0,
+   "decoys_total": 4,
+   "indirect_mean_rank_pct": 0.05
+  },
+  "binding prior only": {
+   "AUROC": 0.9341563786008231,
+   "AUPRC": 0.47310924369747903,
+   "precision_at_9": 0.4444444444444444,
+   "indirect_FP_in_top9": 0.0,
+   "indirect_pairs_total": 4,
+   "decoy_FP_in_top9": 4.0,
+   "decoys_total": 4,
+   "indirect_mean_rank_pct": 0.21666666666666667
+  },
+  "KD mean-diff + prior (product)": {
+   "AUROC": 0.8436213991769547,
+   "AUPRC": 0.5978835978835979,
+   "precision_at_9": 0.6666666666666666,
+   "indirect_FP_in_top9": 2.0,
+   "indirect_pairs_total": 4,
+   "decoy_FP_in_top9": 0.0,
+   "decoys_total": 4,
+   "indirect_mean_rank_pct": 0.06944444444444445
+  }
+ }
+}

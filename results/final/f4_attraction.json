@@ -1,0 +1,125 @@
+{
+ "three_gene": {
+  "observational": {
+   "theory_coef_c_b_lambda": 0.5,
+   "empirical_coef_mean": 0.49734507968153724,
+   "empirical_coef_sd": 0.02429723854961635,
+   "mean_t_stat": 21.001133073950662,
+   "lasso_selects_spurious_A_to_C": 1.0,
+   "sd_A": 1.0
+  },
+  "perturb A": {
+   "theory_coef_c_b_lambda": 0.5,
+   "empirical_coef_mean": 0.5000805303686224,
+   "empirical_coef_sd": 0.02236147165073924,
+   "mean_t_stat": 23.926953636333202,
+   "lasso_selects_spurious_A_to_C": 1.0,
+   "sd_A": 1.7320508075688772
+  },
+  "perturb B": {
+   "theory_coef_c_b_lambda": 0.1,
+   "empirical_coef_mean": 0.0992430211085908,
+   "empirical_coef_sd": 0.017158177454208508,
+   "mean_t_stat": 5.451740407968795,
+   "lasso_selects_spurious_A_to_C": 1.0,
+   "sd_A": 1.0
+  },
+  "perturb A and B": {
+   "theory_coef_c_b_lambda": 0.1,
+   "empirical_coef_mean": 0.076389815016665,
+   "empirical_coef_sd": 0.010532627251023621,
+   "mean_t_stat": 6.796657564029527,
+   "lasso_selects_spurious_A_to_C": 1.0,
+   "sd_A": 1.7320508075688772
+  },
+  "noise_sweep_observational": [
+   {
+    "sigma_e": 0.0,
+    "theory": 0.0,
+    "empirical": 0.0015371102885759894
+   },
+   {
+    "sigma_e": 0.1,
+    "theory": 0.03846153846153847,
+    "empirical": 0.05285241304532108
+   },
+   {
+    "sigma_e": 0.25,
+    "theory": 0.2,
+    "empirical": 0.19490059137024243
+   },
+   {
+    "sigma_e": 0.5,
+    "theory": 0.5,
+    "empirical": 0.49442920179187716
+   },
+   {
+    "sigma_e": 1.0,
+    "theory": 0.8,
+    "empirical": 0.7936346814750419
+   }
+  ]
+ },
+ "network_fp_table": {
+  "source perturbed | mediator unperturbed": {
+   "n_pairs": 874,
+   "false_positive_rate": 0.059496567505720827,
+   "seed_sd": 0.03208729497566122
+  },
+  "source perturbed | mediator perturbed": {
+   "n_pairs": 881,
+   "false_positive_rate": 0.04880817253121453,
+   "seed_sd": 0.034474373636949905
+  },
+  "source perturbed | mediator hidden": {
+   "n_pairs": 175,
+   "false_positive_rate": 0.14857142857142858,
+   "seed_sd": 0.1427606121676651
+  },
+  "source perturbed | longer path only": {
+   "n_pairs": 1709,
+   "false_positive_rate": 0.0017554125219426564,
+   "seed_sd": 0.0032666187486522424
+  },
+  "source unperturbed | mediator unperturbed": {
+   "n_pairs": 779,
+   "false_positive_rate": 0.051347881899871634,
+   "seed_sd": 0.019273535308375916
+  },
+  "source unperturbed | mediator perturbed": {
+   "n_pairs": 862,
+   "false_positive_rate": 0.042923433874709975,
+   "seed_sd": 0.03257843361640818
+  },
+  "source unperturbed | mediator hidden": {
+   "n_pairs": 179,
+   "false_positive_rate": 0.17318435754189945,
+   "seed_sd": 0.12529923605417118
+  },
+  "source unperturbed | longer path only": {
+   "n_pairs": 1723,
+   "false_positive_rate": 0.002901915264074289,
+   "seed_sd": 0.005436420560967251
+  }
+ },
+ "identifiability_flag": {
+  "n_predicted_edges": 3426,
+  "fraction_flagged": 0.4366608289550496,
+  "precision_flagged": 0.2727272727272727,
+  "precision_unflagged": 0.4409326424870466,
+  "indirect_frac_flagged": 0.08890374331550802,
+  "indirect_frac_unflagged": 0.0538860103626943,
+  "share_of_indirect_FPs_that_are_flagged": 0.5611814345991561,
+  "share_of_TPs_flagged": 0.32406671961874506,
+  "precision_source_perturbed": 0.8350515463917526,
+  "precision_source_unperturbed": 0.20759890325107716,
+  "precision_regulator_source_perturbed": 0.8350515463917526,
+  "precision_regulator_source_unperturbed": 0.7171853856562923,
+  "n_edges_from_unperturbed_regulators": 739,
+  "n_edges_from_perturbed": 873,
+  "fraction_of_edges_from_non_regulators": 0.5294804436660829,
+  "precision_flagged_among_regulator_sources": 0.710801393728223,
+  "precision_unflagged_among_regulator_sources": 0.8198458574181118
+ },
+ "seconds": 909.3551251888275
+}

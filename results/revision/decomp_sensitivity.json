@@ -1,0 +1,338 @@
+{
+ "noise_c": 1.0115306717343628,
+ "K_sensitivity": {
+  "0": {
+   "pooled_share_of_total_energy": {
+    "noise": 0.46980356419322106,
+    "generic": 0.11875902861356735,
+    "pathway": 0.0,
+    "specific (residual minus expected noise)": 0.4114949259834491
+   },
+   "pooled_share_of_signal": {
+    "generic": 0.22399062078272086,
+    "pathway": 0.0,
+    "specific": 0.7761178653668118
+   },
+   "median_noise_share_per_knockdown": 0.7366009233772005,
+   "n": 4507
+  },
+  "1": {
+   "pooled_share_of_total_energy": {
+    "noise": 0.46980356419322106,
+    "generic": 0.11875902861356735,
+    "pathway": 0.0854349434375763,
+    "specific (residual minus expected noise)": 0.32611696839797355
+   },
+   "pooled_share_of_signal": {
+    "generic": 0.22399062078272086,
+    "pathway": 0.16113828882940345,
+    "specific": 0.6150870627821824
+   },
+   "median_noise_share_per_knockdown": 0.7366009233772005,
+   "n": 4507
+  },
+  "3": {
+   "pooled_share_of_total_energy": {
+    "noise": 0.46980356419322106,
+    "generic": 0.11875902861356735,
+    "pathway": 0.13983744382858276,
+    "specific (residual minus expected noise)": 0.27182836016395073
+   },
+   "pooled_share_of_signal": {
+    "generic": 0.22399062078272086,
+    "pathway": 0.2637464823611131,
+    "specific": 0.5126936769205555
+   },
+   "median_noise_share_per_knockdown": 0.7366009233772005,
+   "n": 4507
+  },
+  "5": {
+   "pooled_share_of_total_energy": {
+    "noise": 0.46980356419322106,
+    "generic": 0.11875902861356735,
+    "pathway": 0.17503395676612854,
+    "specific (residual minus expected noise)": 0.23674571588764753
+   },
+   "pooled_share_of_signal": {
+    "generic": 0.22399062078272086,
+    "pathway": 0.3301304010052836,
+    "specific": 0.4465245329825746
+   },
+   "median_noise_share_per_knockdown": 0.7366009233772005,
+   "n": 4507
+  },
+  "10": {
+   "pooled_share_of_total_energy": {
+    "noise": 0.46980356419322106,
+    "generic": 0.11875902861356735,
+    "pathway": 0.21881362795829773,
+    "specific (residual minus expected noise)": 0.19325089959478248
+   },
+   "pooled_share_of_signal": {
+    "generic": 0.22399062078272086,
+    "pathway": 0.41270293151915355,
+    "specific": 0.36448924689718115
+   },
+   "median_noise_share_per_knockdown": 0.7366009233772005,
+   "n": 4507
+  },
+  "20": {
+   "pooled_share_of_total_energy": {
+    "noise": 0.46980356419322106,
+    "generic": 0.11875902861356735,
+    "pathway": 0.2604638934135437,
+    "specific (residual minus expected noise)": 0.15217022750542006
+   },
+   "pooled_share_of_signal": {
+    "generic": 0.22399062078272086,
+    "pathway": 0.4912592291973578,
+    "specific": 0.2870072622684999
+   },
+   "median_noise_share_per_knockdown": 0.7366009233772005,
+   "n": 4507
+  },
+  "50": {
+   "pooled_share_of_total_energy": {
+    "noise": 0.46980356419322106,
+    "generic": 0.11875902861356735,
+    "pathway": 0.3195807933807373,
+    "specific (residual minus expected noise)": 0.09476217670658584
+   },
+   "pooled_share_of_signal": {
+    "generic": 0.22399062078272086,
+    "pathway": 0.6027592021545661,
+    "specific": 0.17873031636357564
+   },
+   "median_noise_share_per_knockdown": 0.7366009233772005,
+   "n": 4507
+  }
+ },
+ "gene_panel_sensitivity (K=3)": {
+  "all genes": {
+   "pooled_share_of_total_energy": {
+    "noise": 0.46980356419322106,
+    "generic": 0.11875902861356735,
+    "pathway": 0.13983744382858276,
+    "specific (residual minus expected noise)": 0.27182836016395073
+   },
+   "pooled_share_of_signal": {
+    "generic": 0.22399062078272086,
+    "pathway": 0.2637464823611131,
+    "specific": 0.5126936769205555
+   },
+   "median_noise_share_per_knockdown": 0.7366009233772005,
+   "n": 4507
+  },
+  "2000 most variable": {
+   "pooled_share_of_total_energy": {
+    "noise": 0.2445805271029983,
+    "generic": 0.17784658074378967,
+    "pathway": 0.23030659556388855,
+    "specific (residual minus expected noise)": 0.34775549939061645
+   },
+   "pooled_share_of_signal": {
+    "generic": 0.235427585792597,
+    "pathway": 0.30487245508205973,
+    "specific": 0.46034754446690235
+   },
+   "median_noise_share_per_knockdown": 0.5318153121440143,
+   "n": 4507
+  },
+  "mean UMI > 1 (1728 genes)": {
+   "pooled_share_of_total_energy": {
+    "noise": 0.3017237261989366,
+    "generic": 0.1439850777387619,
+    "pathway": 0.2581608295440674,
+    "specific (residual minus expected noise)": 0.29682882429716645
+   },
+   "pooled_share_of_signal": {
+    "generic": 0.20620072827086086,
+    "pathway": 0.3697115818023394,
+    "specific": 0.4250879421713417
+   },
+   "median_noise_share_per_knockdown": 0.5733659228177106,
+   "n": 4507
+  }
+ },
+ "cell_count_tertiles (K=3)": {
+  "tertile 1": {
+   "pooled_share_of_total_energy": {
+    "noise": 0.45617771689421316,
+    "generic": 0.1300113946199417,
+    "pathway": 0.15079058706760406,
+    "specific (residual minus expected noise)": 0.26324202615400877
+   },
+   "pooled_share_of_signal": {
+    "generic": 0.23906964783014778,
+    "pathway": 0.2772791570266411,
+    "specific": 0.48405891838529486
+   },
+   "median_noise_share_per_knockdown": 0.6683872718615919,
+   "n": 1478
+  },
+  "tertile 2": {
+   "pooled_share_of_total_energy": {
+    "noise": 0.475765858026344,
+    "generic": 0.1104903444647789,
+    "pathway": 0.12761281430721283,
+    "specific (residual minus expected noise)": 0.28636218769796806
+   },
+   "pooled_share_of_signal": {
+    "generic": 0.2107652586776932,
+    "pathway": 0.2434271300267716,
+    "specific": 0.5462486411508056
+   },
+   "median_noise_share_per_knockdown": 0.7652081803093704,
+   "n": 1520
+  },
+  "tertile 3": {
+   "pooled_share_of_total_energy": {
+    "noise": 0.5256974208350327,
+    "generic": 0.07886919379234314,
+    "pathway": 0.10883356630802155,
+    "specific (residual minus expected noise)": 0.28685512220880865
+   },
+   "pooled_share_of_signal": {
+    "generic": 0.16628456302437264,
+    "pathway": 0.22946019626213254,
+    "specific": 0.6047935111671351
+   },
+   "median_noise_share_per_knockdown": 0.7714573356263434,
+   "n": 1509
+  }
+ },
+ "knockdown_strength_tertiles (K=3; tertile 1 = strongest)": {
+  "tertile 1": {
+   "pooled_share_of_total_energy": {
+    "noise": 0.5485657467874447,
+    "generic": 0.08797092735767365,
+    "pathway": 0.1162123829126358,
+    "specific (residual minus expected noise)": 0.24751737239297328
+   },
+   "pooled_share_of_signal": {
+    "generic": 0.19486985493096304,
+    "pathway": 0.25742924994114497,
+    "specific": 0.5482910759021007
+   },
+   "median_noise_share_per_knockdown": 0.7995211055293241,
+   "n": 1502
+  },
+  "tertile 2": {
+   "pooled_share_of_total_energy": {
+    "noise": 0.47744760664982316,
+    "generic": 0.10303749889135361,
+    "pathway": 0.14751508831977844,
+    "specific (residual minus expected noise)": 0.2722318043813839
+   },
+   "pooled_share_of_signal": {
+    "generic": 0.19718118039699867,
+    "pathway": 0.2822972269440305,
+    "specific": 0.520965567942493
+   },
+   "median_noise_share_per_knockdown": 0.7209234377749026,
+   "n": 1502
+  },
+  "tertile 3": {
+   "pooled_share_of_total_energy": {
+    "noise": 0.40905242392237845,
+    "generic": 0.1510406881570816,
+    "pathway": 0.15137764811515808,
+    "specific (residual minus expected noise)": 0.28872813590109636
+   },
+   "pooled_share_of_signal": {
+    "generic": 0.2555906801610441,
+    "pathway": 0.25616087795343906,
+    "specific": 0.4885850244407663
+   },
+   "median_noise_share_per_knockdown": 0.6509724881900153,
+   "n": 1503
+  }
+ },
+ "noise_model_check_across_screens": {
+  "n_knockdowns": 1394,
+  "observed/predicted noise energy of (gw - es) difference, median [IQR]": [
+   1.2985178617693818,
+   1.1330508098836198,
+   1.6142263985380256
+  ],
+  "non-targeting controls, random cross-screen pairs, median [IQR]": [
+   1.1801628188428235,
+   0.9429264196181057,
+   1.554075001250482
+  ],
+  "interpretation": "ratio 1 = difference fully explained by the control-calibrated noise model; >1 = extra noise in perturbed profiles and/or real between-screen differences"
+ },
+ "axis_stability": {
+  "n_knockdowns_in_both": 1457,
+  "cos(generic_gw, generic_es)": 0.9106305837631226,
+  "principal_angle_cosines_pathway3": [
+   0.9679999947547913,
+   0.9359999895095825,
+   0.00800000037997961
+  ],
+  "random_subspace_cosines": [
+   0.02,
+   0.016,
+   0.003
+  ],
+  "top_loading_genes_gw": {
+   "PC1": [
+    "EEF1A1",
+    "TPT1",
+    "PRG2",
+    "RPS3",
+    "RPL3",
+    "RPL13A",
+    "RPS27",
+    "RPS18",
+    "SNHG29",
+    "RPS4X",
+    "RPLP1",
+    "RPS24"
+   ],
+   "PC2": [
+    "PRG2",
+    "MT-CO3",
+    "GAS5",
+    "MT-CO2",
+    "MT-ND4",
+    "MT-CO1",
+    "RPS18",
+    "MT-CYB",
+    "MT-ATP6",
+    "MT-ND3",
+    "ZFAS1",
+    "MT-ND5"
+   ],
+   "PC3": [
+    "PRG2",
+    "HBZ",
+    "BLVRB",
+    "AC016629.2",
+    "HBG2",
+    "GSTP1",
+    "ALAS2",
+    "SLC25A37",
+    "HBG1",
+    "APOE",
+    "IGFL2-AS1",
+    "HBA1"
+   ]
+  },
+  "top_loading_genes_generic": [
+   "PRG2",
+   "FTH1",
+   "MALAT1",
+   "PTMA",
+   "ALAS2",
+   "IGFL2-AS1",
+   "CD63",
+   "NPM1",
+   "BTG1",
+   "HSPD1",
+   "GYPB",
+   "GAS5"
+  ]
+ },
+ "seconds": 20.687881469726562
+}

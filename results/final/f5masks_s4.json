@@ -1,0 +1,114 @@
+{
+ "seed": 4,
+ "variants": {
+  "exact regulator set": {
+   "AUROC": 0.9228832819722651,
+   "AUPRC": 0.5004986276162543,
+   "AUPRC_ratio": 21.97643973987735,
+   "precision_at_E": 0.4818181818181818,
+   "indirect_frac_of_topE": 0.20909090909090908,
+   "decoy_frac_of_topE": 0.06363636363636363,
+   "recall_ceiling": 1.0,
+   "n_allowed_regulators": 22,
+   "heldout_effect_corr": 0.23425775754682776,
+   "heldout_effect_sign_acc": 0.7886904761904762
+  },
+  "missing 10% of regulators": {
+   "AUROC": 0.8730450693374422,
+   "AUPRC": 0.454860417640152,
+   "AUPRC_ratio": 19.972507429108493,
+   "precision_at_E": 0.4727272727272727,
+   "indirect_frac_of_topE": 0.2,
+   "decoy_frac_of_topE": 0.045454545454545456,
+   "recall_ceiling": 0.9,
+   "n_allowed_regulators": 20,
+   "heldout_effect_corr": 0.10544496868223724,
+   "heldout_effect_sign_acc": 0.6458333333333334
+  },
+  "missing 25% of regulators": {
+   "AUROC": 0.8201752696456086,
+   "AUPRC": 0.35888898189742324,
+   "AUPRC_ratio": 15.75848893240504,
+   "precision_at_E": 0.39090909090909093,
+   "indirect_frac_of_topE": 0.12727272727272726,
+   "decoy_frac_of_topE": 0.01818181818181818,
+   "recall_ceiling": 0.7181818181818181,
+   "n_allowed_regulators": 16,
+   "heldout_effect_corr": 0.12565299231549354,
+   "heldout_effect_sign_acc": 0.5803571428571428
+  },
+  "missing 50% of regulators": {
+   "AUROC": 0.7749268104776578,
+   "AUPRC": 0.27809781088140134,
+   "AUPRC_ratio": 12.211022059610624,
+   "precision_at_E": 0.3090909090909091,
+   "indirect_frac_of_topE": 0.20909090909090908,
+   "decoy_frac_of_topE": 0.045454545454545456,
+   "recall_ceiling": 0.5545454545454546,
+   "n_allowed_regulators": 11,
+   "heldout_effect_corr": 0.1723019359898714,
+   "heldout_effect_sign_acc": 0.5803571428571428
+  },
+  "+50% false regulators": {
+   "AUROC": 0.8945011556240369,
+   "AUPRC": 0.39016128563231744,
+   "AUPRC_ratio": 17.13162736003721,
+   "precision_at_E": 0.4090909090909091,
+   "indirect_frac_of_topE": 0.08181818181818182,
+   "decoy_frac_of_topE": 0.00909090909090909,
+   "recall_ceiling": 1.0,
+   "n_allowed_regulators": 33,
+   "heldout_effect_corr": 0.3256772695505955,
+   "heldout_effect_sign_acc": 0.8363095238095238
+  },
+  "+100% false regulators": {
+   "AUROC": 0.8737634822804314,
+   "AUPRC": 0.32893999229797016,
+   "AUPRC_ratio": 14.443456025447237,
+   "precision_at_E": 0.38181818181818183,
+   "indirect_frac_of_topE": 0.06363636363636363,
+   "decoy_frac_of_topE": 0.02727272727272727,
+   "recall_ceiling": 1.0,
+   "n_allowed_regulators": 44,
+   "heldout_effect_corr": 0.3912906722351818,
+   "heldout_effect_sign_acc": 0.8601190476190477
+  },
+  "+200% false regulators": {
+   "AUROC": 0.8495512326656394,
+   "AUPRC": 0.3148920428783559,
+   "AUPRC_ratio": 13.826623337295084,
+   "precision_at_E": 0.38181818181818183,
+   "indirect_frac_of_topE": 0.06363636363636363,
+   "decoy_frac_of_topE": 0.00909090909090909,
+   "recall_ceiling": 1.0,
+   "n_allowed_regulators": 66,
+   "heldout_effect_corr": 0.36378095818746814,
+   "heldout_effect_sign_acc": 0.7529761904761905
+  },
+  "missing 25% + 100% false": {
+   "AUROC": 0.792846687211094,
+   "AUPRC": 0.22870083125488933,
+   "AUPRC_ratio": 10.042045590555595,
+   "precision_at_E": 0.2909090909090909,
+   "indirect_frac_of_topE": 0.05454545454545454,
+   "decoy_frac_of_topE": 0.00909090909090909,
+   "recall_ceiling": 0.7090909090909091,
+   "n_allowed_regulators": 38,
+   "heldout_effect_corr": 0.3707158213584008,
+   "heldout_effect_sign_acc": 0.5833333333333334
+  },
+  "missing 25% + 100% false, + soft site prior": {
+   "AUROC": 0.8066679506933745,
+   "AUPRC": 0.26591594003508406,
+   "AUPRC_ratio": 11.676127185176874,
+   "precision_at_E": 0.33636363636363636,
+   "indirect_frac_of_topE": 0.07272727272727272,
+   "decoy_frac_of_topE": 0.02727272727272727,
+   "recall_ceiling": 0.7090909090909091,
+   "n_allowed_regulators": 38,
+   "heldout_effect_corr": 0.3502798379328503,
+   "heldout_effect_sign_acc": 0.5773809523809523
+  }
+ },
+ "seconds": 294.29483342170715
+}

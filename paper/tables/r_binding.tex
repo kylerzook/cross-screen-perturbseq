@@ -1,0 +1,26 @@
+\begin{tabular}{lcc}
+\toprule
+Score & mean per-TF AUROC [95\% CI] & TFs \\
+\midrule
+\multicolumn{3}{l}{\emph{Predicting ChIP-seq binding at promoters}} \\
+PWM\_max & 0.566 [0.555, 0.576] & 197 \\
+occupancy (mu=Ethr-2) & 0.568 [0.557, 0.579] & 197 \\
+occupancy x ATAC & 0.610 [0.599, 0.621] & 197 \\
+ATAC only & 0.577 [0.569, 0.585] & 197 \\
+hub (leave-TF-out binding frequency) & 0.761 [0.753, 0.768] & 197 \\
+\midrule \multicolumn{3}{l}{\emph{Within-stratum AUROC (averaged over 5 quintiles)}} \\
+hub (leave-TF-out binding frequency) $|$ within ATAC quintile & 0.753 [0.745, 0.761] & 197 \\
+occupancy x ATAC $|$ within ATAC quintile & 0.591 [0.581, 0.602] & 197 \\
+PWM\_max $|$ within ATAC quintile & 0.566 [0.556, 0.576] & 197 \\
+hub (leave-TF-out binding frequency) $|$ within expression quintile & 0.758 [0.750, 0.766] & 197 \\
+occupancy x ATAC $|$ within expression quintile & 0.610 [0.599, 0.622] & 197 \\
+PWM\_max $|$ within expression quintile & 0.565 [0.555, 0.576] & 197 \\
+\midrule \multicolumn{3}{l}{\emph{Predicting knockdown responders ($|z|\ge0.5$)}} \\
+ChIP bound (measured binding) & 0.496 [0.473, 0.511] & 22 \\
+occupancy (mu=Ethr-2) & 0.518 [0.497, 0.542] & 22 \\
+occupancy x ATAC & 0.492 [0.468, 0.520] & 22 \\
+PWM\_max & 0.512 [0.493, 0.535] & 22 \\
+ChIP bound $|$ within expression quintiles & 0.488 [0.470, 0.502] & 22 \\
+occupancy x ATAC $|$ within expression quintiles & 0.494 [0.469, 0.522] & 22 \\
+\bottomrule
+\end{tabular}

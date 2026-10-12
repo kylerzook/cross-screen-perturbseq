@@ -1,0 +1,19 @@
+\begin{tabular}{lccccc}
+\toprule
+Regulator mask & allowed regulators & recall ceiling & AUPRC$\times$ & Precision@$E$ & held-out KD corr \\
+\midrule
+exact regulator set & 22 & 1.00 & 22.2 $\pm$ 2.3 & 0.496 & 0.39 \\
+missing 10\% of regulators & 20 & 0.90 & 19.8 $\pm$ 2.2 & 0.454 & 0.32 \\
+missing 25\% of regulators & 16 & 0.73 & 15.9 $\pm$ 1.5 & 0.405 & 0.22 \\
+missing 50\% of regulators & 11 & 0.50 & 11.2 $\pm$ 2.8 & 0.316 & 0.10 \\
++50\% false regulators & 33 & 1.00 & 19.1 $\pm$ 2.1 & 0.433 & 0.40 \\
++100\% false regulators & 44 & 1.00 & 17.1 $\pm$ 3.2 & 0.429 & 0.41 \\
++200\% false regulators & 66 & 1.00 & 15.9 $\pm$ 2.1 & 0.395 & 0.37 \\
+missing 25\% + 100\% false & 38 & 0.72 & 10.7 $\pm$ 1.4 & 0.301 & 0.31 \\
+missing 25\% + 100\% false, + soft site prior & 38 & 0.72 & 12.4 $\pm$ 1.4 & 0.336 & 0.29 \\
+\midrule
+Reference: no prior & -- & 1.00 & 15.5 $\pm$ 2.2 & 0.382 & 0.33 \\
+Reference: soft site prior only & -- & 1.00 & 18.6 $\pm$ 2.4 & 0.467 & 0.42 \\
+\bottomrule
+\end{tabular}
+% 10 seeds

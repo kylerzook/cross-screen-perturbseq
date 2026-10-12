@@ -1,0 +1,17 @@
+\begin{tabular}{lcccccc}
+\toprule
+Comparison & $n$ & sign flips / strong shared & Jaccard & corr top-50 & gain slope (median) & fold gain change \\
+\midrule
+\multicolumn{7}{l}{\emph{Norman 2019 (K562, CRISPRa; from earlier analysis)}} \\
+A alone vs A in C's context & 260 & -- (1.5\%) & 0.185 & -- & -- & -- \\
+A alone, split-half null & 251 & -- (0.0\%) & 0.430 & -- & -- & -- \\
+Cell-cycle state bins & 152 & 5/10223 (0.05\%) & -- & 0.96 & -- & 1.26 \\
+\midrule \multicolumn{7}{l}{\emph{Wessels 2023 (THP-1, Cas13 knockdown)}} \\
+A alone vs A in C's context & 106 & 18/1657 (1.09\%) & 0.106 & 0.44 & 0.99 & 1.20 \\
+A alone, split-half null & 106 & 1/1463 (0.07\%) & 0.110 & 0.85 & 1.00 & 1.12 \\
+\midrule \multicolumn{7}{l}{\emph{Shifrut 2018 (primary T cells, CRISPR KO)}} \\
+No stimulation vs stimulation & 18 & 0/6 (0.00\%) & 0.011 & 0.02 & -- & -- \\
+split-half null (no stim.) & 18 & 0/6 (0.00\%) & 0.010 & -0.02 & -- & -- \\
+split-half null (stim.) & 18 & 0/12 (0.00\%) & 0.020 & 0.12 & -- & -- \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,96 @@
+{
+ "estimators": {
+  "median over controls (used)": [
+   0.46980330144405635,
+   0.7366014994262212
+  ],
+  "mean over controls": [
+   0.4988553930613885,
+   0.7821520823638405
+  ],
+  "20% trimmed mean": [
+   0.47086457445778557,
+   0.7382654623886158
+  ],
+  "gene-specific mean": [
+   0.4988553903371176,
+   0.782152078092474
+  ],
+  "gene-specific median / chi2 median (0.455)": [
+   0.4752844489881049,
+   0.7451953545292239
+  ]
+ },
+ "bootstrap_over_controls": {
+  "pooled": [
+   0.4673733371354654,
+   0.47346697335630006
+  ],
+  "median": [
+   0.732791574404923,
+   0.7423457464667794
+  ]
+ },
+ "matched_pc_abs_cosine_gw_rows_es_cols": [
+  [
+   0.9459999799728394,
+   0.1720000058412552,
+   0.0820000022649765
+  ],
+  [
+   0.1550000011920929,
+   0.9079999923706055,
+   0.12600000202655792
+  ],
+  [
+   0.04899999871850014,
+   0.12099999934434891,
+   0.024000000208616257
+  ]
+ ],
+ "canonical_cosines": [
+  0.9679999947547913,
+  0.9359999895095825,
+  0.00800000037997961
+ ],
+ "canonical_direction_top_genes": {
+  "canonical 1": [
+   "EEF1A1",
+   "TPT1",
+   "RPS18",
+   "RPS27",
+   "SNHG29",
+   "RPS3",
+   "RPL13A",
+   "RPS8",
+   "RPS23",
+   "RPS4X"
+  ],
+  "canonical 2": [
+   "MT-CO3",
+   "PRG2",
+   "MT-ND4",
+   "MT-CO2",
+   "MT-CO1",
+   "MT-ATP6",
+   "GAS5",
+   "MT-CYB",
+   "MT-ND3",
+   "MT-ND2"
+  ],
+  "canonical 3": [
+   "PRG2",
+   "HBZ",
+   "BLVRB",
+   "HBG2",
+   "AC016629.2",
+   "ALAS2",
+   "SLC25A37",
+   "GSTP1",
+   "HBG1",
+   "APOE"
+  ]
+ },
+ "seconds": 5.565064430236816,
+ "note": "Profile-level estimators use c = summary over controls of mean_g(x^2)*n. Gene-specific estimators use c_g per gene; a plain per-gene median of x^2 is biased low (chi-square median = 0.455 x mean) and is shown corrected. Trimmed per-gene means are biased low for chi-square-like distributions and are omitted."
+}

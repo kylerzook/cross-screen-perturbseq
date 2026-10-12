@@ -1,0 +1,25 @@
+\begin{tabular}{p{6.2cm}cccccc}
+\toprule
+Generator & coverage & \multicolumn{5}{c}{cascade share $\alpha$ (exact energy fraction)} \\
+ & & 0 & 0.05 & 0.1 & 0.25 & 0.5 \\
+\midrule
+base (orthogonal, strongest mediators, coordinates restored, equal reliability) & 1.0 & 0.000 & 0.047$^\ast$ & 0.066$^\ast$ & 0.106$^\ast$ & 0.153$^\ast$ \\
+base (orthogonal, strongest mediators, coordinates restored, equal reliability) & 0.25 & -0.002 & 0.008$^\ast$ & 0.013$^\ast$ & 0.026$^\ast$ & 0.039$^\ast$ \\
+mediators ranked at random (ranking errors) & 1.0 & -0.003 & 0.006 & 0.009$^\ast$ & 0.017$^\ast$ & 0.023$^\ast$ \\
+mediators ranked at random (ranking errors) & 0.25 & -0.003 & -0.001 & -0.001 & 0.003 & 0.005 \\
+mediator coordinates not restored & 1.0 & -0.004 & -0.002 & -0.002 & -0.000 & 0.001 \\
+mediator coordinates not restored & 0.25 & 0.000 & -0.001 & -0.002 & -0.003 & 0.001 \\
+heterogeneous mediator strengths (lognormal, sd 1) & 1.0 & -0.003 & 0.035$^\ast$ & 0.049$^\ast$ & 0.080$^\ast$ & 0.115$^\ast$ \\
+heterogeneous mediator strengths (lognormal, sd 1) & 0.25 & -0.004 & 0.003 & 0.008$^\ast$ & 0.015$^\ast$ & 0.027$^\ast$ \\
+screen-2 reliability halved & 1.0 & 0.000 & 0.033$^\ast$ & 0.046$^\ast$ & 0.074$^\ast$ & 0.107$^\ast$ \\
+screen-2 reliability halved & 0.25 & -0.001 & 0.005 & 0.009$^\ast$ & 0.018$^\ast$ & 0.027$^\ast$ \\
+screen-1 reliability halved & 1.0 & -0.003 & 0.032$^\ast$ & 0.047$^\ast$ & 0.074$^\ast$ & 0.109$^\ast$ \\
+screen-1 reliability halved & 0.25 & -0.003 & 0.006 & 0.009$^\ast$ & 0.018$^\ast$ & 0.026$^\ast$ \\
+non-orthogonal construction (original) & 1.0 & -0.002 & 0.044$^\ast$ & 0.064$^\ast$ & 0.104$^\ast$ & 0.152$^\ast$ \\
+non-orthogonal construction (original) & 0.25 & -0.003 & 0.008$^\ast$ & 0.013$^\ast$ & 0.025$^\ast$ & 0.038$^\ast$ \\
+all adverse: random ranking, no restore, heterogeneous, screen-2 halved & 1.0 & -0.001 & -0.003 & -0.003 & -0.001 & -0.000 \\
+all adverse: random ranking, no restore, heterogeneous, screen-2 halved & 0.25 & -0.003 & -0.004 & -0.004 & -0.001 & -0.001 \\
+\midrule
+Real data (specific residual) & -- & \multicolumn{5}{c}{-0.004 [-0.012, 0.004]} \\
+\bottomrule
+\end{tabular}

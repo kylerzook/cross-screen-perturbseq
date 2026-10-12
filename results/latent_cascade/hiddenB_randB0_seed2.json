@@ -1,0 +1,563 @@
+{
+  "condition": "hiddenB_randB0",
+  "seed": 2,
+  "latent_names": [
+    "A",
+    "C"
+  ],
+  "kinetics": {
+    "gA": 1.0,
+    "gB": 0.8,
+    "gC": 0.6,
+    "VB": 2.0,
+    "VC": 2.0,
+    "K": 0.6,
+    "b0": 0.05,
+    "s": 0.03
+  },
+  "variants": {
+    "K10_lam0": {
+      "K": 10,
+      "lam": 0.0,
+      "final_loss": 0.004331666510552168,
+      "seconds": 9.619071960449219,
+      "strength": [
+        [
+          0.0,
+          0.0019000000320374966
+        ],
+        [
+          0.7720000147819519,
+          0.0
+        ]
+      ],
+      "W": [
+        [
+          -0.0,
+          -0.1873999983072281
+        ],
+        [
+          0.7853999733924866,
+          -0.0
+        ]
+      ],
+      "called_edges": [
+        "A->C"
+      ],
+      "A_to_C_strength_rel_max": 1.0,
+      "direct_A_to_C_called": true,
+      "empty_graph": false,
+      "test_full_rollout_mse": 0.009680693969130516
+    },
+    "K10_lam1e-05": {
+      "K": 10,
+      "lam": 1e-05,
+      "final_loss": 0.004341443534940481,
+      "seconds": 8.738350629806519,
+      "strength": [
+        [
+          0.0,
+          0.0017000000225380063
+        ],
+        [
+          0.7709000110626221,
+          0.0
+        ]
+      ],
+      "W": [
+        [
+          -0.0,
+          -0.1673000007867813
+        ],
+        [
+          0.7842000126838684,
+          -0.0
+        ]
+      ],
+      "called_edges": [
+        "A->C"
+      ],
+      "A_to_C_strength_rel_max": 1.0,
+      "direct_A_to_C_called": true,
+      "empty_graph": false,
+      "test_full_rollout_mse": 0.009686865843832493
+    },
+    "K10_lam3e-05": {
+      "K": 10,
+      "lam": 3e-05,
+      "final_loss": 0.004359716549515724,
+      "seconds": 8.758687734603882,
+      "strength": [
+        [
+          0.0,
+          0.001500000013038516
+        ],
+        [
+          0.7684999704360962,
+          0.0
+        ]
+      ],
+      "W": [
+        [
+          -0.0,
+          -0.12729999423027039
+        ],
+        [
+          0.7817999720573425,
+          -0.0
+        ]
+      ],
+      "called_edges": [
+        "A->C"
+      ],
+      "A_to_C_strength_rel_max": 1.0,
+      "direct_A_to_C_called": true,
+      "empty_graph": false,
+      "test_full_rollout_mse": 0.009699301794171333
+    },
+    "K10_lam0.0001": {
+      "K": 10,
+      "lam": 0.0001,
+      "final_loss": 0.004411458969116211,
+      "seconds": 8.695924282073975,
+      "strength": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7601000070571899,
+          0.0
+        ]
+      ],
+      "W": [
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          0.7731999754905701,
+          -0.0
+        ]
+      ],
+      "called_edges": [
+        "A->C"
+      ],
+      "A_to_C_strength_rel_max": 1.0,
+      "direct_A_to_C_called": true,
+      "empty_graph": false,
+      "test_full_rollout_mse": 0.00969995278865099
+    },
+    "K10_lam0.0003": {
+      "K": 10,
+      "lam": 0.0003,
+      "final_loss": 0.004563190974295139,
+      "seconds": 8.741479873657227,
+      "strength": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7351999878883362,
+          0.0
+        ]
+      ],
+      "W": [
+        [
+          -0.0,
+          0.0
+        ],
+        [
+          0.7473999857902527,
+          -0.0
+        ]
+      ],
+      "called_edges": [
+        "A->C"
+      ],
+      "A_to_C_strength_rel_max": 1.0,
+      "direct_A_to_C_called": true,
+      "empty_graph": false,
+      "test_full_rollout_mse": 0.009720605798065662
+    },
+    "K10_lam0.001": {
+      "K": 10,
+      "lam": 0.001,
+      "final_loss": 0.005019259173423052,
+      "seconds": 8.748110294342041,
+      "strength": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6557000279426575,
+          0.0
+        ]
+      ],
+      "W": [
+        [
+          -0.0,
+          0.0
+        ],
+        [
+          0.6653000116348267,
+          -0.0
+        ]
+      ],
+      "called_edges": [
+        "A->C"
+      ],
+      "A_to_C_strength_rel_max": 1.0,
+      "direct_A_to_C_called": true,
+      "empty_graph": false,
+      "test_full_rollout_mse": 0.009773061610758305
+    },
+    "K10_lam0.003": {
+      "K": 10,
+      "lam": 0.003,
+      "final_loss": 0.005860828794538975,
+      "seconds": 8.79124116897583,
+      "strength": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.4860999882221222,
+          0.0
+        ]
+      ],
+      "W": [
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          0.49129998683929443,
+          -0.0
+        ]
+      ],
+      "called_edges": [
+        "A->C"
+      ],
+      "A_to_C_strength_rel_max": 1.0,
+      "direct_A_to_C_called": true,
+      "empty_graph": false,
+      "test_full_rollout_mse": 0.009709030389785767
+    },
+    "K10_lam0.01": {
+      "K": 10,
+      "lam": 0.01,
+      "final_loss": 0.00727330194786191,
+      "seconds": 8.697651863098145,
+      "strength": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2757999897003174,
+          0.0
+        ]
+      ],
+      "W": [
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          0.2777000069618225,
+          -0.0
+        ]
+      ],
+      "called_edges": [
+        "A->C"
+      ],
+      "A_to_C_strength_rel_max": 1.0,
+      "direct_A_to_C_called": true,
+      "empty_graph": false,
+      "test_full_rollout_mse": 0.009271712973713875
+    },
+    "K1_lam0": {
+      "K": 1,
+      "lam": 0.0,
+      "final_loss": 0.0017553302459418774,
+      "seconds": 1.995572566986084,
+      "strength": [
+        [
+          0.0,
+          0.003700000001117587
+        ],
+        [
+          1.2604000568389893,
+          0.0
+        ]
+      ],
+      "W": [
+        [
+          -0.0,
+          -0.012900000438094139
+        ],
+        [
+          1.3236000537872314,
+          -0.0
+        ]
+      ],
+      "called_edges": [
+        "A->C"
+      ],
+      "A_to_C_strength_rel_max": 1.0,
+      "direct_A_to_C_called": true,
+      "empty_graph": false,
+      "test_full_rollout_mse": 0.018536169081926346
+    },
+    "K1_lam1e-05": {
+      "K": 1,
+      "lam": 1e-05,
+      "final_loss": 0.0017681731842458248,
+      "seconds": 1.9396276473999023,
+      "strength": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.247499942779541,
+          0.0
+        ]
+      ],
+      "W": [
+        [
+          -0.0,
+          9.999999747378752e-05
+        ],
+        [
+          1.3077000379562378,
+          -0.0
+        ]
+      ],
+      "called_edges": [
+        "A->C"
+      ],
+      "A_to_C_strength_rel_max": 1.0,
+      "direct_A_to_C_called": true,
+      "empty_graph": false,
+      "test_full_rollout_mse": 0.018078334629535675
+    },
+    "K1_lam3e-05": {
+      "K": 1,
+      "lam": 3e-05,
+      "final_loss": 0.001793238683603704,
+      "seconds": 1.9495751857757568,
+      "strength": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.2218999862670898,
+          0.0
+        ]
+      ],
+      "W": [
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          1.2766000032424927,
+          -0.0
+        ]
+      ],
+      "called_edges": [
+        "A->C"
+      ],
+      "A_to_C_strength_rel_max": 1.0,
+      "direct_A_to_C_called": true,
+      "empty_graph": false,
+      "test_full_rollout_mse": 0.01823047734797001
+    },
+    "K1_lam0.0001": {
+      "K": 1,
+      "lam": 0.0001,
+      "final_loss": 0.0018716312479227781,
+      "seconds": 2.025743246078491,
+      "strength": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.131100058555603,
+          0.0
+        ]
+      ],
+      "W": [
+        [
+          -0.0,
+          0.0
+        ],
+        [
+          1.1708999872207642,
+          -0.0
+        ]
+      ],
+      "called_edges": [
+        "A->C"
+      ],
+      "A_to_C_strength_rel_max": 1.0,
+      "direct_A_to_C_called": true,
+      "empty_graph": false,
+      "test_full_rollout_mse": 0.018450535833835602
+    },
+    "K1_lam0.0003": {
+      "K": 1,
+      "lam": 0.0003,
+      "final_loss": 0.0020427212584763765,
+      "seconds": 1.9871268272399902,
+      "strength": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.9254999756813049,
+          0.0
+        ]
+      ],
+      "W": [
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          0.9434999823570251,
+          -0.0
+        ]
+      ],
+      "called_edges": [
+        "A->C"
+      ],
+      "A_to_C_strength_rel_max": 1.0,
+      "direct_A_to_C_called": true,
+      "empty_graph": false,
+      "test_full_rollout_mse": 0.019387414678931236
+    },
+    "K1_lam0.001": {
+      "K": 1,
+      "lam": 0.001,
+      "final_loss": 0.0024025067687034607,
+      "seconds": 1.9596519470214844,
+      "strength": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.6097000241279602,
+          0.0
+        ]
+      ],
+      "W": [
+        [
+          -0.0,
+          0.0
+        ],
+        [
+          0.6128000020980835,
+          -0.0
+        ]
+      ],
+      "called_edges": [
+        "A->C"
+      ],
+      "A_to_C_strength_rel_max": 1.0,
+      "direct_A_to_C_called": true,
+      "empty_graph": false,
+      "test_full_rollout_mse": 0.01853114180266857
+    },
+    "K1_lam0.003": {
+      "K": 1,
+      "lam": 0.003,
+      "final_loss": 0.003131834790110588,
+      "seconds": 1.9614861011505127,
+      "strength": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3995000123977661,
+          0.0
+        ]
+      ],
+      "W": [
+        [
+          -0.0,
+          0.0
+        ],
+        [
+          0.4000999927520752,
+          -0.0
+        ]
+      ],
+      "called_edges": [
+        "A->C"
+      ],
+      "A_to_C_strength_rel_max": 1.0,
+      "direct_A_to_C_called": true,
+      "empty_graph": false,
+      "test_full_rollout_mse": 0.022190971300005913
+    },
+    "K1_lam0.01": {
+      "K": 1,
+      "lam": 0.01,
+      "final_loss": 0.007559422869235277,
+      "seconds": 1.9932522773742676,
+      "strength": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "W": [
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          -0.0
+        ]
+      ],
+      "called_edges": [],
+      "A_to_C_strength_rel_max": NaN,
+      "direct_A_to_C_called": false,
+      "empty_graph": true,
+      "test_full_rollout_mse": 0.32702136039733887
+    }
+  },
+  "baselines": {
+    "pooled_corr_A_C": -0.13221328637748464,
+    "max_lagged_corr_A_to_C": 0.8594356072544278,
+    "best_lag_steps": 15,
+    "pairwise_granger_R2_gain_A_to_C": 0.019862403138367513,
+    "lassoVAR_coef_on_vC": {
+      "A": 0.4612179054827584,
+      "C": -0.016951574285463983
+    }
+  },
+  "markov": {
+    "modelfree_R2_state_only": 0.951489710000446,
+    "modelfree_dR2_add_early_velocity": 0.0010141964595419273,
+    "modelfree_dR2_add_current_velocity": 0.002190864949779825,
+    "model_forecast_R2_H_steps": 0.9464824566352514,
+    "model_residual_R2_from_early_velocity": 0.0332745267396532
+  }
+}

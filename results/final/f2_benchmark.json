@@ -1,0 +1,94 @@
+{
+ "n_heldout_knockdowns_scored": 1396,
+ "scores_mean_corr": {
+  "zero": {
+   "gw raw (same screen)": 0.0,
+   "es raw (independent screen)": 0.0,
+   "es specific residual (independent screen)": 0.0
+  },
+  "mean training profile": {
+   "gw raw (same screen)": 0.33963544012703323,
+   "es raw (independent screen)": 0.24683301321950454,
+   "es specific residual (independent screen)": -0.0029085840766416896
+  },
+  "generic only (mean amplitude x generic direction)": {
+   "gw raw (same screen)": 0.3396354401675915,
+   "es raw (independent screen)": 0.24683301325688944,
+   "es specific residual (independent screen)": -0.0030609216772035683
+  },
+  "kNN raw (k=50)": {
+   "gw raw (same screen)": 0.36813007415241084,
+   "es raw (independent screen)": 0.2832015165971269,
+   "es specific residual (independent screen)": 0.06456771652516508
+  },
+  "kNN raw (k=10)": {
+   "gw raw (same screen)": 0.30911258956612825,
+   "es raw (independent screen)": 0.24347299284813842,
+   "es specific residual (independent screen)": 0.04801210621290308
+  },
+  "factorised (generic mean + pathway kNN50 + specific kNN10)": {
+   "gw raw (same screen)": 0.30013984820121564,
+   "es raw (independent screen)": 0.23546519517841527,
+   "es specific residual (independent screen)": 0.0480121025343759
+  }
+ },
+ "scores_sem": {
+  "zero": {
+   "gw raw (same screen)": 0.0,
+   "es raw (independent screen)": 0.0,
+   "es specific residual (independent screen)": 0.0
+  },
+  "mean training profile": {
+   "gw raw (same screen)": 0.005073028311409456,
+   "es raw (independent screen)": 0.005083848680252424,
+   "es specific residual (independent screen)": 0.0012718966525553372
+  },
+  "generic only (mean amplitude x generic direction)": {
+   "gw raw (same screen)": 0.005073028313830962,
+   "es raw (independent screen)": 0.005083848681970086,
+   "es specific residual (independent screen)": 0.0012537481958854774
+  },
+  "kNN raw (k=50)": {
+   "gw raw (same screen)": 0.006212456139903832,
+   "es raw (independent screen)": 0.006108170501931264,
+   "es specific residual (independent screen)": 0.004319374481454689
+  },
+  "kNN raw (k=10)": {
+   "gw raw (same screen)": 0.006383605014891449,
+   "es raw (independent screen)": 0.006088537122272742,
+   "es specific residual (independent screen)": 0.0042133868482000635
+  },
+  "factorised (generic mean + pathway kNN50 + specific kNN10)": {
+   "gw raw (same screen)": 0.0058432699433973905,
+   "es raw (independent screen)": 0.005584066008461408,
+   "es specific residual (independent screen)": 0.004213386650604292
+  }
+ },
+ "rank_by_target": {
+  "gw raw (same screen)": [
+   "kNN raw (k=50)",
+   "generic only (mean amplitude x generic direction)",
+   "mean training profile",
+   "kNN raw (k=10)",
+   "factorised (generic mean + pathway kNN50 + specific kNN10)",
+   "zero"
+  ],
+  "es raw (independent screen)": [
+   "kNN raw (k=50)",
+   "generic only (mean amplitude x generic direction)",
+   "mean training profile",
+   "kNN raw (k=10)",
+   "factorised (generic mean + pathway kNN50 + specific kNN10)",
+   "zero"
+  ],
+  "es specific residual (independent screen)": [
+   "kNN raw (k=50)",
+   "kNN raw (k=10)",
+   "factorised (generic mean + pathway kNN50 + specific kNN10)",
+   "zero",
+   "mean training profile",
+   "generic only (mean amplitude x generic direction)"
+  ]
+ },
+ "seconds": 208.5608377456665
+}

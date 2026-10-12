@@ -1,0 +1,114 @@
+{
+ "seed": 0,
+ "variants": {
+  "exact regulator set": {
+   "AUROC": 0.9178785066516807,
+   "AUPRC": 0.5408444685427971,
+   "AUPRC_ratio": 24.413820402445886,
+   "precision_at_E": 0.4766355140186916,
+   "indirect_frac_of_topE": 0.09345794392523364,
+   "decoy_frac_of_topE": 0.018691588785046728,
+   "recall_ceiling": 1.0,
+   "n_allowed_regulators": 22,
+   "heldout_effect_corr": 0.43278956181250317,
+   "heldout_effect_sign_acc": 0.9305555555555556
+  },
+  "missing 10% of regulators": {
+   "AUROC": 0.8343362467622155,
+   "AUPRC": 0.3874318917634063,
+   "AUPRC_ratio": 17.48874801137619,
+   "precision_at_E": 0.3644859813084112,
+   "indirect_frac_of_topE": 0.12149532710280374,
+   "decoy_frac_of_topE": 0.018691588785046728,
+   "recall_ceiling": 0.8504672897196262,
+   "n_allowed_regulators": 20,
+   "heldout_effect_corr": 0.02236390823528691,
+   "heldout_effect_sign_acc": 0.4305555555555556
+  },
+  "missing 25% of regulators": {
+   "AUROC": 0.7850942197755664,
+   "AUPRC": 0.3672419753898893,
+   "AUPRC_ratio": 16.577371412459488,
+   "precision_at_E": 0.38317757009345793,
+   "indirect_frac_of_topE": 0.18691588785046728,
+   "decoy_frac_of_topE": 0.037383177570093455,
+   "recall_ceiling": 0.7102803738317757,
+   "n_allowed_regulators": 16,
+   "heldout_effect_corr": 0.17334346552276791,
+   "heldout_effect_sign_acc": 0.3472222222222222
+  },
+  "missing 50% of regulators": {
+   "AUROC": 0.7072607502359699,
+   "AUPRC": 0.3012431478835085,
+   "AUPRC_ratio": 13.598172002592017,
+   "precision_at_E": 0.35514018691588783,
+   "indirect_frac_of_topE": 0.1588785046728972,
+   "decoy_frac_of_topE": 0.04672897196261682,
+   "recall_ceiling": 0.5233644859813084,
+   "n_allowed_regulators": 11,
+   "heldout_effect_corr": 0.2989332337724199,
+   "heldout_effect_sign_acc": 0.5833333333333334
+  },
+  "+50% false regulators": {
+   "AUROC": 0.8956072985450007,
+   "AUPRC": 0.4869161348440953,
+   "AUPRC_ratio": 21.979485339224112,
+   "precision_at_E": 0.42990654205607476,
+   "indirect_frac_of_topE": 0.06542056074766354,
+   "decoy_frac_of_topE": 0.0,
+   "recall_ceiling": 1.0,
+   "n_allowed_regulators": 33,
+   "heldout_effect_corr": 0.5033426237875911,
+   "heldout_effect_sign_acc": 0.9305555555555556
+  },
+  "+100% false regulators": {
+   "AUROC": 0.8703619788626349,
+   "AUPRC": 0.5157545466305997,
+   "AUPRC_ratio": 23.281256637624267,
+   "precision_at_E": 0.48598130841121495,
+   "indirect_frac_of_topE": 0.09345794392523364,
+   "decoy_frac_of_topE": 0.018691588785046728,
+   "recall_ceiling": 1.0,
+   "n_allowed_regulators": 44,
+   "heldout_effect_corr": 0.544733434098136,
+   "heldout_effect_sign_acc": 0.9305555555555556
+  },
+  "+200% false regulators": {
+   "AUROC": 0.8494996645961995,
+   "AUPRC": 0.4166212673030132,
+   "AUPRC_ratio": 18.80636187919209,
+   "precision_at_E": 0.40186915887850466,
+   "indirect_frac_of_topE": 0.04672897196261682,
+   "decoy_frac_of_topE": 0.009345794392523364,
+   "recall_ceiling": 1.0,
+   "n_allowed_regulators": 66,
+   "heldout_effect_corr": 0.49477920753362564,
+   "heldout_effect_sign_acc": 0.8333333333333334
+  },
+  "missing 25% + 100% false": {
+   "AUROC": 0.7441848500378937,
+   "AUPRC": 0.27442060197683826,
+   "AUPRC_ratio": 12.387397266804943,
+   "precision_at_E": 0.32710280373831774,
+   "indirect_frac_of_topE": 0.12149532710280374,
+   "decoy_frac_of_topE": 0.009345794392523364,
+   "recall_ceiling": 0.7102803738317757,
+   "n_allowed_regulators": 38,
+   "heldout_effect_corr": 0.15075265683939096,
+   "heldout_effect_sign_acc": 0.16666666666666666
+  },
+  "missing 25% + 100% false, + soft site prior": {
+   "AUROC": 0.7506099600087858,
+   "AUPRC": 0.3032577538736996,
+   "AUPRC_ratio": 13.689111693551112,
+   "precision_at_E": 0.34579439252336447,
+   "indirect_frac_of_topE": 0.11214953271028037,
+   "decoy_frac_of_topE": 0.018691588785046728,
+   "recall_ceiling": 0.7102803738317757,
+   "n_allowed_regulators": 38,
+   "heldout_effect_corr": 0.14654661492926876,
+   "heldout_effect_sign_acc": 0.2222222222222222
+  }
+ },
+ "seconds": 312.3824791908264
+}

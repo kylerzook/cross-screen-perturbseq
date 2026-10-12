@@ -1,0 +1,18 @@
+\begin{tabular}{llcc}
+\toprule
+Paired comparison & target & $\Delta$ corr [95\% CI] & $\Delta R^2_0$ calibrated [95\% CI] \\
+\midrule
+kNN k=100 minus kNN k=10 & raw & 0.041 [0.034, 0.048] & 0.0097 [0.0064, 0.0127] \\
+kNN k=100 minus kNN k=10 & mean-centred & 0.020 [0.009, 0.030] & -0.0011 [-0.0034, 0.0010] \\
+kNN k=100 minus kNN k=10 & specific residual & 0.023 [0.016, 0.030] & 0.0024 [0.0016, 0.0031] \\
+kNN k=50 minus kNN k=10 & raw & 0.040 [0.033, 0.046] & 0.0089 [0.0056, 0.0118] \\
+kNN k=50 minus kNN k=10 & mean-centred & 0.022 [0.013, 0.031] & -0.0001 [-0.0024, 0.0020] \\
+kNN k=50 minus kNN k=10 & specific residual & 0.016 [0.010, 0.022] & 0.0018 [0.0011, 0.0024] \\
+kNN k=100 minus kNN k=50 & raw & 0.002 [-0.001, 0.004] & 0.0008 [-0.0005, 0.0022] \\
+kNN k=100 minus kNN k=50 & mean-centred & -0.002 [-0.007, 0.003] & -0.0010 [-0.0019, 0.0000] \\
+kNN k=100 minus kNN k=50 & specific residual & 0.007 [0.002, 0.011] & 0.0006 [0.0002, 0.0010] \\
+factorised (generic mean + pathway kNN50 + specific kNN50) minus kNN k=50 & raw & -0.007 [-0.009, -0.005] & -0.0031 [-0.0048, -0.0012] \\
+factorised (generic mean + pathway kNN50 + specific kNN50) minus kNN k=50 & mean-centred & 0.005 [-0.002, 0.012] & 0.0064 [0.0046, 0.0083] \\
+factorised (generic mean + pathway kNN50 + specific kNN50) minus kNN k=50 & specific residual & 0.000 [-0.000, 0.000] & -0.0000 [-0.0000, 0.0000] \\
+\bottomrule
+\end{tabular}

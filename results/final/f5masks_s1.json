@@ -1,0 +1,114 @@
+{
+ "seed": 1,
+ "variants": {
+  "exact regulator set": {
+   "AUROC": 0.9094869287991499,
+   "AUPRC": 0.5195990410008441,
+   "AUPRC_ratio": 20.077306944272614,
+   "precision_at_E": 0.504,
+   "indirect_frac_of_topE": 0.184,
+   "decoy_frac_of_topE": 0.032,
+   "recall_ceiling": 1.0,
+   "n_allowed_regulators": 22,
+   "heldout_effect_corr": 0.2722196067428726,
+   "heldout_effect_sign_acc": 0.7142857142857143
+  },
+  "missing 10% of regulators": {
+   "AUROC": 0.8749194473963867,
+   "AUPRC": 0.48668388411244945,
+   "AUPRC_ratio": 18.805465282105047,
+   "precision_at_E": 0.48,
+   "indirect_frac_of_topE": 0.192,
+   "decoy_frac_of_topE": 0.024,
+   "recall_ceiling": 0.92,
+   "n_allowed_regulators": 20,
+   "heldout_effect_corr": 0.19019769605246664,
+   "heldout_effect_sign_acc": 0.4642857142857143
+  },
+  "missing 25% of regulators": {
+   "AUROC": 0.7910631243358128,
+   "AUPRC": 0.3573748471548533,
+   "AUPRC_ratio": 13.80896409406353,
+   "precision_at_E": 0.44,
+   "indirect_frac_of_topE": 0.184,
+   "decoy_frac_of_topE": 0.088,
+   "recall_ceiling": 0.792,
+   "n_allowed_regulators": 16,
+   "heldout_effect_corr": 0.36518252762857545,
+   "heldout_effect_sign_acc": 0.7142857142857143
+  },
+  "missing 50% of regulators": {
+   "AUROC": 0.6986235919234857,
+   "AUPRC": 0.21348612310803228,
+   "AUPRC_ratio": 8.249103796894367,
+   "precision_at_E": 0.28,
+   "indirect_frac_of_topE": 0.264,
+   "decoy_frac_of_topE": 0.096,
+   "recall_ceiling": 0.48,
+   "n_allowed_regulators": 11,
+   "heldout_effect_corr": 0.0,
+   "heldout_effect_sign_acc": 0.0
+  },
+  "+50% false regulators": {
+   "AUROC": 0.8775651434643996,
+   "AUPRC": 0.4429838722669641,
+   "AUPRC_ratio": 17.116896824395493,
+   "precision_at_E": 0.456,
+   "indirect_frac_of_topE": 0.096,
+   "decoy_frac_of_topE": 0.024,
+   "recall_ceiling": 1.0,
+   "n_allowed_regulators": 33,
+   "heldout_effect_corr": 0.24999980798329868,
+   "heldout_effect_sign_acc": 0.6309523809523809
+  },
+  "+100% false regulators": {
+   "AUROC": 0.8535379383634432,
+   "AUPRC": 0.35060203948113183,
+   "AUPRC_ratio": 13.547262805550933,
+   "precision_at_E": 0.4,
+   "indirect_frac_of_topE": 0.08,
+   "decoy_frac_of_topE": 0.016,
+   "recall_ceiling": 1.0,
+   "n_allowed_regulators": 44,
+   "heldout_effect_corr": 0.2863726999013362,
+   "heldout_effect_sign_acc": 0.734375
+  },
+  "+200% false regulators": {
+   "AUROC": 0.8344348565356005,
+   "AUPRC": 0.40824844591534365,
+   "AUPRC_ratio": 15.774719950168878,
+   "precision_at_E": 0.448,
+   "indirect_frac_of_topE": 0.072,
+   "decoy_frac_of_topE": 0.016,
+   "recall_ceiling": 1.0,
+   "n_allowed_regulators": 66,
+   "heldout_effect_corr": 0.28896165413772745,
+   "heldout_effect_sign_acc": 0.75
+  },
+  "missing 25% + 100% false": {
+   "AUROC": 0.7531749202975558,
+   "AUPRC": 0.27232258070684934,
+   "AUPRC_ratio": 10.522544518512658,
+   "precision_at_E": 0.352,
+   "indirect_frac_of_topE": 0.12,
+   "decoy_frac_of_topE": 0.024,
+   "recall_ceiling": 0.76,
+   "n_allowed_regulators": 38,
+   "heldout_effect_corr": 0.29797358024945975,
+   "heldout_effect_sign_acc": 0.5
+  },
+  "missing 25% + 100% false, + soft site prior": {
+   "AUROC": 0.7815209351753454,
+   "AUPRC": 0.3182627418656178,
+   "AUPRC_ratio": 12.297672345687472,
+   "precision_at_E": 0.392,
+   "indirect_frac_of_topE": 0.12,
+   "decoy_frac_of_topE": 0.056,
+   "recall_ceiling": 0.76,
+   "n_allowed_regulators": 38,
+   "heldout_effect_corr": 0.3086878502253166,
+   "heldout_effect_sign_acc": 0.4642857142857143
+  }
+ },
+ "seconds": 310.87482047080994
+}

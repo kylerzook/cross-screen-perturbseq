@@ -1,0 +1,114 @@
+{
+ "seed": 5,
+ "variants": {
+  "exact regulator set": {
+   "AUROC": 0.9411498459167951,
+   "AUPRC": 0.47917399613990164,
+   "AUPRC_ratio": 21.04009455777932,
+   "precision_at_E": 0.4818181818181818,
+   "indirect_frac_of_topE": 0.10909090909090909,
+   "decoy_frac_of_topE": 0.07272727272727272,
+   "recall_ceiling": 1.0,
+   "n_allowed_regulators": 22,
+   "heldout_effect_corr": 0.35033691644046694,
+   "heldout_effect_sign_acc": 0.8055555555555555
+  },
+  "missing 10% of regulators": {
+   "AUROC": 0.901176810477658,
+   "AUPRC": 0.454498092173008,
+   "AUPRC_ratio": 19.95659804723299,
+   "precision_at_E": 0.45454545454545453,
+   "indirect_frac_of_topE": 0.09090909090909091,
+   "decoy_frac_of_topE": 0.03636363636363636,
+   "recall_ceiling": 0.9,
+   "n_allowed_regulators": 20,
+   "heldout_effect_corr": 0.20418724854856402,
+   "heldout_effect_sign_acc": 0.2916666666666667
+  },
+  "missing 25% of regulators": {
+   "AUROC": 0.7812808166409861,
+   "AUPRC": 0.38234681291763023,
+   "AUPRC_ratio": 16.7885009672014,
+   "precision_at_E": 0.41818181818181815,
+   "indirect_frac_of_topE": 0.16363636363636364,
+   "decoy_frac_of_topE": 0.02727272727272727,
+   "recall_ceiling": 0.6818181818181818,
+   "n_allowed_regulators": 16,
+   "heldout_effect_corr": 0.2483916380533069,
+   "heldout_effect_sign_acc": 0.2916666666666667
+  },
+  "missing 50% of regulators": {
+   "AUROC": 0.6449922958397535,
+   "AUPRC": 0.15281155677542857,
+   "AUPRC_ratio": 6.709816538412,
+   "precision_at_E": 0.23636363636363636,
+   "indirect_frac_of_topE": 0.18181818181818182,
+   "decoy_frac_of_topE": 0.11818181818181818,
+   "recall_ceiling": 0.4090909090909091,
+   "n_allowed_regulators": 11,
+   "heldout_effect_corr": -0.10660322680046241,
+   "heldout_effect_sign_acc": 0.3055555555555555
+  },
+  "+50% false regulators": {
+   "AUROC": 0.9002773497688752,
+   "AUPRC": 0.45082284922616017,
+   "AUPRC_ratio": 19.79522147056685,
+   "precision_at_E": 0.44545454545454544,
+   "indirect_frac_of_topE": 0.09090909090909091,
+   "decoy_frac_of_topE": 0.02727272727272727,
+   "recall_ceiling": 1.0,
+   "n_allowed_regulators": 33,
+   "heldout_effect_corr": 0.20467106840116345,
+   "heldout_effect_sign_acc": 0.7638888888888888
+  },
+  "+100% false regulators": {
+   "AUROC": 0.8991063174114022,
+   "AUPRC": 0.4719371056992133,
+   "AUPRC_ratio": 20.722329277520004,
+   "precision_at_E": 0.4818181818181818,
+   "indirect_frac_of_topE": 0.1,
+   "decoy_frac_of_topE": 0.01818181818181818,
+   "recall_ceiling": 1.0,
+   "n_allowed_regulators": 44,
+   "heldout_effect_corr": 0.09988014135601275,
+   "heldout_effect_sign_acc": 0.6805555555555555
+  },
+  "+200% false regulators": {
+   "AUROC": 0.8483936825885978,
+   "AUPRC": 0.37252505418653664,
+   "AUPRC_ratio": 16.357236470190657,
+   "precision_at_E": 0.37272727272727274,
+   "indirect_frac_of_topE": 0.09090909090909091,
+   "decoy_frac_of_topE": 0.02727272727272727,
+   "recall_ceiling": 1.0,
+   "n_allowed_regulators": 66,
+   "heldout_effect_corr": 0.16054998822074787,
+   "heldout_effect_sign_acc": 0.6388888888888888
+  },
+  "missing 25% + 100% false": {
+   "AUROC": 0.7702388289676425,
+   "AUPRC": 0.31601245098899994,
+   "AUPRC_ratio": 13.875819438880635,
+   "precision_at_E": 0.33636363636363636,
+   "indirect_frac_of_topE": 0.12727272727272726,
+   "decoy_frac_of_topE": 0.05454545454545454,
+   "recall_ceiling": 0.7818181818181819,
+   "n_allowed_regulators": 38,
+   "heldout_effect_corr": 0.021576049059563146,
+   "heldout_effect_sign_acc": 0.5555555555555555
+  },
+  "missing 25% + 100% false, + soft site prior": {
+   "AUROC": 0.7907627118644068,
+   "AUPRC": 0.3646743996070818,
+   "AUPRC_ratio": 16.0125213645655,
+   "precision_at_E": 0.4090909090909091,
+   "indirect_frac_of_topE": 0.15454545454545454,
+   "decoy_frac_of_topE": 0.08181818181818182,
+   "recall_ceiling": 0.7818181818181819,
+   "n_allowed_regulators": 38,
+   "heldout_effect_corr": 0.04631995598774216,
+   "heldout_effect_sign_acc": 0.6388888888888888
+  }
+ },
+ "seconds": 41.057963132858276
+}

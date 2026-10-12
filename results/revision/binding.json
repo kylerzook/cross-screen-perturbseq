@@ -1,0 +1,166 @@
+{
+ "scope": "1-kb upstream promoters of Perturb-seq-measured genes, K562",
+ "n_genes": 7839,
+ "n_tfs": 197,
+ "binding_auroc_mean_ci": {
+  "PWM_max": [
+   0.5656653195143133,
+   0.5554828565124019,
+   0.5762132731125,
+   197
+  ],
+  "occupancy (mu=Ethr-2)": [
+   0.5680635747054829,
+   0.5574093210764752,
+   0.5790827754946233,
+   197
+  ],
+  "occupancy x ATAC": [
+   0.6102321927277907,
+   0.5988673796343301,
+   0.6214901618826384,
+   197
+  ],
+  "ATAC only": [
+   0.5772768144807232,
+   0.569308626788752,
+   0.5853789425274023,
+   197
+  ],
+  "hub (leave-TF-out binding frequency)": [
+   0.760633861904241,
+   0.7529805187598394,
+   0.768449244300833,
+   197
+  ]
+ },
+ "paired_occATAC_minus_PWMmax": {
+  "mean_ci": [
+   0.04456687321347753,
+   0.04052264179153906,
+   0.0487128863367544,
+   197
+  ],
+  "wilcoxon_p": 1.601301529515685e-33,
+  "frac_TFs_positive": 0.9695431472081218
+ },
+ "paired_occATAC_minus_ATAC": {
+  "mean_ci": [
+   0.03295537824706765,
+   0.022355598790974096,
+   0.04372292102910311,
+   197
+  ],
+  "wilcoxon_p": 1.6616451889653737e-06,
+  "frac_TFs_positive": 0.5786802030456852
+ },
+ "hub_characterisation": {
+  "spearman(hub, ATAC)": 0.3306414323838349,
+  "spearman(hub, log expression)": 0.22660972977192625,
+  "spearman(ATAC, log expression)": 0.0049142325646980255,
+  "frac_promoters_bound_by_>=50%_of_TFs": 0.047582599821405794,
+  "frac_promoters_bound_by_no_TF": 0.020793468554662586
+ },
+ "binding_auroc_within_strata": {
+  "hub (leave-TF-out binding frequency) | within ATAC quintile": [
+   0.752887304042209,
+   0.7453963722409156,
+   0.7608262431761436,
+   197
+  ],
+  "occupancy x ATAC | within ATAC quintile": [
+   0.5913574081844303,
+   0.5807264055963814,
+   0.6024608089510954,
+   197
+  ],
+  "PWM_max | within ATAC quintile": [
+   0.566104021455437,
+   0.5560910088332833,
+   0.5764575333348084,
+   197
+  ],
+  "hub (leave-TF-out binding frequency) | within expression quintile": [
+   0.7576555311123221,
+   0.7500398624965413,
+   0.7656524815104271,
+   197
+  ],
+  "occupancy x ATAC | within expression quintile": [
+   0.6101705523660171,
+   0.5990476551287864,
+   0.6216253981548009,
+   197
+  ],
+  "PWM_max | within expression quintile": [
+   0.5654600576088401,
+   0.5550457002760545,
+   0.5763817276777533,
+   197
+  ]
+ },
+ "function_tfs": [
+  "ARID3A",
+  "ATF7",
+  "CEBPG",
+  "ETV5",
+  "GATA1",
+  "GATA2",
+  "HINFP",
+  "HMBOX1",
+  "KLF16",
+  "MAX",
+  "MEF2A",
+  "NRF1",
+  "PBX2",
+  "SP1",
+  "SPI1",
+  "SREBF1",
+  "STAT5B",
+  "STAT6",
+  "TBP",
+  "TCFL5",
+  "TFAP4",
+  "ZNF324"
+ ],
+ "function_auroc_mean_ci": {
+  "ChIP bound (measured binding)": [
+   0.495733924982261,
+   0.47320744175437796,
+   0.5107246746138658,
+   22
+  ],
+  "occupancy (mu=Ethr-2)": [
+   0.518119933575927,
+   0.49688322273898444,
+   0.5419668675787748,
+   22
+  ],
+  "occupancy x ATAC": [
+   0.4916472338268338,
+   0.46793787481240795,
+   0.5199788164682683,
+   22
+  ],
+  "PWM_max": [
+   0.5124761391486012,
+   0.4927082986664139,
+   0.5345559527876713,
+   22
+  ],
+  "ChIP bound | within expression quintiles": [
+   0.48841722449850883,
+   0.4698406190665941,
+   0.5019754639260459,
+   22
+  ],
+  "occupancy x ATAC | within expression quintiles": [
+   0.49375181197950707,
+   0.4690899020041911,
+   0.5219285704470764,
+   22
+  ]
+ },
+ "responders_vs_expression_spearman_median": null,
+ "seconds": 27.57115125656128
+}

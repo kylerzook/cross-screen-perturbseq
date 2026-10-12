@@ -1,0 +1,31 @@
+# Large public inputs (see data/README.md) and derived caches
+data/raw/
+data/processed/
+*.h5ad
+*.npz
+*.npy
+*.tar
+*.bundle
+
+# Environments and caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+
+# Logs
+logs/
+*.log
+
+# LaTeX build products
+*.aux
+*.fls
+*.fdb_latexmk
+*.out
+*.synctex.gz
+*.toc
+*.bbl
+*.blg
+paper/*_backup.tex

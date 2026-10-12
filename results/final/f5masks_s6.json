@@ -1,0 +1,114 @@
+{
+ "seed": 6,
+ "variants": {
+  "exact regulator set": {
+   "AUROC": 0.8877988045143763,
+   "AUPRC": 0.4960174298714569,
+   "AUPRC_ratio": 20.13247215360619,
+   "precision_at_E": 0.48739495798319327,
+   "indirect_frac_of_topE": 0.23529411764705882,
+   "decoy_frac_of_topE": 0.05042016806722689,
+   "recall_ceiling": 1.0,
+   "n_allowed_regulators": 22,
+   "heldout_effect_corr": 0.3641363657963127,
+   "heldout_effect_sign_acc": 0.41369047619047616
+  },
+  "missing 10% of regulators": {
+   "AUROC": 0.8630293127652249,
+   "AUPRC": 0.4488567955503788,
+   "AUPRC_ratio": 18.218305231162432,
+   "precision_at_E": 0.42857142857142855,
+   "indirect_frac_of_topE": 0.2857142857142857,
+   "decoy_frac_of_topE": 0.058823529411764705,
+   "recall_ceiling": 0.9159663865546218,
+   "n_allowed_regulators": 20,
+   "heldout_effect_corr": 0.3472265526963212,
+   "heldout_effect_sign_acc": 0.37797619047619047
+  },
+  "missing 25% of regulators": {
+   "AUROC": 0.8099887800588289,
+   "AUPRC": 0.3847224452370948,
+   "AUPRC_ratio": 15.615205130211494,
+   "precision_at_E": 0.3865546218487395,
+   "indirect_frac_of_topE": 0.16806722689075632,
+   "decoy_frac_of_topE": 0.058823529411764705,
+   "recall_ceiling": 0.7815126050420168,
+   "n_allowed_regulators": 16,
+   "heldout_effect_corr": 0.1796236883035342,
+   "heldout_effect_sign_acc": 0.22619047619047616
+  },
+  "missing 50% of regulators": {
+   "AUROC": 0.6869582900024795,
+   "AUPRC": 0.27445624300369625,
+   "AUPRC_ratio": 11.139694568973553,
+   "precision_at_E": 0.2857142857142857,
+   "indirect_frac_of_topE": 0.12605042016806722,
+   "decoy_frac_of_topE": 0.06722689075630252,
+   "recall_ceiling": 0.46218487394957986,
+   "n_allowed_regulators": 11,
+   "heldout_effect_corr": -0.021367972419493796,
+   "heldout_effect_sign_acc": 0.0
+  },
+  "+50% false regulators": {
+   "AUROC": 0.868937173680765,
+   "AUPRC": 0.47685581140825034,
+   "AUPRC_ratio": 19.354735874805453,
+   "precision_at_E": 0.46218487394957986,
+   "indirect_frac_of_topE": 0.20168067226890757,
+   "decoy_frac_of_topE": 0.04201680672268908,
+   "recall_ceiling": 1.0,
+   "n_allowed_regulators": 33,
+   "heldout_effect_corr": 0.41461148764897837,
+   "heldout_effect_sign_acc": 0.41369047619047616
+  },
+  "+100% false regulators": {
+   "AUROC": 0.8357750232336618,
+   "AUPRC": 0.45155446403745275,
+   "AUPRC_ratio": 18.327798834461316,
+   "precision_at_E": 0.4369747899159664,
+   "indirect_frac_of_topE": 0.13445378151260504,
+   "decoy_frac_of_topE": 0.01680672268907563,
+   "recall_ceiling": 1.0,
+   "n_allowed_regulators": 44,
+   "heldout_effect_corr": 0.44699186792334955,
+   "heldout_effect_sign_acc": 0.41369047619047616
+  },
+  "+200% false regulators": {
+   "AUROC": 0.816849176520534,
+   "AUPRC": 0.41824965670632375,
+   "AUPRC_ratio": 16.9760154780802,
+   "precision_at_E": 0.42016806722689076,
+   "indirect_frac_of_topE": 0.10084033613445378,
+   "decoy_frac_of_topE": 0.008403361344537815,
+   "recall_ceiling": 1.0,
+   "n_allowed_regulators": 66,
+   "heldout_effect_corr": 0.40834817281526314,
+   "heldout_effect_sign_acc": 0.6636904761904762
+  },
+  "missing 25% + 100% false": {
+   "AUROC": 0.7080656928447455,
+   "AUPRC": 0.24651781410205362,
+   "AUPRC_ratio": 10.005723042965705,
+   "precision_at_E": 0.3025210084033613,
+   "indirect_frac_of_topE": 0.04201680672268908,
+   "decoy_frac_of_topE": 0.008403361344537815,
+   "recall_ceiling": 0.6722689075630253,
+   "n_allowed_regulators": 38,
+   "heldout_effect_corr": 0.3284280795723151,
+   "heldout_effect_sign_acc": 0.37797619047619047
+  },
+  "missing 25% + 100% false, + soft site prior": {
+   "AUROC": 0.7225856167132529,
+   "AUPRC": 0.2676207584971335,
+   "AUPRC_ratio": 10.862254315471889,
+   "precision_at_E": 0.31092436974789917,
+   "indirect_frac_of_topE": 0.07563025210084033,
+   "decoy_frac_of_topE": 0.03361344537815126,
+   "recall_ceiling": 0.6722689075630253,
+   "n_allowed_regulators": 38,
+   "heldout_effect_corr": 0.29110105807868436,
+   "heldout_effect_sign_acc": 0.41369047619047616
+  }
+ },
+ "seconds": 44.42019701004028
+}

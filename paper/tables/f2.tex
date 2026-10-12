@@ -1,0 +1,12 @@
+\begin{tabular}{lccc}
+\toprule
+Predictor & Same screen, raw & Independent screen, raw & Independent screen, specific \\
+\midrule
+zero & 0.000 $\pm$ 0.000 & 0.000 $\pm$ 0.000 & 0.000 $\pm$ 0.000 \\
+mean training profile & 0.340 $\pm$ 0.005 & 0.247 $\pm$ 0.005 & -0.003 $\pm$ 0.001 \\
+generic only & 0.340 $\pm$ 0.005 & 0.247 $\pm$ 0.005 & -0.003 $\pm$ 0.001 \\
+similarity kNN ($k{=}50$) & \textbf{0.368 $\pm$ 0.006} & \textbf{0.283 $\pm$ 0.006} & \textbf{0.065 $\pm$ 0.004} \\
+similarity kNN ($k{=}10$) & 0.309 $\pm$ 0.006 & 0.243 $\pm$ 0.006 & 0.048 $\pm$ 0.004 \\
+factorised (generic + pathway kNN50 + specific kNN10) & 0.300 $\pm$ 0.006 & 0.235 $\pm$ 0.006 & 0.048 $\pm$ 0.004 \\
+\bottomrule
+\end{tabular}

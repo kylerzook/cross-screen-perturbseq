@@ -1,0 +1,356 @@
+{
+ "groups": {
+  "specific_share_of_signal": {
+   "TF": [
+    0.7518816724614681,
+    0.6712350270066544,
+    247
+   ],
+   "essential (non-TF)": [
+    0.6012036163636825,
+    0.5774467850361387,
+    1449
+   ],
+   "other": [
+    0.7333451570048077,
+    0.6790088538649259,
+    2811
+   ]
+  },
+  "log10 signal-to-noise": {
+   "TF": [
+    -0.6334312731679405,
+    -0.9188189080179925,
+    247
+   ],
+   "essential (non-TF)": [
+    0.10892858579522888,
+    0.06563487647288677,
+    1449
+   ],
+   "other": [
+    -0.6275953564557062,
+    -0.7746800307557216,
+    2811
+   ]
+  },
+  "uniqueness (1 - max |cos| to other knockdowns)": {
+   "TF": [
+    0.8079338073730469,
+    0.75807124376297,
+    247
+   ],
+   "essential (non-TF)": [
+    0.5104098320007324,
+    0.5086454153060913,
+    1449
+   ],
+   "other": [
+    0.7978320717811584,
+    0.7487224340438843,
+    2811
+   ]
+  },
+  "generic_frac": {
+   "TF": [
+    0.0963369715985184,
+    0.12859513804256062,
+    247
+   ],
+   "essential (non-TF)": [
+    0.1743402523569886,
+    0.1925503532723283,
+    1449
+   ],
+   "other": [
+    0.08451357456978965,
+    0.12164546163345648,
+    2811
+   ]
+  },
+  "pathway_frac": {
+   "TF": [
+    0.12482216759271311,
+    0.20016983561777282,
+    247
+   ],
+   "essential (non-TF)": [
+    0.17656799984000782,
+    0.23000286200630723,
+    1449
+   ],
+   "other": [
+    0.13101335905334835,
+    0.19934568415142306,
+    2811
+   ]
+  }
+ },
+ "tests": {
+  "specific_share_of_signal": {
+   "TF vs essential": 5.492445606658712e-14,
+   "TF vs other": 0.9585751307797247
+  },
+  "log10 signal-to-noise": {
+   "TF vs essential": 7.038564911038868e-64,
+   "TF vs other": 0.40256467277676955
+  },
+  "uniqueness (1 - max |cos| to other knockdowns)": {
+   "TF vs essential": 0.0,
+   "TF vs other": 0.3052733838558197
+  },
+  "generic_frac": {
+   "TF vs essential": 2.3361131358874175e-15,
+   "TF vs other": 0.28209419174106876
+  },
+  "pathway_frac": {
+   "TF vs essential": 0.0005650924677777906,
+   "TF vs other": 0.87670872626529
+  }
+ },
+ "correlations": {
+  "specific_share_of_signal": {
+   "knockdown strength (1 - fold_expr)": 0.08449448068833781,
+   "n cells": 0.2272993103791581,
+   "log10 signal energy (above noise)": -0.2004740947163929
+  },
+  "log10 signal-to-noise": {
+   "knockdown strength (1 - fold_expr)": -0.2261758876199195,
+   "n cells": -0.11661793571616666,
+   "log10 signal energy (above noise)": 0.9199650529388148
+  },
+  "uniqueness (1 - max |cos| to other knockdowns)": {
+   "knockdown strength (1 - fold_expr)": 0.21307065428215058,
+   "n cells": 0.1842239208756824,
+   "log10 signal energy (above noise)": -0.8518332697252196
+  },
+  "generic_frac": {
+   "knockdown strength (1 - fold_expr)": -0.13482191939051422,
+   "n cells": -0.2559179773075757,
+   "log10 signal energy (above noise)": 0.3485598889402781
+  },
+  "pathway_frac": {
+   "knockdown strength (1 - fold_expr)": -0.01533557086266186,
+   "n cells": -0.09140894171841189,
+   "log10 signal energy (above noise)": 0.022517769187101723
+  }
+ },
+ "top20_most_specific": [
+  [
+   "TMEM131",
+   "other",
+   0.996
+  ],
+  [
+   "MAGEA9B",
+   "other",
+   0.992
+  ],
+  [
+   "DESI1",
+   "other",
+   0.991
+  ],
+  [
+   "PHF14",
+   "other",
+   0.991
+  ],
+  [
+   "SLC10A7",
+   "other",
+   0.991
+  ],
+  [
+   "SOS1",
+   "other",
+   0.99
+  ],
+  [
+   "PHF12",
+   "essential (non-TF)",
+   0.99
+  ],
+  [
+   "CWC22",
+   "essential (non-TF)",
+   0.989
+  ],
+  [
+   "INHBE",
+   "other",
+   0.989
+  ],
+  [
+   "GANAB",
+   "other",
+   0.988
+  ],
+  [
+   "CALM2",
+   "other",
+   0.988
+  ],
+  [
+   "GFPT1",
+   "other",
+   0.988
+  ],
+  [
+   "RNASEH2A",
+   "other",
+   0.987
+  ],
+  [
+   "GRWD1",
+   "essential (non-TF)",
+   0.986
+  ],
+  [
+   "UBE2G2",
+   "other",
+   0.986
+  ],
+  [
+   "SERBP1",
+   "essential (non-TF)",
+   0.985
+  ],
+  [
+   "RIOX1",
+   "other",
+   0.985
+  ],
+  [
+   "NDUFS6",
+   "other",
+   0.985
+  ],
+  [
+   "AP2B1",
+   "other",
+   0.984
+  ],
+  [
+   "MELK",
+   "other",
+   0.983
+  ]
+ ],
+ "top20_least_specific": [
+  [
+   "XXYLT1",
+   "other",
+   0.0
+  ],
+  [
+   "FAM72B",
+   "other",
+   0.0
+  ],
+  [
+   "FAM98A",
+   "other",
+   0.0
+  ],
+  [
+   "FAM83D",
+   "other",
+   0.0
+  ],
+  [
+   "FARS2",
+   "essential (non-TF)",
+   0.0
+  ],
+  [
+   "ALKBH4",
+   "other",
+   0.0
+  ],
+  [
+   "EVI5",
+   "other",
+   0.0
+  ],
+  [
+   "FOXH1",
+   "TF",
+   0.0
+  ],
+  [
+   "FOXA1",
+   "TF",
+   0.0
+  ],
+  [
+   "BST2",
+   "other",
+   0.0
+  ],
+  [
+   "TTC9C",
+   "other",
+   0.0
+  ],
+  [
+   "TSHZ3",
+   "other",
+   0.0
+  ],
+  [
+   "TMEM39A",
+   "other",
+   0.0
+  ],
+  [
+   "GATA4",
+   "TF",
+   0.0
+  ],
+  [
+   "ANKRD10",
+   "other",
+   0.0
+  ],
+  [
+   "EBF2",
+   "TF",
+   0.0
+  ],
+  [
+   "ZNF98",
+   "other",
+   0.0
+  ],
+  [
+   "PPIG",
+   "other",
+   0.0
+  ],
+  [
+   "CAPN1",
+   "other",
+   0.0
+  ],
+  [
+   "CBFA2T2",
+   "other",
+   0.0
+  ]
+ ],
+ "groups_large_effect_only": {
+  "TF": [
+   0.7557178864112416,
+   80
+  ],
+  "essential (non-TF)": [
+   0.5620600434935715,
+   1164
+  ],
+  "other": [
+   0.7122327018057035,
+   1009
+  ]
+ }
+}

@@ -1,0 +1,117 @@
+{
+ "seed": 2,
+ "pool_size": 18,
+ "strategy": "random",
+ "curve": {
+  "0": {
+   "AUROC": 0.8231723547523813,
+   "AUPRC": 0.2666434615532929,
+   "AUPRC_ratio": 10.914304400867836,
+   "precision_at_E": 0.3305084745762712,
+   "indirect_frac_of_topE": 0.06779661016949153,
+   "decoy_frac_of_topE": 0.07627118644067797,
+   "heldout_effect_corr": 0.41487018557147026,
+   "heldout_effect_sign_acc": 0.6916666666666667
+  },
+  "1": {
+   "AUROC": 0.8286038531265287,
+   "AUPRC": 0.2719418533950222,
+   "AUPRC_ratio": 11.131179253372519,
+   "precision_at_E": 0.3389830508474576,
+   "indirect_frac_of_topE": 0.06779661016949153,
+   "decoy_frac_of_topE": 0.06779661016949153,
+   "heldout_effect_corr": 0.4628049843921279,
+   "heldout_effect_sign_acc": 0.7194444444444444
+  },
+  "2": {
+   "AUROC": 0.8201940231935771,
+   "AUPRC": 0.26618746137785537,
+   "AUPRC_ratio": 10.895639308941028,
+   "precision_at_E": 0.3220338983050847,
+   "indirect_frac_of_topE": 0.06779661016949153,
+   "decoy_frac_of_topE": 0.059322033898305086,
+   "heldout_effect_corr": 0.5541480041440854,
+   "heldout_effect_sign_acc": 0.7194444444444444
+  },
+  "4": {
+   "AUROC": 0.8379021467008143,
+   "AUPRC": 0.28024576096566306,
+   "AUPRC_ratio": 11.471076486984344,
+   "precision_at_E": 0.3644067796610169,
+   "indirect_frac_of_topE": 0.07627118644067797,
+   "decoy_frac_of_topE": 0.05084745762711865,
+   "heldout_effect_corr": 0.49287467739036245,
+   "heldout_effect_sign_acc": 0.7694444444444444
+  },
+  "8": {
+   "AUROC": 0.8515258553710684,
+   "AUPRC": 0.3197193365947412,
+   "AUPRC_ratio": 13.086816913157628,
+   "precision_at_E": 0.3898305084745763,
+   "indirect_frac_of_topE": 0.07627118644067797,
+   "decoy_frac_of_topE": 0.059322033898305086,
+   "heldout_effect_corr": 0.4606594832330517,
+   "heldout_effect_sign_acc": 0.6722222222222223
+  },
+  "12": {
+   "AUROC": 0.8591911024143191,
+   "AUPRC": 0.3343412542257726,
+   "AUPRC_ratio": 13.685324219580353,
+   "precision_at_E": 0.3898305084745763,
+   "indirect_frac_of_topE": 0.0423728813559322,
+   "decoy_frac_of_topE": 0.025423728813559324,
+   "heldout_effect_corr": 0.5529209039846541,
+   "heldout_effect_sign_acc": 0.8527777777777779
+  },
+  "18": {
+   "AUROC": 0.8652574746050472,
+   "AUPRC": 0.3665946253109871,
+   "AUPRC_ratio": 15.00552576484803,
+   "precision_at_E": 0.4745762711864407,
+   "indirect_frac_of_topE": 0.05084745762711865,
+   "decoy_frac_of_topE": 0.01694915254237288,
+   "heldout_effect_corr": 0.5539969862192482,
+   "heldout_effect_sign_acc": 0.8305555555555556
+  }
+ },
+ "order": [
+  8,
+  2,
+  12,
+  13,
+  4,
+  19,
+  5,
+  6,
+  0,
+  17,
+  16,
+  11,
+  10,
+  21,
+  20,
+  3,
+  14,
+  1
+ ],
+ "order_is_TF": [
+  1,
+  1,
+  1,
+  1,
+  1,
+  0,
+  1,
+  1,
+  1,
+  0,
+  0,
+  1,
+  1,
+  0,
+  0,
+  1,
+  1,
+  1
+ ]
+}

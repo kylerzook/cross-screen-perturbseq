@@ -1,0 +1,258 @@
+{
+ "note": "values: [mean, median, sd, n, fraction > 0]",
+ "predictors": {
+  "residual: zero": {
+   "R2_vs_zero": [
+    4.861279124588976e-10,
+    3.3792557641021403e-10,
+    4.074817112934243e-08,
+    3871,
+    0.5032291397571687
+   ],
+   "corr": [
+    0.0,
+    0.0,
+    0.0,
+    3871,
+    0.0
+   ]
+  },
+  "residual: mean training residual": {
+   "R2_vs_zero": [
+    -4.265173547679524e-09,
+    0.0,
+    5.1919879950901304e-08,
+    3871,
+    0.11444071299405838
+   ],
+   "corr": [
+    0.0001866634246254865,
+    0.0003649013140413012,
+    0.016067597093114425,
+    3871,
+    0.5076207698269181
+   ]
+  },
+  "residual: similarity transfer (k=10)": {
+   "R2_vs_zero": [
+    -0.1693362146615982,
+    -0.13584113121032715,
+    0.14782658219337463,
+    3871,
+    0.02764143632136399
+   ],
+   "corr": [
+    0.012881865138893472,
+    0.004624678368463168,
+    0.06232506215717634,
+    3871,
+    0.5554120382330148
+   ]
+  },
+  "residual: similarity transfer (k=50)": {
+   "R2_vs_zero": [
+    -0.033818185329437256,
+    -0.02950131893157959,
+    0.0406961590051651,
+    3871,
+    0.12219064841126324
+   ],
+   "corr": [
+    0.018908221625418335,
+    0.006922017333280612,
+    0.06911202280158708,
+    3871,
+    0.5706535778868509
+   ]
+  },
+  "raw: zero": {
+   "R2_vs_zero": [
+    1.1183954165195148e-09,
+    8.287220909508619e-10,
+    3.999274809927054e-08,
+    3871,
+    0.5096874192715061
+   ],
+   "corr": [
+    0.0,
+    0.0,
+    0.0,
+    3871,
+    0.0
+   ]
+  },
+  "raw: mean training profile": {
+   "R2_vs_zero": [
+    -0.01591639034450054,
+    0.006216704845428467,
+    0.11449246853590012,
+    3871,
+    0.5233789718419013
+   ],
+   "corr": [
+    0.1637920520413418,
+    0.151854591575616,
+    0.1715299611515295,
+    3871,
+    0.8152932058899509
+   ]
+  },
+  "raw: similarity transfer (k=10)": {
+   "R2_vs_zero": [
+    -0.2142217606306076,
+    -0.12568879127502441,
+    0.3874923288822174,
+    3871,
+    0.25264789460087833
+   ],
+   "corr": [
+    0.11740242490245487,
+    0.08539548249168469,
+    0.15122085214013142,
+    3871,
+    0.787651769568587
+   ]
+  },
+  "generic+pathway removed: similarity transfer (k=10)": {
+   "R2_vs_zero": [
+    -0.1693362146615982,
+    -0.13584113121032715,
+    0.14782658219337463,
+    3871,
+    0.02764143632136399
+   ],
+   "corr": [
+    0.012881865138893472,
+    0.004624678368463168,
+    0.06232506215717634,
+    3871,
+    0.5554120382330148
+   ]
+  }
+ },
+ "sem": {
+  "residual (400-gene set): zero": {
+   "R2_vs_zero": [
+    0.0,
+    0.0,
+    0.0,
+    400,
+    0.0
+   ],
+   "corr": [
+    0.0,
+    0.0,
+    0.0,
+    400,
+    0.0
+   ]
+  },
+  "residual (400-gene set): linear SEM": {
+   "R2_vs_zero": [
+    -0.0021989691920063846,
+    -2.918554709019361e-08,
+    0.012659229253761032,
+    400,
+    0.4125
+   ],
+   "corr": [
+    -0.008082554126056815,
+    0.0,
+    0.08068819353357888,
+    400,
+    0.3
+   ]
+  },
+  "raw (400-gene set): linear SEM": {
+   "R2_vs_zero": [
+    0.00046478288536682565,
+    -1.331345200750178e-08,
+    0.020393308459762397,
+    400,
+    0.4825
+   ],
+   "corr": [
+    0.008587255458814367,
+    0.0,
+    0.1651350043769253,
+    400,
+    0.42
+   ]
+  },
+  "raw (400-gene set): mean training profile": {
+   "R2_vs_zero": [
+    0.05043511465191841,
+    0.04997482895851135,
+    0.03154546394944191,
+    400,
+    0.9625
+   ],
+   "corr": [
+    0.30935349637858445,
+    0.3112660438610634,
+    0.15403557323024705,
+    400,
+    0.9825
+   ]
+  }
+ },
+ "reproducible_subset": {
+  "residual: zero": {
+   "n_reproducible": 508,
+   "corr_all_genes_mean_reproducible": 0.0,
+   "corr_top1000var_mean_reproducible": 0.0,
+   "corr_top1000var_mean_all": 0.0,
+   "frac_positive_top1000var_reproducible": 0.0
+  },
+  "residual: mean training residual": {
+   "n_reproducible": 508,
+   "corr_all_genes_mean_reproducible": -0.003973956899884743,
+   "corr_top1000var_mean_reproducible": -0.007067216154212785,
+   "corr_top1000var_mean_all": 0.0011738453163559553,
+   "frac_positive_top1000var_reproducible": 0.484251968503937
+  },
+  "residual: similarity transfer (k=10)": {
+   "n_reproducible": 508,
+   "corr_all_genes_mean_reproducible": 0.03921836607160047,
+   "corr_top1000var_mean_reproducible": 0.06487540324175096,
+   "corr_top1000var_mean_all": 0.026287784459810053,
+   "frac_positive_top1000var_reproducible": 0.5748031496062992
+  },
+  "residual: similarity transfer (k=50)": {
+   "n_reproducible": 508,
+   "corr_all_genes_mean_reproducible": 0.059126398723720386,
+   "corr_top1000var_mean_reproducible": 0.09257258164165065,
+   "corr_top1000var_mean_all": 0.035981274210456014,
+   "frac_positive_top1000var_reproducible": 0.6594488188976378
+  },
+  "raw: zero": {
+   "n_reproducible": 508,
+   "corr_all_genes_mean_reproducible": 0.0,
+   "corr_top1000var_mean_reproducible": 0.0,
+   "corr_top1000var_mean_all": 0.0,
+   "frac_positive_top1000var_reproducible": 0.0
+  },
+  "raw: mean training profile": {
+   "n_reproducible": 508,
+   "corr_all_genes_mean_reproducible": 0.3593792712097895,
+   "corr_top1000var_mean_reproducible": 0.3973409799630458,
+   "corr_top1000var_mean_all": 0.20387723192072288,
+   "frac_positive_top1000var_reproducible": 0.9881889763779528
+  },
+  "raw: similarity transfer (k=10)": {
+   "n_reproducible": 508,
+   "corr_all_genes_mean_reproducible": 0.2742440496554359,
+   "corr_top1000var_mean_reproducible": 0.3503083381257345,
+   "corr_top1000var_mean_all": 0.17277953661609258,
+   "frac_positive_top1000var_reproducible": 0.9566929133858267
+  },
+  "generic+pathway removed: similarity transfer (k=10)": {
+   "n_reproducible": 508,
+   "corr_all_genes_mean_reproducible": 0.03921836607160047,
+   "corr_top1000var_mean_reproducible": 0.06487540324175096,
+   "corr_top1000var_mean_all": 0.026287784459810053,
+   "frac_positive_top1000var_reproducible": 0.5748031496062992
+  }
+ },
+ "ceiling_note": "cross-screen residual corr median (see decomp_summary) bounds what any predictor can reach"
+}

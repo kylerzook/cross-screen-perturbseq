@@ -1,0 +1,8 @@
+# Environment used for most Supplement S1-S4 runs (Python 3.10.12, CPU); exported from the run machine's virtualenv
+numpy==2.2.6
+scipy==1.15.3
+scikit-learn==1.7.2
+h5py==3.16.0
+pandas==2.3.3
+joblib==1.6.0
+torch==2.14.1+cpu        # pip install torch==2.14.1 --index-url https://download.pytorch.org/whl/cpu

@@ -1,0 +1,95 @@
+{
+ "seed": 1,
+ "pool_size": 18,
+ "strategy": "active",
+ "curve": {
+  "0": {
+   "AUROC": 0.7926733262486716,
+   "AUPRC": 0.35400089129419005,
+   "AUPRC_ratio": 13.678594439607503,
+   "precision_at_E": 0.376,
+   "indirect_frac_of_topE": 0.08,
+   "decoy_frac_of_topE": 0.08,
+   "heldout_effect_corr": 0.35100849240704435,
+   "heldout_effect_sign_acc": 0.7083333333333334
+  },
+  "1": {
+   "AUROC": 0.8011596174282677,
+   "AUPRC": 0.37435591048871214,
+   "AUPRC_ratio": 14.465112381283836,
+   "precision_at_E": 0.4,
+   "indirect_frac_of_topE": 0.088,
+   "decoy_frac_of_topE": 0.056,
+   "heldout_effect_corr": 0.3335484891175095,
+   "heldout_effect_sign_acc": 0.8035714285714286
+  },
+  "2": {
+   "AUROC": 0.8074150903294368,
+   "AUPRC": 0.37174816678331774,
+   "AUPRC_ratio": 14.364349164507397,
+   "precision_at_E": 0.424,
+   "indirect_frac_of_topE": 0.08,
+   "decoy_frac_of_topE": 0.048,
+   "heldout_effect_corr": 0.49984277244052844,
+   "heldout_effect_sign_acc": 0.8035714285714286
+  },
+  "4": {
+   "AUROC": 0.8062044633368756,
+   "AUPRC": 0.4019495392245904,
+   "AUPRC_ratio": 15.531330195638173,
+   "precision_at_E": 0.448,
+   "indirect_frac_of_topE": 0.104,
+   "decoy_frac_of_topE": 0.048,
+   "heldout_effect_corr": 0.3407798982802467,
+   "heldout_effect_sign_acc": 0.7142857142857143
+  },
+  "8": {
+   "AUROC": 0.8203528161530288,
+   "AUPRC": 0.40501836945731073,
+   "AUPRC_ratio": 15.649909795830485,
+   "precision_at_E": 0.432,
+   "indirect_frac_of_topE": 0.096,
+   "decoy_frac_of_topE": 0.056,
+   "heldout_effect_corr": 0.2904929385438674,
+   "heldout_effect_sign_acc": 0.75
+  },
+  "12": {
+   "AUROC": 0.8299732199787461,
+   "AUPRC": 0.4158448041013187,
+   "AUPRC_ratio": 16.068243230474952,
+   "precision_at_E": 0.424,
+   "indirect_frac_of_topE": 0.096,
+   "decoy_frac_of_topE": 0.04,
+   "heldout_effect_corr": 0.22730800135907275,
+   "heldout_effect_sign_acc": 0.6666666666666666
+  }
+ },
+ "order": [
+  5,
+  14,
+  10,
+  11,
+  18,
+  7,
+  13,
+  3,
+  17,
+  16,
+  0,
+  20
+ ],
+ "order_is_TF": [
+  1,
+  1,
+  1,
+  1,
+  0,
+  1,
+  1,
+  1,
+  0,
+  0,
+  1,
+  0
+ ]
+}

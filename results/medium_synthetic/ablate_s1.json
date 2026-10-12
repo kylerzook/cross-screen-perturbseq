@@ -1,0 +1,222 @@
+{
+ "seed": 1,
+ "n_genes_measured": 70,
+ "n_edges": 125,
+ "n_indirect": 193,
+ "methods": {
+  "BOND-V (velocity + KD-aware + prior a=0.8)": {
+   "AUROC": 0.8548199787460149,
+   "AUPRC": 0.4116384465624242,
+   "AUPRC_ratio": 15.90570957517207,
+   "precision_at_E": 0.472,
+   "indirect_frac_of_topE": 0.088,
+   "decoy_frac_of_topE": 0.032,
+   "heldout_effect_corr": 0.24893242273456576,
+   "heldout_effect_sign_acc": 0.6666666666666666
+  },
+  "  - prior (a=0)": {
+   "AUROC": 0.8223676939426143,
+   "AUPRC": 0.3469268662313133,
+   "AUPRC_ratio": 13.405254111177944,
+   "precision_at_E": 0.408,
+   "indirect_frac_of_topE": 0.072,
+   "decoy_frac_of_topE": 0.016,
+   "heldout_effect_corr": 0.27078542431200936,
+   "heldout_effect_sign_acc": 0.734375
+  },
+  "  - KD-aware [= PHOENIX-style: velocity + prior]": {
+   "AUROC": 0.8540038257173219,
+   "AUPRC": 0.3915977916647704,
+   "AUPRC_ratio": 15.131338669926727,
+   "precision_at_E": 0.48,
+   "indirect_frac_of_topE": 0.08,
+   "decoy_frac_of_topE": 0.024,
+   "heldout_effect_corr": 0.23578636503375172,
+   "heldout_effect_sign_acc": 0.734375
+  },
+  "  - velocity [static, KD-aware + prior]": {
+   "AUROC": 0.9251400637619553,
+   "AUPRC": 0.33915875599791007,
+   "AUPRC_ratio": 13.105094331759243,
+   "precision_at_E": 0.36,
+   "indirect_frac_of_topE": 0.016,
+   "decoy_frac_of_topE": 0.008,
+   "heldout_effect_corr": 0.4242873964263542,
+   "heldout_effect_sign_acc": 0.9129464285714286
+  },
+  "  - KD-aware - prior [velocity only]": {
+   "AUROC": 0.8208170031880977,
+   "AUPRC": 0.3249225257549011,
+   "AUPRC_ratio": 12.555006395169379,
+   "precision_at_E": 0.376,
+   "indirect_frac_of_topE": 0.072,
+   "decoy_frac_of_topE": 0.008,
+   "heldout_effect_corr": 0.24905039159359593,
+   "heldout_effect_sign_acc": 0.734375
+  },
+  "DCDI-style (static, KD-aware, no prior)": {
+   "AUROC": 0.8981236981934112,
+   "AUPRC": 0.2959093024686206,
+   "AUPRC_ratio": 11.433935447387501,
+   "precision_at_E": 0.344,
+   "indirect_frac_of_topE": 0.016,
+   "decoy_frac_of_topE": 0.008,
+   "heldout_effect_corr": 0.40698102639783823,
+   "heldout_effect_sign_acc": 0.9486607142857143
+  },
+  "CellOracle-style (motif base GRN + ridge)": {
+   "AUROC": 0.6632365568544103,
+   "AUPRC": 0.23562029029126083,
+   "AUPRC_ratio": 9.104368016854318,
+   "precision_at_E": 0.328,
+   "indirect_frac_of_topE": 0.112,
+   "decoy_frac_of_topE": 0.24
+  },
+  "GENIE3-style (extra trees)": {
+   "AUROC": 0.7751668437832093,
+   "AUPRC": 0.13297618134861305,
+   "AUPRC_ratio": 5.138199647310408,
+   "precision_at_E": 0.208,
+   "indirect_frac_of_topE": 0.016,
+   "decoy_frac_of_topE": 0.008
+  },
+  "|corr|": {
+   "AUROC": 0.6866465462274177,
+   "AUPRC": 0.05735945573342787,
+   "AUPRC_ratio": 2.216369369539653,
+   "precision_at_E": 0.04,
+   "indirect_frac_of_topE": 0.0,
+   "decoy_frac_of_topE": 0.0
+  },
+  "KD mean-difference (total effect)": {
+   "AUROC": 0.8844140276301807,
+   "AUPRC": 0.5946027970534058,
+   "AUPRC_ratio": 22.975452078143597,
+   "precision_at_E": 0.656,
+   "indirect_frac_of_topE": 0.336,
+   "decoy_frac_of_topE": 0.056
+  },
+  "binding prior only (realistic)": {
+   "AUROC": 0.8254333687566419,
+   "AUPRC": 0.13677209022454148,
+   "AUPRC_ratio": 5.284873566276283,
+   "precision_at_E": 0.168,
+   "indirect_frac_of_topE": 0.176,
+   "decoy_frac_of_topE": 0.44
+  }
+ },
+ "sweeps": {
+  "prior strength a=0.0 | realistic prior": {
+   "AUROC": 0.8223676939426143,
+   "AUPRC": 0.3469268662313133,
+   "AUPRC_ratio": 13.405254111177944,
+   "precision_at_E": 0.408,
+   "indirect_frac_of_topE": 0.072,
+   "decoy_frac_of_topE": 0.016,
+   "heldout_effect_corr": 0.27078542431200936,
+   "heldout_effect_sign_acc": 0.734375
+  },
+  "prior strength a=0.5 | realistic prior": {
+   "AUROC": 0.8506388947927737,
+   "AUPRC": 0.39026066107559904,
+   "AUPRC_ratio": 15.079671943961145,
+   "precision_at_E": 0.456,
+   "indirect_frac_of_topE": 0.072,
+   "decoy_frac_of_topE": 0.024,
+   "heldout_effect_corr": 0.29783719809602416,
+   "heldout_effect_sign_acc": 0.734375
+  },
+  "prior strength a=0.8 | realistic prior": {
+   "AUROC": 0.8548199787460149,
+   "AUPRC": 0.4116384465624242,
+   "AUPRC_ratio": 15.90570957517207,
+   "precision_at_E": 0.472,
+   "indirect_frac_of_topE": 0.088,
+   "decoy_frac_of_topE": 0.032,
+   "heldout_effect_corr": 0.24893242273456576,
+   "heldout_effect_sign_acc": 0.6666666666666666
+  },
+  "prior strength a=0.95 | realistic prior": {
+   "AUROC": 0.8597951115834219,
+   "AUPRC": 0.42020288690243457,
+   "AUPRC_ratio": 16.23663954991007,
+   "precision_at_E": 0.48,
+   "indirect_frac_of_topE": 0.096,
+   "decoy_frac_of_topE": 0.032,
+   "heldout_effect_corr": 0.23934504722750985,
+   "heldout_effect_sign_acc": 0.75
+  },
+  "prior quality uninformative | a=0.8": {
+   "AUROC": 0.8344127523910735,
+   "AUPRC": 0.3888274893859024,
+   "AUPRC_ratio": 15.024294189871268,
+   "precision_at_E": 0.448,
+   "indirect_frac_of_topE": 0.112,
+   "decoy_frac_of_topE": 0.024,
+   "heldout_effect_corr": 0.18829116660963607,
+   "heldout_effect_sign_acc": 0.5677083333333334
+  },
+  "prior quality realistic | a=0.8": {
+   "AUROC": 0.8548199787460149,
+   "AUPRC": 0.4116384465624242,
+   "AUPRC_ratio": 15.90570957517207,
+   "precision_at_E": 0.472,
+   "indirect_frac_of_topE": 0.088,
+   "decoy_frac_of_topE": 0.032,
+   "heldout_effect_corr": 0.24893242273456576,
+   "heldout_effect_sign_acc": 0.6666666666666666
+  },
+  "prior quality clean | a=0.8": {
+   "AUROC": 0.8775277364505845,
+   "AUPRC": 0.4663889716906569,
+   "AUPRC_ratio": 18.021269866126982,
+   "precision_at_E": 0.488,
+   "indirect_frac_of_topE": 0.08,
+   "decoy_frac_of_topE": 0.0,
+   "heldout_effect_corr": 0.2501078487286116,
+   "heldout_effect_sign_acc": 0.6666666666666666
+  },
+  "prior quality shuffled | a=0.8": {
+   "AUROC": 0.8475800212539852,
+   "AUPRC": 0.3888493193160511,
+   "AUPRC_ratio": 15.025137698372214,
+   "precision_at_E": 0.456,
+   "indirect_frac_of_topE": 0.096,
+   "decoy_frac_of_topE": 0.024,
+   "heldout_effect_corr": 0.213587875396258,
+   "heldout_effect_sign_acc": 0.734375
+  },
+  "velocity noise 0.3 x sd | a=0.8 realistic": {
+   "AUROC": 0.8846333687566418,
+   "AUPRC": 0.42639820185552413,
+   "AUPRC_ratio": 16.476026519697452,
+   "precision_at_E": 0.472,
+   "indirect_frac_of_topE": 0.072,
+   "decoy_frac_of_topE": 0.016,
+   "heldout_effect_corr": 0.29087622083506015,
+   "heldout_effect_sign_acc": 0.7142857142857143
+  },
+  "velocity noise 1.0 x sd | a=0.8 realistic": {
+   "AUROC": 0.8548199787460149,
+   "AUPRC": 0.4116384465624242,
+   "AUPRC_ratio": 15.90570957517207,
+   "precision_at_E": 0.472,
+   "indirect_frac_of_topE": 0.088,
+   "decoy_frac_of_topE": 0.032,
+   "heldout_effect_corr": 0.24893242273456576,
+   "heldout_effect_sign_acc": 0.6666666666666666
+  },
+  "velocity noise 2.0 x sd | a=0.8 realistic": {
+   "AUROC": 0.7713020191285865,
+   "AUPRC": 0.391481683812439,
+   "AUPRC_ratio": 15.12685226251264,
+   "precision_at_E": 0.44,
+   "indirect_frac_of_topE": 0.072,
+   "decoy_frac_of_topE": 0.064,
+   "heldout_effect_corr": 0.42996418902802114,
+   "heldout_effect_sign_acc": 0.8333333333333334
+  }
+ },
+ "calib_frac_responders_bound_realistic": 0.3945699475962634,
+ "calib_frac_true_targets_bound_realistic": 0.44
+}

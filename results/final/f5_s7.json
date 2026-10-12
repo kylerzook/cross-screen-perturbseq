@@ -1,0 +1,135 @@
+{
+ "seed": 7,
+ "variants": {
+  "no prior": {
+   "AUROC": 0.8254040181177417,
+   "AUPRC": 0.40947796439629297,
+   "AUPRC_ratio": 18.483911850785933,
+   "precision_at_E": 0.40186915887850466,
+   "indirect_frac_of_topE": 0.07476635514018691,
+   "decoy_frac_of_topE": 0.018691588785046728,
+   "recall_ceiling": 1.0,
+   "heldout_effect_corr": 0.288669916009341,
+   "heldout_effect_sign_acc": 0.6701754385964912
+  },
+  "soft site prior (a=0.8)": {
+   "AUROC": 0.8624349722277739,
+   "AUPRC": 0.4852292464308356,
+   "AUPRC_ratio": 21.903338880943327,
+   "precision_at_E": 0.514018691588785,
+   "indirect_frac_of_topE": 0.08411214953271028,
+   "decoy_frac_of_topE": 0.028037383177570093,
+   "recall_ceiling": 1.0,
+   "heldout_effect_corr": 0.6462421701918422,
+   "heldout_effect_sign_acc": 0.6833333333333333
+  },
+  "soft identity prior (non-regulators x3 penalty)": {
+   "AUROC": 0.8869046087846114,
+   "AUPRC": 0.5225830092337742,
+   "AUPRC_ratio": 23.589494715879713,
+   "precision_at_E": 0.5233644859813084,
+   "indirect_frac_of_topE": 0.12149532710280374,
+   "decoy_frac_of_topE": 0.018691588785046728,
+   "recall_ceiling": 1.0,
+   "heldout_effect_corr": 0.5594150351051264,
+   "heldout_effect_sign_acc": 0.7535087719298246
+  },
+  "hard identity mask (TFs + other regulators)": {
+   "AUROC": 0.919786053929765,
+   "AUPRC": 0.5982558784903385,
+   "AUPRC_ratio": 27.00538217858257,
+   "precision_at_E": 0.5607476635514018,
+   "indirect_frac_of_topE": 0.1588785046728972,
+   "decoy_frac_of_topE": 0.04672897196261682,
+   "recall_ceiling": 1.0,
+   "heldout_effect_corr": 0.5501957324612741,
+   "heldout_effect_sign_acc": 0.7333333333333334
+  },
+  "hard TF-only mask": {
+   "AUROC": 0.847607947585983,
+   "AUPRC": 0.5208308753186,
+   "AUPRC_ratio": 23.510403063447082,
+   "precision_at_E": 0.5046728971962616,
+   "indirect_frac_of_topE": 0.27102803738317754,
+   "decoy_frac_of_topE": 0.08411214953271028,
+   "recall_ceiling": 0.822429906542056,
+   "heldout_effect_corr": 0.11509319735233241,
+   "heldout_effect_sign_acc": 0.35
+  },
+  "hard binding mask (TF x top-15% occupancy)": {
+   "AUROC": 0.6615666820352184,
+   "AUPRC": 0.21652620967341552,
+   "AUPRC_ratio": 9.7740335768467,
+   "precision_at_E": 0.2523364485981308,
+   "indirect_frac_of_topE": 0.17757009345794392,
+   "decoy_frac_of_topE": 0.4953271028037383,
+   "recall_ceiling": 0.2616822429906542,
+   "heldout_effect_corr": 0.04585369435296659,
+   "heldout_effect_sign_acc": 0.09210526315789473
+  },
+  "hard identity mask + soft site prior": {
+   "AUROC": 0.9170889720417682,
+   "AUPRC": 0.6006214332197807,
+   "AUPRC_ratio": 27.11216376122935,
+   "precision_at_E": 0.5607476635514018,
+   "indirect_frac_of_topE": 0.17757009345794392,
+   "decoy_frac_of_topE": 0.037383177570093455,
+   "recall_ceiling": 1.0,
+   "heldout_effect_corr": 0.5491781731120461,
+   "heldout_effect_sign_acc": 0.7201754385964911
+  }
+ },
+ "depth": {
+  "no prior": {
+   "1": 0.6112531443526907,
+   "2": 0.2536192517326507,
+   "3": -0.07718826898675168,
+   "4": -0.08905966514867489,
+   "6": 0.09300587351693934,
+   "8": -0.09322155715215497,
+   "12": -0.09753752989135421,
+   "inf": 0.1886629998429996,
+   "spectral_radius": 4.0855385613733795
+  },
+  "hard identity mask + soft site prior": {
+   "1": 0.5726084430723304,
+   "2": 0.14153378118669563,
+   "3": 0.0672514295774428,
+   "4": -0.014870821130556482,
+   "6": 0.04242970928549592,
+   "8": -0.027161402046370048,
+   "12": -0.017183492697413497,
+   "inf": 0.1391429490927376,
+   "spectral_radius": 2.8297152497951408
+  },
+  "no prior, stabilised (rho=0.8)": {
+   "1": 0.6112531443526906,
+   "2": 0.5437726862606918,
+   "3": 0.5117626104668007,
+   "4": 0.5189776184014262,
+   "6": 0.5218210445288428,
+   "8": 0.5259319790822691,
+   "12": 0.5257025840166788,
+   "inf": 0.5248542661143341,
+   "spectral_radius": 0.7999999999999992
+  },
+  "hard identity mask + soft site prior, stabilised (rho=0.8)": {
+   "1": 0.5726084430723304,
+   "2": 0.434763165947198,
+   "3": 0.46040563089477327,
+   "4": 0.4902712075235176,
+   "6": 0.4614327100675195,
+   "8": 0.4781390798425269,
+   "12": 0.47562071343610113,
+   "inf": 0.47331778949999737,
+   "spectral_radius": 0.7999999999999985
+  }
+ },
+ "true_downstream_depth_heldout": [
+  2,
+  2,
+  1,
+  1
+ ],
+ "seconds": 261.9300572872162
+}

@@ -1,0 +1,306 @@
+{
+  "condition": "hiddenB_KD25_modeled",
+  "seed": 1,
+  "latent_names": [
+    "A",
+    "C",
+    "h0"
+  ],
+  "kinetics": {
+    "gA": 1.0,
+    "gB": 0.8,
+    "gC": 0.6,
+    "VB": 2.0,
+    "VC": 2.0,
+    "K": 0.6,
+    "b0": 0.05,
+    "s": 0.03
+  },
+  "variants": {
+    "K40_lam0": {
+      "K": 40,
+      "lam": 0.0,
+      "final_loss": 0.002117823576554656,
+      "seconds": 29.185298442840576,
+      "strength": [
+        [
+          0.0,
+          0.039799999445676804,
+          0.09759999811649323
+        ],
+        [
+          0.014399999752640724,
+          0.0,
+          0.522599995136261
+        ],
+        [
+          2.182499885559082,
+          0.0020000000949949026,
+          0.0
+        ]
+      ],
+      "W": [
+        [
+          -0.0,
+          -0.40630000829696655,
+          0.11129999905824661
+        ],
+        [
+          0.014700000174343586,
+          0.0,
+          0.5954999923706055
+        ],
+        [
+          2.238800048828125,
+          -0.020800000056624413,
+          0.0
+        ]
+      ],
+      "called_edges": [
+        "h0->C",
+        "A->h0"
+      ],
+      "A_to_C_strength_rel_max": 0.006583585869520903,
+      "direct_A_to_C_called": false,
+      "empty_graph": false,
+      "A_to_h_and_h_to_C_called": true,
+      "exact_graph_via_h": true,
+      "abs_corr_h0_trueB": 0.9784101879054242,
+      "test_mse_WT_cells": 0.0028038076125085354,
+      "test_mse_KD_cells": 0.00215008482336998,
+      "learned_kd_efficiency": 0.07437734305858612,
+      "test_full_rollout_mse": 0.0026992117054760456
+    },
+    "K40_lam0.0001": {
+      "K": 40,
+      "lam": 0.0001,
+      "final_loss": 0.0024398323148489,
+      "seconds": 28.352444887161255,
+      "strength": [
+        [
+          0.0,
+          0.033399999141693115,
+          0.06909999996423721
+        ],
+        [
+          0.01209999993443489,
+          0.0,
+          0.5175999999046326
+        ],
+        [
+          2.1054999828338623,
+          0.0010000000474974513,
+          0.0
+        ]
+      ],
+      "W": [
+        [
+          -0.0,
+          -0.35030001401901245,
+          0.07890000194311142
+        ],
+        [
+          0.012400000356137753,
+          0.0,
+          0.5907999873161316
+        ],
+        [
+          2.160399913787842,
+          -0.010200000368058681,
+          0.0
+        ]
+      ],
+      "called_edges": [
+        "h0->C",
+        "A->h0"
+      ],
+      "A_to_C_strength_rel_max": 0.005732432007789612,
+      "direct_A_to_C_called": false,
+      "empty_graph": false,
+      "A_to_h_and_h_to_C_called": true,
+      "exact_graph_via_h": true,
+      "abs_corr_h0_trueB": 0.9778837117662618,
+      "test_mse_WT_cells": 0.0027977111749351025,
+      "test_mse_KD_cells": 0.002160330768674612,
+      "learned_kd_efficiency": 0.07405606657266617,
+      "test_full_rollout_mse": 0.0026957301888614893
+    },
+    "K40_lam0.001": {
+      "K": 40,
+      "lam": 0.001,
+      "final_loss": 0.0043660979717969894,
+      "seconds": 28.415217876434326,
+      "strength": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.4690999984741211
+        ],
+        [
+          1.5240999460220337,
+          0.0,
+          0.0
+        ]
+      ],
+      "W": [
+        [
+          -0.0,
+          -0.0,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0,
+          0.5550000071525574
+        ],
+        [
+          1.5679999589920044,
+          0.0,
+          0.0
+        ]
+      ],
+      "called_edges": [
+        "h0->C",
+        "A->h0"
+      ],
+      "A_to_C_strength_rel_max": 4.1067167444452934e-07,
+      "direct_A_to_C_called": false,
+      "empty_graph": false,
+      "A_to_h_and_h_to_C_called": true,
+      "exact_graph_via_h": true,
+      "abs_corr_h0_trueB": 0.9704876305665472,
+      "test_mse_WT_cells": 0.002783264499157667,
+      "test_mse_KD_cells": 0.0024501830339431763,
+      "learned_kd_efficiency": 0.0711197704076767,
+      "test_full_rollout_mse": 0.0027299714274704456
+    },
+    "K40_lam0.003": {
+      "K": 40,
+      "lam": 0.003,
+      "final_loss": 0.006866920739412308,
+      "seconds": 28.484163522720337,
+      "strength": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.37459999322891235
+        ],
+        [
+          0.8837000131607056,
+          0.0,
+          0.0
+        ]
+      ],
+      "W": [
+        [
+          -0.0,
+          -0.0,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0,
+          0.4812000095844269
+        ],
+        [
+          0.8973000049591064,
+          0.0,
+          0.0
+        ]
+      ],
+      "called_edges": [
+        "h0->C",
+        "A->h0"
+      ],
+      "A_to_C_strength_rel_max": 2.049827526207082e-05,
+      "direct_A_to_C_called": false,
+      "empty_graph": false,
+      "A_to_h_and_h_to_C_called": true,
+      "exact_graph_via_h": true,
+      "abs_corr_h0_trueB": 0.9477708331167451,
+      "test_mse_WT_cells": 0.0029722468461841345,
+      "test_mse_KD_cells": 0.003321864642202854,
+      "learned_kd_efficiency": 0.0657089576125145,
+      "test_full_rollout_mse": 0.0030281858053058386
+    },
+    "K40_lam0.01": {
+      "K": 40,
+      "lam": 0.01,
+      "final_loss": 0.014871403574943542,
+      "seconds": 28.231843948364258,
+      "strength": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.19359999895095825,
+          0.0,
+          0.16519999504089355
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "W": [
+        [
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        [
+          0.21140000224113464,
+          0.0,
+          0.1753000020980835
+        ],
+        [
+          0.0,
+          -0.0,
+          0.0
+        ]
+      ],
+      "called_edges": [
+        "A->C",
+        "h0->C"
+      ],
+      "A_to_C_strength_rel_max": 1.0,
+      "direct_A_to_C_called": true,
+      "empty_graph": false,
+      "A_to_h_and_h_to_C_called": false,
+      "exact_graph_via_h": false,
+      "abs_corr_h0_trueB": 0.4374935915929055,
+      "test_mse_WT_cells": 0.007572934962809086,
+      "test_mse_KD_cells": 0.013971049338579178,
+      "learned_kd_efficiency": 0.20178985595703125,
+      "test_full_rollout_mse": 0.008596631698310375
+    }
+  },
+  "baselines": {
+    "pooled_corr_A_C": -0.10695308975359394,
+    "max_lagged_corr_A_to_C": 0.6974950041734944,
+    "best_lag_steps": 15,
+    "pairwise_granger_R2_gain_A_to_C": 0.008040680102044062,
+    "lassoVAR_coef_on_vC": {
+      "A": 0.2742736580790923,
+      "C": -0.013475958678526384
+    }
+  },
+  "markov": {
+    "modelfree_R2_state_only": 0.9514446285667777,
+    "modelfree_dR2_add_early_velocity": 0.00012801047560440093,
+    "modelfree_dR2_add_current_velocity": 0.0011370772484444736
+  }
+}

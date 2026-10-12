@@ -1,0 +1,162 @@
+\appendix
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\setcounter{table}{0}\setcounter{figure}{0}
+\section*{Supplementary material}
+\addcontentsline{toc}{section}{Supplementary material}
+
+The analyses below started the project. They concern specific estimators, simulators and regimes, and their conclusions are stated at that level. All simulation results use the seeds listed. ``Diagnostic re-implementations'' of published method families (PHOENIX-, DCDI-, CellOracle- and GENIE3-style) implement only each method's core idea in our code. They are controls, not evaluations of the original software.
+
+\paragraph{Metric definitions (all simulations).} The candidate-edge universe is every ordered pair $(j\to i)$ of distinct \emph{measured} genes: $70\times69=4{,}830$ pairs in the 80-gene simulator, of which about 114 are true edges. AUROC and average precision (AUPRC) are computed over this universe. AUPRC$\times$ is AUPRC divided by the base rate (true edges / candidates), so 1 = random. $E$ is the number of true edges among measured genes; ``top-$E$'' metrics use the $E$ highest-scored pairs. ``Indirect'' pairs have a directed path of length $\ge2$ (through any gene, measured or hidden) and no direct edge.
+
+\subsection*{S1. Thermodynamic occupancy model}
+\textbf{Occupancy calibration.} For each TF, $E_\text{thr}$ is the 10$^{-4}$ quantile of PWM energies on 400{,}000 background positions with promoter base composition (a FIMO-like threshold). Occupancy uses $\mu=E_\text{thr}+\{-4,-2,0\}$ ($-2$ pre-registered as default). ProBound models (MotifCentral v1.0.0; human model preferred, lowest fit id) were rescaled to a maximum log-affinity of 0.
+
+\textbf{T1, synthetic genome} (1{,}500 genes, 20 JASPAR TFs, 3 seeds). Two different comparisons are reported.
+\begin{itemize}
+\item Over all targets, summed occupancy at $\mu=E_\text{thr}$ reached AUROC 0.959 vs 0.820 for the maximum motif score.
+\item Restricted to weak-cluster targets vs non-targets, occupancy reached 0.968 vs 0.647.
+\end{itemize}
+A fitted occupancy model recovered TF activities $\mu$ (Spearman 0.976).
+
+\textbf{T3, cell-state $\mu$ (K562 vs HepG2).} Test $R^2$ for log expression: 0.172 (accessibility only), 0.185 (fixed $\mu$), 0.188 (state-specific $\mu$). For the HepG2$-$K562 \emph{difference}, $R^2$ rose from 0.006 (fixed $\mu$) to 0.017 (state-specific $\mu$), an improvement of 0.011.
+The inferred $\Delta\mu$ did not correlate with independent proxies (Spearman 0.06--0.09, permutation $p>0.29$).
+
+\textbf{ProBound vs JASPAR} (122 TFs). Binding AUROC was higher with ProBound for 69--73\% of TFs (paired Wilcoxon $p<10^{-7}$), by about 0.02. There was no gain for function (13 TFs).
+
+\subsection*{S2. Latent neural ODE on a three-gene cascade, and a 10-gene toy}
+\textbf{Simulation.} A$\to$B$\to$C with Hill kinetics ($K=0.6$, $n=2$), Euler--Maruyama ($dt=0.005$). 200 cells (150 train), 41 observations at interval 0.2, measurement noise 5\% or 20\% of the per-gene s.d.
+\textbf{Model.} Gene-aligned latent states (residual per-gene MLP encoder and decoder) and dynamics $dz/dt=W\sigma(a(z-c))-\operatorname{softplus}(g)z+b$ with $\operatorname{diag}(W)=0$. Free latent units are initialised from a learned constant (``from start'') or from $(x_t,x_t-x_{t-1})$.
+Loss: $K$-step rollout MSE (4 Euler substeps per interval) + reconstruction + $\lambda\|W\|_1$. Adam, learning rate $10^{-2}$, cosine schedule, 2{,}000 iterations (1{,}200 for from-start runs). $\lambda$ grid $\{0,10^{-5},\dots,10^{-2}\}$; 3 seeds. An edge is called if its strength (|$W_{ij}$| $\times$ range of $j$'s activation along the rollout) is $\ge10\%$ of the largest.
+\textbf{Results.} With all genes observed, the exact graph was recovered in 57--71\% of settings. With B hidden, the shortcut A$\to$C was called in 81--100\% of fits. With knockdowns of the hidden B supplied and modelled (applied to a latent unit with a learned efficiency), A$\to h\to$C was recovered without the shortcut in 75\% of settings (latent--B correlation 0.975). With the same knockdowns unmodelled, the shortcut was always called.
+In a 10-gene toy, a binding prior raised AUROC from 0.749 to 0.947 (0.962 with knockdown-aware fitting). Two indirect edges stayed in the top 9 until the intermediate TF was itself knocked down.
+
+\subsection*{S3. 80-gene simulator: ablations and experiment selection}
+\textbf{Simulator} (in-house, SERGIO-style): 80 genes (16 TFs, 8 non-TF regulators, 56 targets; about 140 edges; TF cascades of depth $\ge3$; 70\% activators). Per-edge Hill coefficient $n\in\{1..4\}$ and threshold $K\sim U(0.5,2)$; decay $U(0.5,1)$; process noise 0.05; a hidden cell-size factor; Poisson counts with log-normal library size; noisy labelling velocity (1$\times$ s.d.); 10 unmeasured genes; 1{,}500 wild-type cells and 80 cells per knockdown, with efficiency $U(0.05,0.3)$. Seeds 0--9.
+\textbf{BOND-V:} nodewise adaptive lasso \citep{zou2006} (BIC) of velocity on Hill features $\phi(x_j)=x_j^2/(K_j^2+x_j^2)$, $K_j=\operatorname{median}(x_j)$, plus a decay term. Features are standardised before division by the penalty factor $1-\alpha p_{ij}$. Each gene's own-knockdown cells are dropped from its equation.
+Ablation results (AUPRC$\times$, 10 seeds):
+\begin{itemize}
+\item full model 18.6; without prior 15.5; ignoring interventions 17.6; static (no velocity) 16.4;
+\item knockdown mean-difference 26.4, but with 36\% indirect edges in its top $E$;
+\item diagnostic re-implementations: CellOracle-style 8.9, GENIE3-style \citep{huynh2010genie3} 5.7.
+\end{itemize}
+Disambiguation-driven knockdown selection beat random and hub-based choice in 10/10 seeds (area under the AUPRC$\times$ coverage curve $+0.95\pm0.67$ vs random). It was not tested on real data.
+
+\begin{figure}[h]
+\centering\includegraphics[width=0.9\textwidth]{figures/fig2_medium_synthetic.pdf}
+\caption{\textbf{80-gene simulator.} (a) Ablations and diagnostic re-implementations. (b) Knockdown selection strategies.}
+\end{figure}
+
+\subsection*{S4. Linear SEM on real held-out knockdowns}
+On 203 strongly knocked-down Replogle genes, a knockdown-aware steady-state linear SEM predicted held-out knockdown profiles with correlation $0.012\pm0.298$, against $0.422\pm0.402$ for the mean training profile. ChIP and motif priors did not change this.
+
+\subsection*{S5. A lag-feature ridge detector of hidden regulators (memory)}
+\textbf{Scope.} This tests one estimator: ridge regression of an observed gene's 5-step-ahead change on the current observed state, with and without lags of 1, 2, 4 and 8 samples. It is not a test of memory-function methods in general \citep{herrera2018memory,zhang2019memory,biswas2021memory}.
+\textbf{Simulation.} Measurement-noise levels are relative to each gene's simulated within-trajectory fluctuation s.d. They are not calibrated against any real assay, so we do not call any level ``realistic''.
+\textbf{Results.} With regulator process noise four times that of other genes and clean data, the detector ranked children of hidden regulators above other genes (AUROC 0.84 vs 0.51 with nothing hidden; Table~\ref{tab:s_f3}). It failed with weaker regulator fluctuations, with measurement noise $\ge0.5\times$ the fluctuation s.d., and with sampling intervals $\ge0.25$. Estimates of the hidden regulator's timescale and of the number of hidden regulators (lagged-residual rank) failed.
+
+\begin{table}[h]
+\centering\small
+\caption{\textbf{Lag-feature ridge detector} (AUROC; 80-gene time courses; seeds 0--9 or 0--5).}
+\label{tab:s_f3}
+\input{tables/f3.tex}\\[2pt]
+\begin{minipage}{0.9\textwidth}\footnotesize\input{tables/f3_gain.tex}\end{minipage}
+\end{table}
+\begin{figure}[h]
+\centering\includegraphics[width=\textwidth]{figures/fig5_memory.pdf}
+\caption{\textbf{Lag-feature ridge detector.} (a) Clean, dense time courses. (b) Measurement noise relative to simulated fluctuations. (c) Sampling interval.}
+\end{figure}
+
+\subsection*{S6. Intervention-induced indirect edges (errors-in-variables)}
+For A$\to$B$\to$C with $B=bA+\varepsilon_B$, $C=cB+\varepsilon_C$ and B measured as $\tilde B=B+e$, regressing C on $(A,\tilde B)$ gives $\beta_{A\to C}=cb\lambda$, $\lambda=\sigma_e^2/(\sigma_e^2+\operatorname{Var}(B|A))$ \citep{fuller1987}.
+Perturbing A leaves $\beta$ unchanged but makes it easier to detect. Perturbing B lowers $\lambda$ (Table~\ref{tab:s_f4three}).
+In the 80-gene simulator, perturbing the source raised the indirect-call rate only slightly, and hidden mediators dominated (Table~\ref{tab:s_f4net}). A simple identifiability flag was modestly informative (Table~\ref{tab:s_f4flag}).
+
+\begin{table}[h]\centering\small
+\caption{\textbf{Three-gene check} ($b=c=1$, $\sigma_B=\sigma_C=\sigma_e=0.5$, $n=2{,}000$, 300 replicates).}\label{tab:s_f4three}
+\input{tables/f4_three.tex}\end{table}
+\begin{table}[h]\centering\small
+\caption{\textbf{Indirect pairs called as edges} by perturbation status (BOND-V without prior; seeds 0--9 $\times$ 3 random halves of the perturbation set).}\label{tab:s_f4net}
+\input{tables/f4_net.tex}\end{table}
+\begin{table}[h]\centering\small
+\caption{\textbf{Identifiability flag} (edge $j\to i$ flagged if some unperturbed $m$ has predicted $j\to m$ and $m\to i$ edges among the top $2E$).}\label{tab:s_f4flag}
+\input{tables/f4_flag.tex}\end{table}
+
+\subsection*{S7. Prior forms and imperfect regulator masks}
+With an \emph{exact} regulator list, a hard identity mask raised AUPRC$\times$ from 15.5 (no prior) to 22.2, and adding a soft site-level binding prior on top gave 23.2 (Table~\ref{tab:s_f5}). The reading is ``mask first; a site prior adds a little on top''.
+A hard binding-site mask capped recall at 25\% and was harmful.
+With imperfect masks (Table~\ref{tab:s_masks}, Fig.~\ref{fig:s_masks}), each missing regulator cost far more than each false one, because a missing regulator's true edges cannot be recovered at all.
+\begin{itemize}
+\item Dropping 25\% of regulators (6 of 22) brought AUPRC$\times$ down to the no-prior level (15.9 vs 15.5); dropping 50\% fell well below it (11.2).
+\item Adding false regulators degraded performance gradually: 19.1 with 50\% extra, and 15.9 only with 200\% extra (44 false regulators).
+\item A mask with both errors (25\% missing, 100\% false) was worse than no prior (10.7). Adding the soft site prior recovered only part of the loss (12.4).
+\end{itemize}
+A hard mask is therefore worthwhile only when the regulator annotation has high recall; with lower recall, soft priors or no prior are safer.
+
+\begin{table}[h]\centering\small
+\caption{\textbf{Prior forms} (exact regulator list; seeds 0--9; mean $\pm$ s.d.).}\label{tab:s_f5}
+\resizebox{\textwidth}{!}{\input{tables/f5.tex}}\end{table}
+\begin{table}[h]\centering\small
+\caption{\textbf{Imperfect regulator masks} (BOND-V; seeds 0--9). Missing regulators are dropped from the mask; false regulators are random non-regulator genes added to it.}\label{tab:s_masks}
+\input{tables/r_masks.tex}\end{table}
+\begin{figure}[h]\centering\includegraphics[width=0.6\textwidth]{figures/s_masks.pdf}
+\caption{\textbf{Imperfect regulator masks.}}\label{fig:s_masks}\end{figure}
+
+\subsection*{S8. Propagation depth: true vs estimated operator}
+We evaluated every regulator (seeds 0--9), stratified by its true downstream depth, and scored both operators against the \emph{same} targets on the \emph{same} log-normalised scale (Table~\ref{tab:s_depth2}, Fig.~\ref{fig:s_depth}).
+\begin{itemize}
+\item \textbf{Targets:} (i) the noise-free steady-state knockdown effect, mapped to the log scale with the first-order transform of the simulator's normalisation; (ii) the measured mean effect in the simulated data.
+\item \textbf{True operator:} the linearised production Jacobian at the wild-type steady state, with its predictions mapped to log scale by the same transform.
+\item \textbf{Estimated operator:} BOND-V, 5-fold over knockdowns.
+\end{itemize}
+Remaining mismatches between the two operators include linearisation error, and cell-to-cell heterogeneity (input levels, cell size) that the true operator, computed at mean inputs, ignores. The noise-free and measured targets correlate 0.79 on average.
+
+For regulators with downstream depth $\ge3$, the mean over $D\in\{2,3,4\}$ minus $D=1$ (bootstrap 95\% CI over 82 regulators) was:
+\begin{itemize}
+\item true operator: $+0.19$ [0.16, 0.23] against the noise-free target and $+0.07$ [0.05, 0.09] against the measured target;
+\item estimated operator, stabilised (rescaled to spectral radius 0.8): $+0.04$ [0.01, 0.07] against the noise-free target and $-0.02$ [$-0.05$, $-0.00$] against the measured target;
+\item estimated operator, unstabilised: strongly negative ($-0.35$ and $-0.51$).
+\end{itemize}
+\textbf{Conclusion:} deeper propagation helps with the true operator in this simulator, against both noise-free and measured targets. The estimated pipeline does not reproduce that benefit: there is no consistent improvement beyond one step after stabilisation, and collapse without it.
+At $D=1$ on the measured target, the estimated operator matched or exceeded the true operator (0.70 vs 0.64 for deep regulators), consistent with the heterogeneity mismatch above. Table~\ref{tab:s_depth} reports the earlier comparison, in which the true operator was scored on noise-free raw-scale effects.
+In Table~\ref{tab:s_f5depth}, the $(I-J)^{-1}$ column is an algebraic inverse. It equals the infinite propagation sum only when $\rho(J)<1$, which holds only for the stabilised rows.
+
+\begin{table}[h]\centering\small
+\caption{\textbf{Propagation depth, both operators on the same targets and scale} (correlation with the knockdown effect; mean over regulators; seeds 0--9).}\label{tab:s_depth2}
+\resizebox{\textwidth}{!}{\input{tables/r_depth2.tex}}\end{table}
+\begin{table}[h]\centering\small
+\caption{\textbf{Propagation depth, earlier comparison on different targets} (true operator: noise-free raw-scale effects; estimated: measured log-scale effects). Superseded by Table~\ref{tab:s_depth2}.}\label{tab:s_depth}
+\input{tables/r_depth.tex}\end{table}
+\begin{table}[h]\centering\small
+\caption{\textbf{Truncated propagation on the four held-out knockdowns of the original design} (seeds 0--9). \textsuperscript{a}Algebraic inverse; equals the infinite sum only if $\rho(J)<1$.}\label{tab:s_f5depth}
+\resizebox{\textwidth}{!}{\input{tables/f5_depth.tex}}\end{table}
+\begin{figure}[h]\centering\includegraphics[width=\textwidth]{figures/s_depth_control.pdf}
+\caption{\textbf{Propagation depth with the true vs estimated operator,} both scored against the same noise-free (top) and measured (bottom) log-scale targets, stratified by each regulator's true downstream depth.}\label{fig:s_depth}\end{figure}
+
+\subsection*{S9. Context: earlier sign-flip summary and Shifrut 2018}
+Table~\ref{tab:s_f6} gives a sign-flip summary that conditions on targets strong in both contexts; Table~\ref{tab:context} gives the unconditional, noise-matched analysis.
+
+\begin{table}[h]\centering\small
+\caption{\textbf{Sign flips among strong shared targets} (conditional analysis). Gain slope: total-least-squares slope of context-2 on context-1 effects.}\label{tab:s_f6}
+\resizebox{\textwidth}{!}{\input{tables/f6.tex}}\end{table}
+
+\subsection*{S10. Additional checks for the main-text analyses}
+\begin{table}[h]\centering\small
+\caption{\textbf{Noise-constant estimators.} Pooled and median per-knockdown expected-noise shares under alternative estimators of the noise constant, and a bootstrap over the 585 non-targeting controls (median estimator). Per-gene medians of squared z-scores are biased low for chi-square-like distributions and are shown divided by the $\chi^2_1$ median (0.455).}\label{tab:s_noise}
+\input{tables/r_noise_est.tex}\end{table}
+\begin{table}[h]\centering\small
+\caption{\textbf{Matched shared axes across screens} ($|\cos|$ between individual axes fitted separately in each screen on the 1{,}457 knockdowns in both).}\label{tab:s_pcmatch}
+\input{tables/r_pcmatch.tex}\end{table}
+\begin{table}[h]\centering\small
+\caption{\textbf{Positive-control robustness.} Mean difference between cascade and random-mediator correlations for semi-synthetic targets with exact cascade share $\alpha$ (realised share equals nominal in orthogonalised generators; in the non-orthogonal generator the realised share was 0.005, 0.053, 0.102, 0.250 and 0.499). $^\ast$: 95\% CI lower bound above the real-data upper bound (0.004).}\label{tab:s_pc2}
+\resizebox{\textwidth}{!}{\input{tables/r_f1_pc2.tex}}\end{table}
+\begin{table}[h]\centering\small
+\caption{\textbf{Calibrated magnitude scores} on independent-screen targets ($R^2_0$ uncalibrated; after training-only scalar calibration with bootstrap 95\% CI; mean calibration factor $\bar\lambda$ over folds).}\label{tab:s_f2cal}
+\resizebox{\textwidth}{!}{\input{tables/r_f2cal.tex}}\end{table}
+\begin{table}[h]\centering\small
+\caption{\textbf{Paired predictor comparisons} (per-knockdown differences; bootstrap 95\% CI).}\label{tab:s_f2pairs}
+\resizebox{\textwidth}{!}{\input{tables/r_f2pairs.tex}}\end{table}
+
+\subsection*{S11. Reproducibility}
+Environments: main-text and Supplement S5--S10 analyses were run with Python 3.13 and the versions in \texttt{requirements.txt}; Supplement S1--S4 (including the PyTorch latent-ODE runs) were run mainly on a second machine with Python 3.10.12 and the versions in \texttt{requirements-s1-s4.txt} (torch 2.14.1+cpu); some 80-gene coverage runs used the main environment. \texttt{run\_all.sh} lists the commands used, in order, starting from the raw files listed in \texttt{data/README.md}. End-to-end regeneration from a clean environment was verified only for the analyses stated in the main-text Methods; the other commands are supplied but not re-verified. Random seeds are fixed in each script (\texttt{numpy.random.default\_rng} with the seeds stated above). Approximate run times on a 2-core machine: decomposition and benchmark $<$10 min; cascade test with positive control about 10 min; 80-gene simulations 1--3 h.
+

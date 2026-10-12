@@ -1,0 +1,198 @@
+{
+  "n_tfs_common": 122,
+  "scores": {
+    "PWM_max [AUROC]": {
+      "JASPAR_mean": 0.5735256065173907,
+      "ProBound_mean": 0.5919425012447824,
+      "JASPAR_median": 0.5575327895886801,
+      "ProBound_median": 0.5717353322303875,
+      "ProBound_wins_frac": 0.6885245901639344,
+      "wilcoxon_p": 1.0332457527855125e-07,
+      "n": 122
+    },
+    "PWM_max [AUPRC_ratio]": {
+      "JASPAR_mean": 1.5026937701892278,
+      "ProBound_mean": 1.5455622735176118,
+      "JASPAR_median": 1.1207668079636064,
+      "ProBound_median": 1.2210863956324198,
+      "ProBound_wins_frac": 0.6557377049180327,
+      "wilcoxon_p": 1.904652644613533e-05,
+      "n": 122
+    },
+    "PWM_hits [AUROC]": {
+      "JASPAR_mean": 0.5477712193085786,
+      "ProBound_mean": 0.5561784454270885,
+      "JASPAR_median": 0.5303856126302815,
+      "ProBound_median": 0.5407021002071439,
+      "ProBound_wins_frac": 0.6311475409836066,
+      "wilcoxon_p": 0.0024749125993714523,
+      "n": 122
+    },
+    "PWM_hits [AUPRC_ratio]": {
+      "JASPAR_mean": 1.2121970983420396,
+      "ProBound_mean": 1.226266317706605,
+      "JASPAR_median": 1.052222070004258,
+      "ProBound_median": 1.0829584382155308,
+      "ProBound_wins_frac": 0.639344262295082,
+      "wilcoxon_p": 0.010974873768849158,
+      "n": 122
+    },
+    "PWM_hits_in_ATAC [AUROC]": {
+      "JASPAR_mean": 0.5544435282734289,
+      "ProBound_mean": 0.5611321312014755,
+      "JASPAR_median": 0.5348698850218847,
+      "ProBound_median": 0.5437071971559311,
+      "ProBound_wins_frac": 0.5819672131147541,
+      "wilcoxon_p": 0.01432681618337879,
+      "n": 122
+    },
+    "PWM_hits_in_ATAC [AUPRC_ratio]": {
+      "JASPAR_mean": 1.2484676569128879,
+      "ProBound_mean": 1.273455437690693,
+      "JASPAR_median": 1.0720249815903165,
+      "ProBound_median": 1.0971302684190034,
+      "ProBound_wins_frac": 0.5819672131147541,
+      "wilcoxon_p": 0.02199596668320812,
+      "n": 122
+    },
+    "OCC_mu-4 [AUROC]": {
+      "JASPAR_mean": 0.5762436505676019,
+      "ProBound_mean": 0.5955998289258445,
+      "JASPAR_median": 0.5574851253967017,
+      "ProBound_median": 0.5761155336663846,
+      "ProBound_wins_frac": 0.6557377049180327,
+      "wilcoxon_p": 1.2849378493704728e-05,
+      "n": 122
+    },
+    "OCC_mu-4 [AUPRC_ratio]": {
+      "JASPAR_mean": 1.5198586865039228,
+      "ProBound_mean": 1.555492842707474,
+      "JASPAR_median": 1.1426599356633296,
+      "ProBound_median": 1.209541481776546,
+      "ProBound_wins_frac": 0.5901639344262295,
+      "wilcoxon_p": 0.02304617452387502,
+      "n": 122
+    },
+    "OCC_mu-2 [AUROC]": {
+      "JASPAR_mean": 0.5762132905855947,
+      "ProBound_mean": 0.5946746614940062,
+      "JASPAR_median": 0.5565018644285049,
+      "ProBound_median": 0.5757329481648894,
+      "ProBound_wins_frac": 0.6557377049180327,
+      "wilcoxon_p": 5.04569864318655e-05,
+      "n": 122
+    },
+    "OCC_mu-2 [AUPRC_ratio]": {
+      "JASPAR_mean": 1.4424353385216957,
+      "ProBound_mean": 1.5120579175070814,
+      "JASPAR_median": 1.1309791928434896,
+      "ProBound_median": 1.194220726767273,
+      "ProBound_wins_frac": 0.5491803278688525,
+      "wilcoxon_p": 0.06753467314844776,
+      "n": 122
+    },
+    "OCC_mu+0 [AUROC]": {
+      "JASPAR_mean": 0.5752532407507103,
+      "ProBound_mean": 0.5885877585024246,
+      "JASPAR_median": 0.5539113293407657,
+      "ProBound_median": 0.5762744976362395,
+      "ProBound_wins_frac": 0.5819672131147541,
+      "wilcoxon_p": 0.016149110557251323,
+      "n": 122
+    },
+    "OCC_mu+0 [AUPRC_ratio]": {
+      "JASPAR_mean": 1.3759106189449481,
+      "ProBound_mean": 1.38333859026817,
+      "JASPAR_median": 1.1451071640619728,
+      "ProBound_median": 1.2088745037783273,
+      "ProBound_wins_frac": 0.48360655737704916,
+      "wilcoxon_p": 0.8470356042903279,
+      "n": 122
+    },
+    "OCC_ACC_mu-4 [AUROC]": {
+      "JASPAR_mean": 0.6188267137576968,
+      "ProBound_mean": 0.6387376768806424,
+      "JASPAR_median": 0.6016748151987862,
+      "ProBound_median": 0.6245967598836393,
+      "ProBound_wins_frac": 0.7295081967213115,
+      "wilcoxon_p": 3.1970664144527175e-08,
+      "n": 122
+    },
+    "OCC_ACC_mu-4 [AUPRC_ratio]": {
+      "JASPAR_mean": 1.6498794211162229,
+      "ProBound_mean": 1.5938083850849334,
+      "JASPAR_median": 1.2388335513039013,
+      "ProBound_median": 1.2717462249703706,
+      "ProBound_wins_frac": 0.639344262295082,
+      "wilcoxon_p": 0.042362254718009626,
+      "n": 122
+    },
+    "OCC_ACC_mu-2 [AUROC]": {
+      "JASPAR_mean": 0.6188372364019257,
+      "ProBound_mean": 0.6384802201111525,
+      "JASPAR_median": 0.6004136047568192,
+      "ProBound_median": 0.6243288666052358,
+      "ProBound_wins_frac": 0.7295081967213115,
+      "wilcoxon_p": 5.378907620212115e-08,
+      "n": 122
+    },
+    "OCC_ACC_mu-2 [AUPRC_ratio]": {
+      "JASPAR_mean": 1.6123775740041142,
+      "ProBound_mean": 1.5733064144378286,
+      "JASPAR_median": 1.2443271919538508,
+      "ProBound_median": 1.2750625280024184,
+      "ProBound_wins_frac": 0.6311475409836066,
+      "wilcoxon_p": 0.04958649127594665,
+      "n": 122
+    },
+    "OCC_ACC_mu+0 [AUROC]": {
+      "JASPAR_mean": 0.6190458754595172,
+      "ProBound_mean": 0.6362850771310379,
+      "JASPAR_median": 0.5998016416613472,
+      "ProBound_median": 0.6235601852910706,
+      "ProBound_wins_frac": 0.7049180327868853,
+      "wilcoxon_p": 2.267211693369308e-06,
+      "n": 122
+    },
+    "OCC_ACC_mu+0 [AUPRC_ratio]": {
+      "JASPAR_mean": 1.5450816147198871,
+      "ProBound_mean": 1.4850777559077035,
+      "JASPAR_median": 1.245992181801959,
+      "ProBound_median": 1.2768839897722684,
+      "ProBound_wins_frac": 0.5327868852459017,
+      "wilcoxon_p": 0.7581759770038401,
+      "n": 122
+    },
+    "OCC_SUB_mu-2|zero-hit [AUROC]": {
+      "JASPAR_mean": 0.545547304101068,
+      "ProBound_mean": 0.5635732417480447,
+      "JASPAR_median": 0.5377471875074358,
+      "ProBound_median": 0.5552584287680673,
+      "ProBound_wins_frac": 0.6639344262295082,
+      "wilcoxon_p": 8.709026212723844e-06,
+      "n": 122
+    },
+    "OCC_SUB_ACC_mu-2|zero-hit [AUROC]": {
+      "JASPAR_mean": 0.5963955305096628,
+      "ProBound_mean": 0.6126656654494167,
+      "JASPAR_median": 0.587250072168479,
+      "ProBound_median": 0.6058402752522837,
+      "ProBound_wins_frac": 0.680327868852459,
+      "wilcoxon_p": 1.1242373917638066e-06,
+      "n": 122
+    }
+  },
+  "Ethr_median_kT": {
+    "jaspar": 4.705545425415039,
+    "probound": 2.301525831222534
+  },
+  "motif_width_median": {
+    "jaspar": 10.0,
+    "probound": 12.0
+  },
+  "probound_model_source_counts": {
+    "human": 120,
+    "mouse": 2,
+    "other": 0
+  }
+}

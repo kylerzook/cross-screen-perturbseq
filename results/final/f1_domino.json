@@ -1,0 +1,67 @@
+{
+ "n_targets": 1394,
+ "n_mediators_available": 521,
+ "by_K": {
+  "5": {
+   "corr_mean_all": -0.004828477261644491,
+   "null_corr_mean_all": -8.005190653461273e-05,
+   "corr_mean_reproducible": -0.007894759455296598,
+   "null_corr_mean_reproducible": -0.003805826710299956,
+   "frac_beats_null_reproducible": 0.4714003944773176,
+   "reliability_mean_reproducible": 0.46652809657646177,
+   "domino_share_median_reproducible": 0.0,
+   "domino_share_mean_reproducible": 0.0032316953398472134,
+   "domino_share_q25_q75_reproducible": [
+    0.0,
+    0.001822385466948935
+   ],
+   "n_reproducible": 507
+  },
+  "10": {
+   "corr_mean_all": -0.006952185168066866,
+   "null_corr_mean_all": -0.0024453104286353434,
+   "corr_mean_reproducible": -0.009522485619913854,
+   "null_corr_mean_reproducible": -0.0027644321005374094,
+   "frac_beats_null_reproducible": 0.47731755424063116,
+   "reliability_mean_reproducible": 0.46363451861371313,
+   "domino_share_median_reproducible": 0.0,
+   "domino_share_mean_reproducible": 0.003163955666117532,
+   "domino_share_q25_q75_reproducible": [
+    0.0,
+    0.002340831686853202
+   ],
+   "n_reproducible": 507
+  },
+  "20": {
+   "corr_mean_all": -0.00793940274984714,
+   "null_corr_mean_all": 0.0002277338356359463,
+   "corr_mean_reproducible": -0.011023697053648454,
+   "null_corr_mean_reproducible": -0.0005653375416473348,
+   "frac_beats_null_reproducible": 0.4714003944773176,
+   "reliability_mean_reproducible": 0.4599418208922836,
+   "domino_share_median_reproducible": 0.0,
+   "domino_share_mean_reproducible": 0.003385157611417975,
+   "domino_share_q25_q75_reproducible": [
+    0.0,
+    0.0022897472397686506
+   ],
+   "n_reproducible": 507
+  },
+  "50": {
+   "corr_mean_all": -0.008140581631520438,
+   "null_corr_mean_all": 0.0002554586244786894,
+   "corr_mean_reproducible": -0.012805131142683357,
+   "null_corr_mean_reproducible": 0.002513763794006116,
+   "frac_beats_null_reproducible": 0.4339250493096647,
+   "reliability_mean_reproducible": 0.45374449581484344,
+   "domino_share_median_reproducible": 0.0,
+   "domino_share_mean_reproducible": 0.0038277137801596326,
+   "domino_share_q25_q75_reproducible": [
+    0.0,
+    0.0022373951980987944
+   ],
+   "n_reproducible": 507
+  }
+ },
+ "seconds": 19.537983417510986
+}

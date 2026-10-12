@@ -1,0 +1,25 @@
+\begin{tabular}{lllcccccc}
+\toprule
+Operator & target & regulators (n) & $D{=}1$ & 2 & 3 & 4 & 6 & 8 \\
+\midrule
+true operator & noise-free & depth 1 (95) & 0.91 & 0.91 & 0.91 & 0.91 & 0.91 & 0.91 \\
+true operator & noise-free & depth 2 (43) & 0.78 & 0.88 & 0.88 & 0.88 & 0.88 & 0.88 \\
+true operator & noise-free & depth $\ge3$ (82) & 0.57 & 0.73 & 0.77 & 0.78 & 0.78 & 0.78 \\
+true operator & measured & depth 1 (95) & 0.71 & 0.71 & 0.71 & 0.71 & 0.71 & 0.71 \\
+true operator & measured & depth 2 (43) & 0.71 & 0.75 & 0.75 & 0.75 & 0.75 & 0.75 \\
+true operator & measured & depth $\ge3$ (82) & 0.64 & 0.70 & 0.71 & 0.71 & 0.71 & 0.71 \\
+estimated & noise-free & depth 1 (95) & 0.39 & 0.18 & 0.06 & 0.04 & 0.01 & -0.00 \\
+estimated & noise-free & depth 2 (43) & 0.55 & 0.38 & 0.08 & -0.00 & 0.05 & -0.03 \\
+estimated & noise-free & depth $\ge3$ (82) & 0.57 & 0.54 & 0.20 & -0.06 & 0.06 & -0.04 \\
+estimated & measured & depth 1 (95) & 0.36 & 0.16 & 0.05 & 0.02 & 0.00 & -0.01 \\
+estimated & measured & depth 2 (43) & 0.58 & 0.37 & 0.07 & -0.01 & 0.06 & -0.06 \\
+estimated & measured & depth $\ge3$ (82) & 0.70 & 0.54 & 0.12 & -0.10 & 0.10 & -0.05 \\
+estimated, stabilised & noise-free & depth 1 (95) & 0.39 & 0.33 & 0.31 & 0.33 & 0.33 & 0.33 \\
+estimated, stabilised & noise-free & depth 2 (43) & 0.55 & 0.53 & 0.50 & 0.50 & 0.51 & 0.51 \\
+estimated, stabilised & noise-free & depth $\ge3$ (82) & 0.57 & 0.63 & 0.62 & 0.61 & 0.61 & 0.61 \\
+estimated, stabilised & measured & depth 1 (95) & 0.36 & 0.30 & 0.29 & 0.30 & 0.30 & 0.30 \\
+estimated, stabilised & measured & depth 2 (43) & 0.58 & 0.55 & 0.51 & 0.51 & 0.52 & 0.52 \\
+estimated, stabilised & measured & depth $\ge3$ (82) & 0.70 & 0.71 & 0.67 & 0.66 & 0.68 & 0.68 \\
+\bottomrule
+\end{tabular}
+% corr(noise-free, measured targets) mean 0.79; 10 seeds

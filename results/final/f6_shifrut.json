@@ -1,0 +1,837 @@
+{
+ "dataset": "Shifrut 2018 (primary T cells, CRISPR KO, NoStim vs Stim)",
+ "n_genes_scored": 2000,
+ "n_knockouts": 20,
+ "n_knockouts_with_>=10_sig_targets": 18,
+ "context (NoStim -> Stim)": {
+  "n_comparisons": 18,
+  "sign_flips": 0,
+  "strong_shared_targets": 6,
+  "flip_fraction": 0.0,
+  "jaccard_mean": 0.011197390572390574,
+  "corr_top50_median": 0.020131144819546483,
+  "tls_slope_median": null,
+  "fold_gain_change_median (max(s,1/s))": null,
+  "median_abs_ratio_median": null,
+  "n_with_slope": 0
+ },
+ "context, half cells (power-matched to null)": {
+  "n_comparisons": 18,
+  "sign_flips": 1,
+  "strong_shared_targets": 8,
+  "flip_fraction": 0.125,
+  "jaccard_mean": 0.012879413927419335,
+  "corr_top50_median": -0.09419566077720351,
+  "tls_slope_median": null,
+  "fold_gain_change_median (max(s,1/s))": null,
+  "median_abs_ratio_median": null,
+  "n_with_slope": 0
+ },
+ "null split-half NoStim": {
+  "n_comparisons": 18,
+  "sign_flips": 0,
+  "strong_shared_targets": 6,
+  "flip_fraction": 0.0,
+  "jaccard_mean": 0.009803605249934504,
+  "corr_top50_median": -0.020193737929583608,
+  "tls_slope_median": null,
+  "fold_gain_change_median (max(s,1/s))": null,
+  "median_abs_ratio_median": null,
+  "n_with_slope": 0
+ },
+ "null split-half Stim": {
+  "n_comparisons": 18,
+  "sign_flips": 0,
+  "strong_shared_targets": 12,
+  "flip_fraction": 0.0,
+  "jaccard_mean": 0.019537337511193725,
+  "corr_top50_median": 0.11562897212680712,
+  "tls_slope_median": null,
+  "fold_gain_change_median (max(s,1/s))": null,
+  "median_abs_ratio_median": null,
+  "n_with_slope": 0
+ },
+ "per_knockout": [
+  {
+   "target": "ARID1A",
+   "n_cells": {
+    "NoStim": 246,
+    "Stim": 379
+   },
+   "context": {
+    "n_sig_ctx1": 29,
+    "n_sig_ctx2": 22,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": -0.07364856613117064
+   },
+   "null_NoStim": {
+    "n_sig_ctx1": 37,
+    "n_sig_ctx2": 44,
+    "n_sig_both": 1,
+    "jaccard": 0.0125,
+    "sign_flips": 0,
+    "corr_top50_union": -0.01811874495183454
+   },
+   "null_Stim": {
+    "n_sig_ctx1": 22,
+    "n_sig_ctx2": 24,
+    "n_sig_both": 2,
+    "jaccard": 0.045454545454545456,
+    "sign_flips": 0,
+    "corr_top50_union": 0.5125361676460791
+   },
+   "context_halfcells": {
+    "n_sig_ctx1": 39,
+    "n_sig_ctx2": 17,
+    "n_sig_both": 1,
+    "jaccard": 0.01818181818181818,
+    "sign_flips": 0,
+    "corr_top50_union": -0.3256047418700975
+   }
+  },
+  {
+   "target": "BTLA",
+   "n_cells": {
+    "NoStim": 588,
+    "Stim": 824
+   },
+   "context": {
+    "n_sig_ctx1": 9,
+    "n_sig_ctx2": 11,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": -0.3188417236188159
+   },
+   "null_NoStim": {
+    "n_sig_ctx1": 11,
+    "n_sig_ctx2": 14,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": -0.15931627457017075
+   },
+   "null_Stim": {
+    "n_sig_ctx1": 16,
+    "n_sig_ctx2": 4,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": 0.06629150395005166
+   },
+   "context_halfcells": {
+    "n_sig_ctx1": 6,
+    "n_sig_ctx2": 10,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": -0.19860710242232169
+   }
+  },
+  {
+   "target": "C10orf54",
+   "n_cells": {
+    "NoStim": 449,
+    "Stim": 609
+   },
+   "context": {
+    "n_sig_ctx1": 12,
+    "n_sig_ctx2": 12,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": 0.0015032931490646072
+   },
+   "null_NoStim": {
+    "n_sig_ctx1": 16,
+    "n_sig_ctx2": 10,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": 0.3253974381468395
+   },
+   "null_Stim": {
+    "n_sig_ctx1": 15,
+    "n_sig_ctx2": 5,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": 0.005006924284132778
+   },
+   "context_halfcells": {
+    "n_sig_ctx1": 15,
+    "n_sig_ctx2": 17,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": -0.28396432705762287
+   }
+  },
+  {
+   "target": "CBLB",
+   "n_cells": {
+    "NoStim": 502,
+    "Stim": 825
+   },
+   "context": {
+    "n_sig_ctx1": 12,
+    "n_sig_ctx2": 20,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": 0.09218279333252602
+   },
+   "null_NoStim": {
+    "n_sig_ctx1": 8,
+    "n_sig_ctx2": 11,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": -0.11005029933700336
+   },
+   "null_Stim": {
+    "n_sig_ctx1": 14,
+    "n_sig_ctx2": 16,
+    "n_sig_both": 3,
+    "jaccard": 0.1111111111111111,
+    "sign_flips": 0,
+    "corr_top50_union": 0.5490034949837163
+   },
+   "context_halfcells": {
+    "n_sig_ctx1": 16,
+    "n_sig_ctx2": 10,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": 0.16740896872511055
+   }
+  },
+  {
+   "target": "CD3D",
+   "n_cells": {
+    "NoStim": 442,
+    "Stim": 414
+   },
+   "context": {
+    "n_sig_ctx1": 9,
+    "n_sig_ctx2": 28,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": -0.31601212798600126
+   },
+   "null_NoStim": {
+    "n_sig_ctx1": 10,
+    "n_sig_ctx2": 9,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": -0.09523898717431582
+   },
+   "null_Stim": {
+    "n_sig_ctx1": 15,
+    "n_sig_ctx2": 37,
+    "n_sig_both": 1,
+    "jaccard": 0.0196078431372549,
+    "sign_flips": 0,
+    "corr_top50_union": 0.20778398258687744
+   },
+   "context_halfcells": {
+    "n_sig_ctx1": 12,
+    "n_sig_ctx2": 23,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": -0.14800835261920303
+   }
+  },
+  {
+   "target": "CD5",
+   "n_cells": {
+    "NoStim": 388,
+    "Stim": 692
+   },
+   "context": {
+    "n_sig_ctx1": 14,
+    "n_sig_ctx2": 18,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": 0.10314062009107741
+   },
+   "null_NoStim": {
+    "n_sig_ctx1": 13,
+    "n_sig_ctx2": 14,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": -0.2656249488926781
+   },
+   "null_Stim": {
+    "n_sig_ctx1": 15,
+    "n_sig_ctx2": 16,
+    "n_sig_both": 1,
+    "jaccard": 0.03333333333333333,
+    "sign_flips": 0,
+    "corr_top50_union": 0.1860651602059573
+   },
+   "context_halfcells": {
+    "n_sig_ctx1": 17,
+    "n_sig_ctx2": 13,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": 0.077039760882903
+   }
+  },
+  {
+   "target": "CDKN1B",
+   "n_cells": {
+    "NoStim": 294,
+    "Stim": 455
+   },
+   "context": {
+    "n_sig_ctx1": 37,
+    "n_sig_ctx2": 14,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": 0.1764710679154796
+   },
+   "null_NoStim": {
+    "n_sig_ctx1": 30,
+    "n_sig_ctx2": 23,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": 0.31467130909228436
+   },
+   "null_Stim": {
+    "n_sig_ctx1": 10,
+    "n_sig_ctx2": 19,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": 0.019496272353596113
+   },
+   "context_halfcells": {
+    "n_sig_ctx1": 28,
+    "n_sig_ctx2": 26,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": 0.2882034087402443
+   }
+  },
+  {
+   "target": "DGKA",
+   "n_cells": {
+    "NoStim": 958,
+    "Stim": 1338
+   },
+   "context": {
+    "n_sig_ctx1": 7,
+    "n_sig_ctx2": 6,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": -0.32110882151682696
+   },
+   "null_NoStim": {
+    "n_sig_ctx1": 11,
+    "n_sig_ctx2": 5,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": 0.0743191178071727
+   },
+   "null_Stim": {
+    "n_sig_ctx1": 4,
+    "n_sig_ctx2": 1,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": -0.00011989199039264812
+   },
+   "context_halfcells": {
+    "n_sig_ctx1": 9,
+    "n_sig_ctx2": 6,
+    "n_sig_both": 1,
+    "jaccard": 0.07142857142857142,
+    "sign_flips": 0,
+    "corr_top50_union": -0.16392701901004772
+   }
+  },
+  {
+   "target": "DGKZ",
+   "n_cells": {
+    "NoStim": 456,
+    "Stim": 564
+   },
+   "context": {
+    "n_sig_ctx1": 25,
+    "n_sig_ctx2": 8,
+    "n_sig_both": 1,
+    "jaccard": 0.03125,
+    "sign_flips": 0,
+    "corr_top50_union": -0.4216980418329387
+   },
+   "null_NoStim": {
+    "n_sig_ctx1": 18,
+    "n_sig_ctx2": 15,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": 0.4345611619096951
+   },
+   "null_Stim": {
+    "n_sig_ctx1": 9,
+    "n_sig_ctx2": 10,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": 0.1902160508182325
+   },
+   "context_halfcells": {
+    "n_sig_ctx1": 13,
+    "n_sig_ctx2": 15,
+    "n_sig_both": 1,
+    "jaccard": 0.037037037037037035,
+    "sign_flips": 1,
+    "corr_top50_union": -0.3340959016677923
+   }
+  },
+  {
+   "target": "HAVCR2",
+   "n_cells": {
+    "NoStim": 620,
+    "Stim": 735
+   },
+   "context": {
+    "n_sig_ctx1": 5,
+    "n_sig_ctx2": 10,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": 0.09391924945224663
+   },
+   "null_NoStim": {
+    "n_sig_ctx1": 8,
+    "n_sig_ctx2": 6,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": -0.00016876612546952373
+   },
+   "null_Stim": {
+    "n_sig_ctx1": 10,
+    "n_sig_ctx2": 13,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": 0.11137006495479529
+   },
+   "context_halfcells": {
+    "n_sig_ctx1": 11,
+    "n_sig_ctx2": 9,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": -0.125275339392906
+   }
+  },
+  {
+   "target": "LAG3",
+   "n_cells": {
+    "NoStim": 338,
+    "Stim": 502
+   },
+   "context": {
+    "n_sig_ctx1": 18,
+    "n_sig_ctx2": 7,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": -0.2168191924884769
+   },
+   "null_NoStim": {
+    "n_sig_ctx1": 20,
+    "n_sig_ctx2": 18,
+    "n_sig_both": 1,
+    "jaccard": 0.02702702702702703,
+    "sign_flips": 0,
+    "corr_top50_union": -0.07325612764229357
+   },
+   "null_Stim": {
+    "n_sig_ctx1": 10,
+    "n_sig_ctx2": 21,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": 0.03384093539982112
+   },
+   "context_halfcells": {
+    "n_sig_ctx1": 26,
+    "n_sig_ctx2": 16,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": 0.026439572252666077
+   }
+  },
+  {
+   "target": "LCP2",
+   "n_cells": {
+    "NoStim": 510,
+    "Stim": 471
+   },
+   "context": {
+    "n_sig_ctx1": 13,
+    "n_sig_ctx2": 34,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": -0.14595294114600002
+   },
+   "null_NoStim": {
+    "n_sig_ctx1": 15,
+    "n_sig_ctx2": 15,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": -0.19032355716454996
+   },
+   "null_Stim": {
+    "n_sig_ctx1": 22,
+    "n_sig_ctx2": 34,
+    "n_sig_both": 2,
+    "jaccard": 0.037037037037037035,
+    "sign_flips": 0,
+    "corr_top50_union": 0.6032557350309691
+   },
+   "context_halfcells": {
+    "n_sig_ctx1": 7,
+    "n_sig_ctx2": 27,
+    "n_sig_both": 1,
+    "jaccard": 0.030303030303030304,
+    "sign_flips": 0,
+    "corr_top50_union": -0.3493627544015205
+   }
+  },
+  {
+   "target": "MEF2D",
+   "n_cells": {
+    "NoStim": 454,
+    "Stim": 572
+   },
+   "context": {
+    "n_sig_ctx1": 18,
+    "n_sig_ctx2": 10,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": 0.0467671576640201
+   },
+   "null_NoStim": {
+    "n_sig_ctx1": 16,
+    "n_sig_ctx2": 15,
+    "n_sig_both": 2,
+    "jaccard": 0.06896551724137931,
+    "sign_flips": 0,
+    "corr_top50_union": 0.2690261984294172
+   },
+   "null_Stim": {
+    "n_sig_ctx1": 11,
+    "n_sig_ctx2": 10,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": -0.04424859408701971
+   },
+   "context_halfcells": {
+    "n_sig_ctx1": 14,
+    "n_sig_ctx2": 10,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": -0.037980461873264856
+   }
+  },
+  {
+   "target": "PDCD1",
+   "n_cells": {
+    "NoStim": 623,
+    "Stim": 861
+   },
+   "context": {
+    "n_sig_ctx1": 10,
+    "n_sig_ctx2": 6,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": -0.07347580525693566
+   },
+   "null_NoStim": {
+    "n_sig_ctx1": 10,
+    "n_sig_ctx2": 9,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": 0.22860720593068798
+   },
+   "null_Stim": {
+    "n_sig_ctx1": 5,
+    "n_sig_ctx2": 10,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": 0.09936768650104912
+   },
+   "context_halfcells": {
+    "n_sig_ctx1": 5,
+    "n_sig_ctx2": 5,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": -0.06311598216150101
+   }
+  },
+  {
+   "target": "RASA2",
+   "n_cells": {
+    "NoStim": 337,
+    "Stim": 568
+   },
+   "context": {
+    "n_sig_ctx1": 15,
+    "n_sig_ctx2": 19,
+    "n_sig_both": 1,
+    "jaccard": 0.030303030303030304,
+    "sign_flips": 0,
+    "corr_top50_union": 0.3225322238239805
+   },
+   "null_NoStim": {
+    "n_sig_ctx1": 22,
+    "n_sig_ctx2": 18,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": -0.022268730907332678
+   },
+   "null_Stim": {
+    "n_sig_ctx1": 10,
+    "n_sig_ctx2": 22,
+    "n_sig_both": 2,
+    "jaccard": 0.06666666666666667,
+    "sign_flips": 0,
+    "corr_top50_union": 0.513120827895087
+   },
+   "context_halfcells": {
+    "n_sig_ctx1": 16,
+    "n_sig_ctx2": 20,
+    "n_sig_both": 2,
+    "jaccard": 0.058823529411764705,
+    "sign_flips": 0,
+    "corr_top50_union": 0.2830520652062497
+   }
+  },
+  {
+   "target": "SOCS1",
+   "n_cells": {
+    "NoStim": 347,
+    "Stim": 488
+   },
+   "context": {
+    "n_sig_ctx1": 11,
+    "n_sig_ctx2": 10,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": 0.22880789728916737
+   },
+   "null_NoStim": {
+    "n_sig_ctx1": 16,
+    "n_sig_ctx2": 13,
+    "n_sig_both": 1,
+    "jaccard": 0.03571428571428571,
+    "sign_flips": 0,
+    "corr_top50_union": -0.08908516837028758
+   },
+   "null_Stim": {
+    "n_sig_ctx1": 13,
+    "n_sig_ctx2": 12,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": 0.11988787929881896
+   },
+   "context_halfcells": {
+    "n_sig_ctx1": 21,
+    "n_sig_ctx2": 9,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": -0.21842632939762638
+   }
+  },
+  {
+   "target": "STAT6",
+   "n_cells": {
+    "NoStim": 240,
+    "Stim": 332
+   },
+   "context": {
+    "n_sig_ctx1": 20,
+    "n_sig_ctx2": 17,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": -0.24712722306164112
+   },
+   "null_NoStim": {
+    "n_sig_ctx1": 18,
+    "n_sig_ctx2": 37,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": -0.17205265944381434
+   },
+   "null_Stim": {
+    "n_sig_ctx1": 27,
+    "n_sig_ctx2": 23,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": -0.27719027923560124
+   },
+   "context_halfcells": {
+    "n_sig_ctx1": 31,
+    "n_sig_ctx2": 24,
+    "n_sig_both": 1,
+    "jaccard": 0.018518518518518517,
+    "sign_flips": 0,
+    "corr_top50_union": -0.42403256519239324
+   }
+  },
+  {
+   "target": "TCEB2",
+   "n_cells": {
+    "NoStim": 358,
+    "Stim": 571
+   },
+   "context": {
+    "n_sig_ctx1": 16,
+    "n_sig_ctx2": 17,
+    "n_sig_both": 3,
+    "jaccard": 0.1,
+    "sign_flips": 0,
+    "corr_top50_union": 0.432921053118748
+   },
+   "null_NoStim": {
+    "n_sig_ctx1": 15,
+    "n_sig_ctx2": 17,
+    "n_sig_both": 1,
+    "jaccard": 0.03225806451612903,
+    "sign_flips": 0,
+    "corr_top50_union": 0.49804122156142394
+   },
+   "null_Stim": {
+    "n_sig_ctx1": 13,
+    "n_sig_ctx2": 14,
+    "n_sig_both": 1,
+    "jaccard": 0.038461538461538464,
+    "sign_flips": 0,
+    "corr_top50_union": 0.49659905457947945
+   },
+   "context_halfcells": {
+    "n_sig_ctx1": 17,
+    "n_sig_ctx2": 14,
+    "n_sig_both": 2,
+    "jaccard": 0.06896551724137931,
+    "sign_flips": 0,
+    "corr_top50_union": 0.292571038287231
+   }
+  },
+  {
+   "target": "TMEM222",
+   "n_cells": {
+    "NoStim": 636,
+    "Stim": 790
+   },
+   "context": {
+    "n_sig_ctx1": 9,
+    "n_sig_ctx2": 17,
+    "n_sig_both": 1,
+    "jaccard": 0.04,
+    "sign_flips": 0,
+    "corr_top50_union": 0.03875899649002836
+   },
+   "null_NoStim": {
+    "n_sig_ctx1": 7,
+    "n_sig_ctx2": 6,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": 0.05671889785075209
+   },
+   "null_Stim": {
+    "n_sig_ctx1": 13,
+    "n_sig_ctx2": 6,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": 0.058629369896298314
+   },
+   "context_halfcells": {
+    "n_sig_ctx1": 14,
+    "n_sig_ctx2": 15,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": 0.022014456283626083
+   }
+  },
+  {
+   "target": "TNFRSF9",
+   "n_cells": {
+    "NoStim": 344,
+    "Stim": 433
+   },
+   "context": {
+    "n_sig_ctx1": 7,
+    "n_sig_ctx2": 8,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": 0.057111263315786163
+   },
+   "null_NoStim": {
+    "n_sig_ctx1": 10,
+    "n_sig_ctx2": 18,
+    "n_sig_both": 1,
+    "jaccard": 0.037037037037037035,
+    "sign_flips": 0,
+    "corr_top50_union": -0.06885528814721169
+   },
+   "null_Stim": {
+    "n_sig_ctx1": 18,
+    "n_sig_ctx2": 13,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": 0.16983271383249587
+   },
+   "context_halfcells": {
+    "n_sig_ctx1": 24,
+    "n_sig_ctx2": 18,
+    "n_sig_both": 0,
+    "jaccard": 0.0,
+    "sign_flips": 0,
+    "corr_top50_union": 0.038508911007372866
+   }
+  }
+ ],
+ "seconds": 34.286160707473755
+}

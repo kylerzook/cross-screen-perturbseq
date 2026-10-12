@@ -1,0 +1,95 @@
+{
+ "seed": 3,
+ "pool_size": 18,
+ "strategy": "degree",
+ "curve": {
+  "0": {
+   "AUROC": 0.7945088597842834,
+   "AUPRC": 0.3300921734917668,
+   "AUPRC_ratio": 14.494047254229397,
+   "precision_at_E": 0.37272727272727274,
+   "indirect_frac_of_topE": 0.1,
+   "decoy_frac_of_topE": 0.08181818181818182,
+   "heldout_effect_corr": 0.2625760435118491,
+   "heldout_effect_sign_acc": 0.625
+  },
+  "1": {
+   "AUROC": 0.7968990755007703,
+   "AUPRC": 0.3265613842275121,
+   "AUPRC_ratio": 14.339013507444394,
+   "precision_at_E": 0.39090909090909093,
+   "indirect_frac_of_topE": 0.07272727272727272,
+   "decoy_frac_of_topE": 0.08181818181818182,
+   "heldout_effect_corr": 0.27238173994969594,
+   "heldout_effect_sign_acc": 0.625
+  },
+  "2": {
+   "AUROC": 0.7909668721109399,
+   "AUPRC": 0.3299730289502902,
+   "AUPRC_ratio": 14.48881572572638,
+   "precision_at_E": 0.39090909090909093,
+   "indirect_frac_of_topE": 0.07272727272727272,
+   "decoy_frac_of_topE": 0.07272727272727272,
+   "heldout_effect_corr": 0.29783854636088475,
+   "heldout_effect_sign_acc": 0.625
+  },
+  "4": {
+   "AUROC": 0.824443374422188,
+   "AUPRC": 0.3651444235374161,
+   "AUPRC_ratio": 16.033159688052,
+   "precision_at_E": 0.4,
+   "indirect_frac_of_topE": 0.07272727272727272,
+   "decoy_frac_of_topE": 0.07272727272727272,
+   "heldout_effect_corr": 0.30815696429589706,
+   "heldout_effect_sign_acc": 0.625
+  },
+  "8": {
+   "AUROC": 0.8357858243451464,
+   "AUPRC": 0.408319130226271,
+   "AUPRC_ratio": 17.928921809026264,
+   "precision_at_E": 0.44545454545454544,
+   "indirect_frac_of_topE": 0.07272727272727272,
+   "decoy_frac_of_topE": 0.01818181818181818,
+   "heldout_effect_corr": 0.30673604311440406,
+   "heldout_effect_sign_acc": 0.625
+  },
+  "12": {
+   "AUROC": 0.8543027734976888,
+   "AUPRC": 0.46788574132507793,
+   "AUPRC_ratio": 20.544437550910242,
+   "precision_at_E": 0.4909090909090909,
+   "indirect_frac_of_topE": 0.07272727272727272,
+   "decoy_frac_of_topE": 0.03636363636363636,
+   "heldout_effect_corr": 0.31585890330939137,
+   "heldout_effect_sign_acc": 0.625
+  }
+ },
+ "order": [
+  3,
+  13,
+  8,
+  5,
+  6,
+  2,
+  4,
+  0,
+  10,
+  12,
+  11,
+  7
+ ],
+ "order_is_TF": [
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1
+ ]
+}

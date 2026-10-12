@@ -1,0 +1,27 @@
+\begin{tabular}{lcccc|ccc|c}
+\toprule
+ & \multicolumn{4}{c|}{Pooled share of total energy} & \multicolumn{3}{c|}{Pooled share of signal} & Median noise \\
+Setting & noise & generic & shared axes & specific & generic & shared axes & specific & share / KD \\
+\midrule
+\multicolumn{9}{l}{\emph{Number of shared axes $K$ (all genes, 4{,}507 knockdowns)}} \\
+$K=0$ & 0.47 & 0.12 & 0.00 & 0.41 & 0.22 & 0.00 & 0.78 & 0.74 \\
+$K=1$ & 0.47 & 0.12 & 0.09 & 0.33 & 0.22 & 0.16 & 0.62 & 0.74 \\
+$K=3$ (permutation null) & 0.47 & 0.12 & 0.14 & 0.27 & 0.22 & 0.26 & 0.51 & 0.74 \\
+$K=5$ & 0.47 & 0.12 & 0.18 & 0.24 & 0.22 & 0.33 & 0.45 & 0.74 \\
+$K=10$ & 0.47 & 0.12 & 0.22 & 0.19 & 0.22 & 0.41 & 0.36 & 0.74 \\
+$K=20$ & 0.47 & 0.12 & 0.26 & 0.15 & 0.22 & 0.49 & 0.29 & 0.74 \\
+$K=50$ & 0.47 & 0.12 & 0.32 & 0.09 & 0.22 & 0.60 & 0.18 & 0.74 \\
+\midrule\multicolumn{9}{l}{\emph{Gene panel ($K=3$)}} \\
+all genes & 0.47 & 0.12 & 0.14 & 0.27 & 0.22 & 0.26 & 0.51 & 0.74 \\
+2000 most variable & 0.24 & 0.18 & 0.23 & 0.35 & 0.24 & 0.30 & 0.46 & 0.53 \\
+mean UMI $>$ 1 (1728 genes) & 0.30 & 0.14 & 0.26 & 0.30 & 0.21 & 0.37 & 0.43 & 0.57 \\
+\midrule\multicolumn{9}{l}{\emph{Cells per knockdown, tertiles ($K=3$; 1 = fewest)}} \\
+tertile 1 & 0.46 & 0.13 & 0.15 & 0.26 & 0.24 & 0.28 & 0.48 & 0.67 \\
+tertile 2 & 0.48 & 0.11 & 0.13 & 0.29 & 0.21 & 0.24 & 0.55 & 0.77 \\
+tertile 3 & 0.53 & 0.08 & 0.11 & 0.29 & 0.17 & 0.23 & 0.60 & 0.77 \\
+\midrule\multicolumn{9}{l}{\emph{Knockdown strength, tertiles ($K=3$; 1 = strongest)}} \\
+tertile 1 & 0.55 & 0.09 & 0.12 & 0.25 & 0.19 & 0.26 & 0.55 & 0.80 \\
+tertile 2 & 0.48 & 0.10 & 0.15 & 0.27 & 0.20 & 0.28 & 0.52 & 0.72 \\
+tertile 3 & 0.41 & 0.15 & 0.15 & 0.29 & 0.26 & 0.26 & 0.49 & 0.65 \\
+\bottomrule
+\end{tabular}
