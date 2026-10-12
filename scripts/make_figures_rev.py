@@ -82,7 +82,7 @@ def r2():
 
 def r3():
     d = J(R / "f1_revised.json"); d2 = J(R / "f1_pc_round2.json")
-    fig, axs = plt.subplots(1, 3, figsize=(7.6, 2.5), gridspec_kw={"width_ratios": [0.8, 1.1, 1.3]})
+    fig, axs = plt.subplots(1, 3, figsize=(7.6, 2.5), gridspec_kw={"width_ratios": [1.0, 1.1, 1.3]})
     ax = axs[0]
     names = list(d["real"].keys()); short = ["specific\nresidual", "generic\nremoved", "raw"]
     for i, n in enumerate(names):

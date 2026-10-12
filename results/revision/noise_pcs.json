@@ -21,6 +21,7 @@
    0.7451953545292239
   ]
  },
+ "note": "Profile-level estimators use c = summary over controls of mean_g(x^2)*n. Gene-specific estimators use c_g per gene; a plain per-gene median of x^2 is biased low (chi-square median = 0.455 x mean) and is shown corrected. Trimmed per-gene means are biased low for chi-square-like distributions and are omitted.",
  "bootstrap_over_controls": {
   "pooled": [
    0.4673733371354654,
@@ -91,6 +92,5 @@
    "APOE"
   ]
  },
- "seconds": 5.565064430236816,
- "note": "Profile-level estimators use c = summary over controls of mean_g(x^2)*n. Gene-specific estimators use c_g per gene; a plain per-gene median of x^2 is biased low (chi-square median = 0.455 x mean) and is shown corrected. Trimmed per-gene means are biased low for chi-square-like distributions and are omitted."
+ "seconds": 4.21130895614624
 }

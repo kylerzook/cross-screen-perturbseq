@@ -192,7 +192,7 @@ def context():
     ms = lambda ii: (X[ii].mean(0), X[ii].var(0, ddof=1) / len(ii))
     comps = []
     mc = ms(ctl)
-    for p, n in cnt.items():
+    for p, n in sorted(cnt.items()):  # sorted: deterministic comparison order (set order depends on hash seed)
         if "_" not in p or n < 100:
             continue
         a, c = p.split("_")
@@ -714,8 +714,13 @@ def noise_pcs():
     res["estimators"]["mean over controls"] = shares(float(np.mean(per)))
     from scipy.stats import trim_mean
     res["estimators"]["20% trimmed mean"] = shares(float(trim_mean(per, 0.2)))
-    cg = np.median(Xn ** 2 * nn[:, None], 0)
-    res["estimators"]["gene-specific (median per gene)"] = shares(cg=cg)
+    from scipy.stats import chi2
+    S2 = Xn ** 2 * nn[:, None]
+    res["estimators"]["gene-specific mean"] = shares(cg=S2.mean(0))
+    res["estimators"]["gene-specific median / chi2 median (0.455)"] = shares(cg=np.median(S2, 0) / chi2.median(1))
+    res["note"] = ("Profile-level estimators use c = summary over controls of mean_g(x^2)*n. Gene-specific estimators use c_g per gene; "
+                   "a plain per-gene median of x^2 is biased low (chi-square median = 0.455 x mean) and is shown corrected. "
+                   "Trimmed per-gene means are biased low for chi-square-like distributions and are omitted.")
     rng = np.random.default_rng(0); B = []
     for _ in range(500):
         b = rng.choice(len(per), len(per)); B.append(shares(float(np.median(per[b]))))
