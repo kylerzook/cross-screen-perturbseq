@@ -1,9 +1,37 @@
-\appendix
+\documentclass[10pt]{article}
+\usepackage[margin=0.9in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{xr-hyper}
+\usepackage[colorlinks=true,linkcolor=blue!50!black,citecolor=blue!50!black,urlcolor=blue!50!black]{hyperref}
+\externaldocument{main}
+\captionsetup{font=small,labelfont=bf}
+\setlength{\tabcolsep}{4pt}
+\newcommand{\good}[1]{\textcolor{green!45!black}{\textbf{#1}}}
+\newcommand{\nsup}[1]{\textcolor{red!60!black}{\textbf{#1}}}
+\newcommand{\mixed}[1]{\textcolor{orange!80!black}{\textbf{#1}}}
+\renewcommand{\thetable}{\arabic{table}}
+
+\title{\vspace{-1.2em}\textbf{Supplementary material for:}\\[2pt]\large What genome-scale Perturb-seq responses contain: an independent-screen analysis and the limits of reading perturbation responses as regulatory networks}
+\author{Kyler Zook\\\small Department of Electrical Engineering and Computer Science, University of Missouri\\\small\texttt{kylerzook@gmail.com}}
+\date{\small October 2026}
+
+\begin{document}
+\maketitle
+\noindent References to Sections, Figures and Tables without an ``S'' prefix refer to the main text.
+
 \renewcommand{\thetable}{S\arabic{table}}
 \renewcommand{\thefigure}{S\arabic{figure}}
 \setcounter{table}{0}\setcounter{figure}{0}
-\section*{Supplementary material}
-\addcontentsline{toc}{section}{Supplementary material}
 
 The analyses below started the project. They concern specific estimators, simulators and regimes, and their conclusions are stated at that level. All simulation results use the seeds listed. ``Diagnostic re-implementations'' of published method families (PHOENIX-, DCDI-, CellOracle- and GENIE3-style) implement only each method's core idea in our code. They are controls, not evaluations of the original software.
 
@@ -160,3 +188,12 @@ Table~\ref{tab:s_f6} gives a sign-flip summary that conditions on targets strong
 \subsection*{S11. Reproducibility}
 Environments: main-text and Supplement S5--S10 analyses were run with Python 3.13 and the versions in \texttt{requirements.txt}; Supplement S1--S4 (including the PyTorch latent-ODE runs) were run mainly on a second machine with Python 3.10.12 and the versions in \texttt{requirements-s1-s4.txt} (torch 2.14.1+cpu); some 80-gene coverage runs used the main environment. \texttt{run\_all.sh} lists the commands used, in order, starting from the raw files listed in \texttt{data/README.md}. End-to-end regeneration from a clean environment was verified only for the analyses stated in the main-text Methods; the other commands are supplied but not re-verified. Random seeds are fixed in each script (\texttt{numpy.random.default\_rng} with the seeds stated above). Approximate run times on a 2-core machine: decomposition and benchmark $<$10 min; cascade test with positive control about 10 min; 80-gene simulations 1--3 h.
 
+\begin{thebibliography}{9}\small
+\bibitem{zou2006} H.~Zou. The adaptive lasso and its oracle properties. \emph{JASA} 101, 1418--1429 (2006).
+\bibitem{huynh2010genie3} V.~A.~Huynh-Thu, A.~Irrthum, L.~Wehenkel, P.~Geurts. Inferring regulatory networks from expression data using tree-based methods. \emph{PLoS ONE} 5, e12776 (2010).
+\bibitem{herrera2018memory} E.~Herrera-Delgado, R.~Perez-Carrasco, J.~Briscoe, P.~Sollich. Memory functions reveal structural properties of gene regulatory networks. \emph{PLoS Comput. Biol.} 14, e1006003 (2018).
+\bibitem{zhang2019memory} J.~Zhang, T.~Zhou. Markovian approaches to modeling intracellular reaction processes with molecular memory. \emph{PNAS} 116, 23542--23550 (2019).
+\bibitem{biswas2021memory} S.~Biswas, S.~Manicka, E.~Hoel, M.~Levin. Gene regulatory networks exhibit several kinds of memory. \emph{iScience} 24, 102131 (2021).
+\bibitem{fuller1987} W.~A.~Fuller. \emph{Measurement Error Models}. Wiley (1987).
+\end{thebibliography}
+\end{document}

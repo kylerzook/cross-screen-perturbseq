@@ -1,6 +1,6 @@
 # Revision 1 — new analyses (numeric results)
 
-Script: `experiments/revision.py` (+ `final_synthetic.py f5masks|depthctrl`). JSON in `results/revision/` and `results/final/`. Manuscript: `paper/main.pdf`; reply: `paper/response_to_reviewers.pdf`.
+Script: `experiments/revision.py` (+ `final_synthetic.py f5masks|depthctrl`). JSON in `results/revision/` and `results/final/`. Manuscript: `paper/main.pdf`, `paper/supplement.pdf`.
 
 | Analysis | Metric | Result | Meaning |
 |---|---|---|---|

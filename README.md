@@ -6,7 +6,7 @@ the limits of reading perturbation responses as regulatory networks"** (Kyler Zo
 The project began as **BOND** (Boltzmann Occupancy Network Discovery), a thermodynamic-occupancy prior for gene
 regulatory network inference; those experiments are reported in the manuscript's Supplement (S1–S9).
 
-**📄 Read the paper: [paper/main.pdf](paper/main.pdf)** (main text and Supplement in one PDF; LaTeX source in [`paper/`](paper/))
+**📄 Read the paper: [main manuscript](paper/main.pdf) · [supplementary material](paper/supplement.pdf)** (LaTeX source in [`paper/`](paper/))
 
 ## What is here
 | Path | Contents |
@@ -14,7 +14,7 @@ regulatory network inference; those experiments are reported in the manuscript's
 | `bond/` | small library: sequence/PWM scanning, occupancy, intervals, metrics, data loaders |
 | `experiments/` | one script per experiment; `revision.py` holds the main-text Replogle/Norman/Wessels analyses |
 | `results/` | JSON outputs of every experiment (`results/revision/` = main-text analyses, `results/final/` = simulations and context replication) |
-| `paper/` | `main.tex` + `supplement.tex`, generated `tables/` and `figures/`, compiled [`main.pdf`](paper/main.pdf), reviewer responses (`response_round1`, `response_round2`) |
+| `paper/` | `main.tex` and `supplement.tex` (compiled: [`main.pdf`](paper/main.pdf), [`supplement.pdf`](paper/supplement.pdf)), generated `tables/` and `figures/` |
 | `scripts/` | table and figure generators |
 | `docs/` | short numeric notes per experiment |
 | `data/README.md` | identifiers for every public input; `data/encode_manifest.tsv`, `data/download_list.txt` list ENCODE accessions |

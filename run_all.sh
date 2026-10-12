@@ -58,4 +58,4 @@ done
 ## Tables, figures, manuscript
 python scripts/make_tables.py && python scripts/make_tables_rev.py
 python scripts/make_figures.py && python scripts/make_figures_rev.py
-cd paper && latexmk -pdf main.tex
+cd paper && latexmk -pdf main.tex supplement.tex && latexmk -pdf main.tex   # second pass resolves cross-document references
